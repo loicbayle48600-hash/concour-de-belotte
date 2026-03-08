@@ -1,0 +1,20 @@
+{
+  "name": "1235",
+  "teams": {
+    "1": {
+      "team_number": 1,
+      "player1_name": "fghdfgh",
+      "player2_name": "fsdgs",
+      "team_type": "Mixte",
+      "total_points": 0,
+      "rounds_played": {},
+      "special_points": {},
+      "is_locked": false
+    }
+  },
+  "rounds": [],
+  "current_round_number": 0,
+  "creation_date": "2026-03-07T03:59:23.638699",
+  "welcome_message": "",
+  "is_offline": false
+}
