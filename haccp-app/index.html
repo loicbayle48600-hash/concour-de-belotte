@@ -1,0 +1,1052 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#0e7490">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>HACCP Cuisine — Registre d'hygiène</title>
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+<style>
+:root{
+  --primary:#0e7490; --primary-dark:#155e75; --primary-light:#e0f2f7;
+  --ok:#1e8449; --ok-bg:#e8f8ef; --bad:#c0392b; --bad-bg:#fdedec;
+  --warn:#b9770e; --warn-bg:#fef5e7;
+  --bg:#f4f6f8; --card:#ffffff; --text:#1c2833; --muted:#6b7a8a; --border:#dde4ea;
+  --radius:14px; --shadow:0 1px 4px rgba(15,40,60,.10);
+}
+*{box-sizing:border-box; -webkit-tap-highlight-color:transparent;}
+html,body{margin:0;padding:0;height:100%;}
+body{font-family:'Segoe UI',Roboto,system-ui,sans-serif;background:var(--bg);color:var(--text);font-size:17px;}
+button{font-family:inherit;}
+
+/* ---- Layout ---- */
+#app{display:flex;height:100vh;height:100dvh;overflow:hidden;}
+#sidebar{width:230px;min-width:230px;background:var(--primary-dark);color:#fff;display:flex;flex-direction:column;overflow-y:auto;}
+#sidebar .brand{padding:18px 16px 12px;font-size:20px;font-weight:700;display:flex;align-items:center;gap:10px;border-bottom:1px solid rgba(255,255,255,.15);}
+#sidebar .brand small{display:block;font-size:12px;font-weight:400;opacity:.75;}
+#sidebar nav{flex:1;padding:8px 0;}
+.nav-btn{display:flex;align-items:center;gap:12px;width:100%;padding:14px 18px;background:none;border:none;color:#e8eef2;font-size:16.5px;cursor:pointer;text-align:left;border-left:4px solid transparent;min-height:52px;}
+.nav-btn:hover{background:rgba(255,255,255,.08);}
+.nav-btn.active{background:rgba(255,255,255,.14);border-left-color:#67e8f9;font-weight:600;}
+.nav-btn .badge{margin-left:auto;background:var(--bad);color:#fff;border-radius:12px;font-size:13px;padding:1px 9px;font-weight:700;}
+#main{flex:1;display:flex;flex-direction:column;overflow:hidden;}
+#topbar{background:var(--card);border-bottom:1px solid var(--border);padding:12px 22px;display:flex;align-items:center;gap:16px;}
+#topbar h1{font-size:21px;margin:0;flex:1;}
+#topbar .clock{color:var(--muted);font-size:16px;text-align:right;line-height:1.3;}
+#content{flex:1;overflow-y:auto;padding:20px 22px 90px;}
+
+/* Mobile / portrait tablet */
+#menuToggle{display:none;background:none;border:none;font-size:26px;cursor:pointer;color:var(--text);padding:4px 8px;}
+@media (max-width:820px){
+  #sidebar{position:fixed;left:-260px;top:0;bottom:0;z-index:50;transition:left .2s;box-shadow:2px 0 12px rgba(0,0,0,.3);}
+  #sidebar.open{left:0;}
+  #menuToggle{display:block;}
+  #overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.4);z-index:40;}
+  #overlay.show{display:block;}
+}
+
+/* ---- Cards & forms ---- */
+.card{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:18px 20px;margin-bottom:18px;}
+.card h2{margin:0 0 14px;font-size:19px;color:var(--primary-dark);display:flex;align-items:center;gap:8px;}
+.grid{display:grid;gap:14px;}
+.grid.cols2{grid-template-columns:1fr 1fr;}
+.grid.cols3{grid-template-columns:1fr 1fr 1fr;}
+@media (max-width:700px){.grid.cols2,.grid.cols3{grid-template-columns:1fr;}}
+label.fld{display:block;}
+label.fld span{display:block;font-size:14.5px;color:var(--muted);margin-bottom:5px;font-weight:600;}
+input,select,textarea{width:100%;padding:13px 14px;font-size:17px;border:1.5px solid var(--border);border-radius:10px;background:#fff;color:var(--text);min-height:50px;}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--primary);}
+textarea{resize:vertical;min-height:70px;}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;font-size:17px;font-weight:600;border:none;border-radius:10px;cursor:pointer;min-height:50px;}
+.btn-primary{background:var(--primary);color:#fff;}
+.btn-primary:hover{background:var(--primary-dark);}
+.btn-ok{background:var(--ok);color:#fff;}
+.btn-danger{background:var(--bad);color:#fff;}
+.btn-light{background:#eef2f5;color:var(--text);border:1px solid var(--border);}
+.btn-sm{padding:8px 14px;font-size:15px;min-height:40px;}
+.btn:disabled{opacity:.5;cursor:default;}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:6px;}
+
+/* ---- Tables & lists ---- */
+table{width:100%;border-collapse:collapse;font-size:15.5px;}
+th{color:var(--muted);font-size:13.5px;text-transform:uppercase;letter-spacing:.4px;text-align:left;padding:8px 10px;border-bottom:2px solid var(--border);}
+td{padding:11px 10px;border-bottom:1px solid var(--border);vertical-align:middle;}
+tr:last-child td{border-bottom:none;}
+.table-wrap{overflow-x:auto;}
+.pill{display:inline-block;padding:4px 12px;border-radius:20px;font-size:13.5px;font-weight:700;}
+.pill.ok{background:var(--ok-bg);color:var(--ok);}
+.pill.bad{background:var(--bad-bg);color:var(--bad);}
+.pill.warn{background:var(--warn-bg);color:var(--warn);}
+.pill.neutral{background:#eef2f5;color:var(--muted);}
+.thumb{width:52px;height:52px;object-fit:cover;border-radius:8px;cursor:pointer;border:1px solid var(--border);}
+.empty{color:var(--muted);text-align:center;padding:24px 10px;font-size:16px;}
+
+/* ---- Dashboard ---- */
+.dash-tiles{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:14px;margin-bottom:18px;}
+.tile{background:var(--card);border-radius:var(--radius);box-shadow:var(--shadow);padding:16px;cursor:pointer;border:none;text-align:left;display:flex;flex-direction:column;gap:6px;min-height:96px;}
+.tile .t-icon{font-size:30px;}
+.tile .t-label{font-size:16px;font-weight:700;}
+.tile .t-sub{font-size:14px;color:var(--muted);}
+.tile.alerte{border-left:5px solid var(--bad);}
+.tile.ok-b{border-left:5px solid var(--ok);}
+.alert-line{display:flex;align-items:center;gap:10px;padding:10px 12px;border-radius:10px;margin-bottom:8px;font-size:15.5px;}
+.alert-line.bad{background:var(--bad-bg);color:var(--bad);}
+.alert-line.warn{background:var(--warn-bg);color:var(--warn);}
+.alert-line.ok{background:var(--ok-bg);color:var(--ok);}
+
+/* ---- Misc ---- */
+.conf-banner{padding:14px 16px;border-radius:10px;font-weight:700;font-size:17px;margin:10px 0;}
+.conf-banner.ok{background:var(--ok-bg);color:var(--ok);}
+.conf-banner.bad{background:var(--bad-bg);color:var(--bad);}
+#toast{position:fixed;bottom:22px;left:50%;transform:translateX(-50%) translateY(120px);background:#1c2833;color:#fff;padding:14px 26px;border-radius:12px;font-size:16.5px;z-index:100;transition:transform .25s;box-shadow:0 4px 16px rgba(0,0,0,.35);max-width:90vw;text-align:center;}
+#toast.show{transform:translateX(-50%) translateY(0);}
+#photoModal{position:fixed;inset:0;background:rgba(0,0,0,.85);z-index:90;display:none;align-items:center;justify-content:center;padding:20px;}
+#photoModal.show{display:flex;}
+#photoModal img{max-width:100%;max-height:90vh;border-radius:8px;}
+.item-row{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--border);}
+.item-row:last-child{border-bottom:none;}
+.item-row .grow{flex:1;}
+.muted{color:var(--muted);font-size:14.5px;}
+.section-title{font-size:16px;font-weight:700;color:var(--primary-dark);margin:16px 0 8px;}
+.checkline{display:flex;align-items:center;gap:12px;padding:13px 14px;border:1.5px solid var(--border);border-radius:10px;margin-bottom:10px;background:#fff;}
+.checkline.done{background:var(--ok-bg);border-color:var(--ok);}
+.checkline .grow{flex:1;font-size:16.5px;font-weight:600;}
+.checkline .sub{font-size:13.5px;color:var(--muted);font-weight:400;}
+@media print{
+  #sidebar,#topbar,.actions,.no-print,#menuToggle{display:none !important;}
+  #content{overflow:visible;padding:0;}
+  body{background:#fff;}
+  .card{box-shadow:none;border:1px solid #ccc;}
+}
+</style>
+</head>
+<body>
+<div id="app">
+  <aside id="sidebar">
+    <div class="brand">🧑‍🍳 <div>HACCP Cuisine<small id="brandEtab"></small></div></div>
+    <nav id="nav"></nav>
+  </aside>
+  <div id="overlay"></div>
+  <div id="main">
+    <header id="topbar">
+      <button id="menuToggle" aria-label="Menu">☰</button>
+      <h1 id="pageTitle">Accueil</h1>
+      <div class="clock" id="clock"></div>
+    </header>
+    <main id="content"></main>
+  </div>
+</div>
+<div id="toast"></div>
+<div id="photoModal"><img id="photoModalImg" alt="Photo"></div>
+
+<script>
+'use strict';
+/* ================================================================
+   HACCP Cuisine — Registre d'hygiène numérique pour tablette Android
+   Application 100% hors-ligne : données stockées sur la tablette (IndexedDB)
+   ================================================================ */
+
+/* ---------- Petites aides ---------- */
+const $ = s => document.querySelector(s);
+const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const pad = n => String(n).padStart(2, '0');
+const todayISO = () => { const d = new Date(); return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate()); };
+const nowTime = () => { const d = new Date(); return pad(d.getHours())+':'+pad(d.getMinutes()); };
+const fmtDateFR = iso => { if(!iso) return ''; const [y,m,d] = iso.split('-'); return d+'/'+m+'/'+y; };
+const uid = () => Date.now().toString(36) + Math.random().toString(36).slice(2, 8);
+const daysAgoISO = n => { const d = new Date(); d.setDate(d.getDate()-n); return d.getFullYear()+'-'+pad(d.getMonth()+1)+'-'+pad(d.getDate()); };
+
+function toast(msg, ms) {
+  const t = $('#toast'); t.textContent = msg; t.classList.add('show');
+  clearTimeout(toast._t); toast._t = setTimeout(() => t.classList.remove('show'), ms || 2600);
+}
+
+/* ---------- Base de données (IndexedDB) ---------- */
+const DB_NAME = 'haccp-db', DB_VERSION = 1;
+let db = null;
+
+function openDB() {
+  return new Promise((resolve, reject) => {
+    const req = indexedDB.open(DB_NAME, DB_VERSION);
+    req.onupgradeneeded = e => {
+      const d = e.target.result;
+      if (!d.objectStoreNames.contains('records')) {
+        const st = d.createObjectStore('records', { keyPath: 'id' });
+        st.createIndex('module', 'module', { unique: false });
+        st.createIndex('date', 'date', { unique: false });
+      }
+      if (!d.objectStoreNames.contains('settings')) d.createObjectStore('settings', { keyPath: 'key' });
+    };
+    req.onsuccess = e => { db = e.target.result; resolve(db); };
+    req.onerror = e => reject(e.target.error);
+  });
+}
+function dbPut(store, obj) {
+  return new Promise((res, rej) => {
+    const tx = db.transaction(store, 'readwrite');
+    tx.objectStore(store).put(obj);
+    tx.oncomplete = () => res(); tx.onerror = e => rej(e.target.error);
+  });
+}
+function dbDelete(store, key) {
+  return new Promise((res, rej) => {
+    const tx = db.transaction(store, 'readwrite');
+    tx.objectStore(store).delete(key);
+    tx.oncomplete = () => res(); tx.onerror = e => rej(e.target.error);
+  });
+}
+function dbGetAll(store) {
+  return new Promise((res, rej) => {
+    const req = db.transaction(store).objectStore(store).getAll();
+    req.onsuccess = () => res(req.result || []); req.onerror = e => rej(e.target.error);
+  });
+}
+function dbGet(store, key) {
+  return new Promise((res, rej) => {
+    const req = db.transaction(store).objectStore(store).get(key);
+    req.onsuccess = () => res(req.result); req.onerror = e => rej(e.target.error);
+  });
+}
+async function getRecords(module, fromDate, toDate) {
+  const all = await dbGetAll('records');
+  return all.filter(r =>
+    (!module || r.module === module) &&
+    (!fromDate || r.date >= fromDate) &&
+    (!toDate || r.date <= toDate)
+  ).sort((a, b) => (b.date + (b.time||'')).localeCompare(a.date + (a.time||'')));
+}
+async function saveRecord(rec) {
+  rec.id = rec.id || uid();
+  rec.date = rec.date || todayISO();
+  rec.time = rec.time || nowTime();
+  rec.ts = rec.ts || Date.now();
+  await dbPut('records', rec);
+  return rec;
+}
+
+/* ---------- Paramètres ---------- */
+const DEFAULT_SETTINGS = {
+  key: 'main',
+  etablissement: 'Mon établissement',
+  employes: ['Loïc'],
+  equipements: [
+    { id: 'eq1', nom: 'Frigo 1', type: 'Réfrigérateur', min: 0, max: 4 },
+    { id: 'eq2', nom: 'Congélateur 1', type: 'Congélateur', min: -24, max: -18 }
+  ],
+  zones: [
+    { id: 'z1', nom: 'Plans de travail', freq: 'quotidien' },
+    { id: 'z2', nom: 'Sols de la cuisine', freq: 'quotidien' },
+    { id: 'z3', nom: 'Intérieur des frigos', freq: 'hebdomadaire' },
+    { id: 'z4', nom: 'Hotte aspirante', freq: 'mensuel' }
+  ],
+  friteuses: ['Friteuse 1'],
+  lastOperator: ''
+};
+let settings = null;
+
+async function loadSettings() {
+  settings = (await dbGet('settings', 'main')) || null;
+  if (!settings) { settings = JSON.parse(JSON.stringify(DEFAULT_SETTINGS)); await dbPut('settings', settings); }
+}
+async function saveSettings() { await dbPut('settings', settings); $('#brandEtab').textContent = settings.etablissement; }
+
+/* ---------- Photos (compression caméra) ---------- */
+function readPhoto(file) {
+  return new Promise((resolve, reject) => {
+    const img = new Image();
+    const url = URL.createObjectURL(file);
+    img.onload = () => {
+      const MAX = 900;
+      let { width: w, height: h } = img;
+      if (w > MAX || h > MAX) { const k = MAX / Math.max(w, h); w = Math.round(w*k); h = Math.round(h*k); }
+      const cv = document.createElement('canvas'); cv.width = w; cv.height = h;
+      cv.getContext('2d').drawImage(img, 0, 0, w, h);
+      URL.revokeObjectURL(url);
+      resolve(cv.toDataURL('image/jpeg', 0.65));
+    };
+    img.onerror = () => { URL.revokeObjectURL(url); reject(new Error('Photo illisible')); };
+    img.src = url;
+  });
+}
+function showPhoto(src) { $('#photoModalImg').src = src; $('#photoModal').classList.add('show'); }
+$('#photoModal') && document.addEventListener('click', e => { if (e.target.id === 'photoModal') $('#photoModal').classList.remove('show'); });
+
+/* ---------- Non-conformités automatiques ---------- */
+async function createNC(desc, source, gravite) {
+  await saveRecord({
+    module: 'nc', operator: currentOperator(),
+    data: { desc, gravite: gravite || 'majeure', source: source || '', action: '', statut: 'ouverte' }
+  });
+}
+
+/* ---------- Sélecteur d'opérateur ---------- */
+function operatorSelect(id) {
+  const opts = settings.employes.map(e =>
+    `<option value="${esc(e)}" ${e === settings.lastOperator ? 'selected' : ''}>${esc(e)}</option>`).join('');
+  return `<label class="fld"><span>Opérateur / signature</span><select id="${id}">${opts}</select></label>`;
+}
+function currentOperator(sel) {
+  const v = sel ? sel.value : (settings.lastOperator || settings.employes[0] || '');
+  if (sel && v !== settings.lastOperator) { settings.lastOperator = v; saveSettings(); }
+  return v;
+}
+
+/* ================================================================
+   NAVIGATION
+   ================================================================ */
+const PAGES = [
+  { id: 'home',  icon: '🏠', label: 'Accueil' },
+  { id: 'temp',  icon: '🌡️', label: 'Températures' },
+  { id: 'recep', icon: '📦', label: 'Réception' },
+  { id: 'trace', icon: '🏷️', label: 'Traçabilité' },
+  { id: 'clean', icon: '🧽', label: 'Nettoyage' },
+  { id: 'oil',   icon: '🍟', label: 'Huiles de friture' },
+  { id: 'cool',  icon: '❄️', label: 'Refroidissement' },
+  { id: 'nc',    icon: '⚠️', label: 'Non-conformités' },
+  { id: 'hist',  icon: '📊', label: 'Historique' },
+  { id: 'params',icon: '⚙️', label: 'Paramètres' }
+];
+let currentPage = 'home';
+
+function buildNav() {
+  $('#nav').innerHTML = PAGES.map(p =>
+    `<button class="nav-btn ${p.id === currentPage ? 'active' : ''}" data-page="${p.id}">
+       <span>${p.icon}</span> ${p.label}<span class="badge" id="badge-${p.id}" style="display:none"></span>
+     </button>`).join('');
+  $('#nav').querySelectorAll('.nav-btn').forEach(b =>
+    b.addEventListener('click', () => { go(b.dataset.page); closeSidebar(); }));
+}
+async function updateBadges() {
+  const ncs = (await getRecords('nc')).filter(r => r.data.statut === 'ouverte');
+  const badge = $('#badge-nc');
+  if (badge) { badge.style.display = ncs.length ? '' : 'none'; badge.textContent = ncs.length; }
+}
+function go(page) {
+  currentPage = page;
+  document.querySelectorAll('.nav-btn').forEach(b => b.classList.toggle('active', b.dataset.page === page));
+  const p = PAGES.find(x => x.id === page);
+  $('#pageTitle').textContent = p ? p.icon + ' ' + p.label : '';
+  RENDER[page]();
+  $('#content').scrollTop = 0;
+}
+function closeSidebar() { $('#sidebar').classList.remove('open'); $('#overlay').classList.remove('show'); }
+$('#menuToggle').addEventListener('click', () => { $('#sidebar').classList.add('open'); $('#overlay').classList.add('show'); });
+$('#overlay').addEventListener('click', closeSidebar);
+
+/* ================================================================
+   PAGE : ACCUEIL (tableau de bord)
+   ================================================================ */
+async function renderHome() {
+  const today = todayISO();
+  const [temps, cleans, ncs, traces] = await Promise.all([
+    getRecords('temp', today, today), getRecords('clean', today, today),
+    getRecords('nc'), getRecords('trace', daysAgoISO(60))
+  ]);
+  const openNC = ncs.filter(r => r.data.statut === 'ouverte');
+
+  // Équipements sans relevé aujourd'hui
+  const relevés = new Set(temps.map(r => r.data.equipId));
+  const missingTemp = settings.equipements.filter(e => !relevés.has(e.id));
+
+  // Tâches de nettoyage dues aujourd'hui
+  const dueTasks = await cleaningTasksDue();
+  const notDone = dueTasks.filter(t => !t.done);
+
+  // DLC qui expirent (aujourd'hui ou demain)
+  const limite = daysAgoISO(-1);
+  const dlcAlerts = traces.filter(r => r.data.dlc && r.data.dlc <= limite && r.data.dlc >= daysAgoISO(7));
+
+  let alerts = '';
+  if (missingTemp.length) alerts += `<div class="alert-line warn">🌡️ Relevé de température manquant aujourd'hui : <b>${esc(missingTemp.map(e => e.nom).join(', '))}</b></div>`;
+  if (notDone.length) alerts += `<div class="alert-line warn">🧽 ${notDone.length} tâche(s) de nettoyage à valider aujourd'hui</div>`;
+  if (openNC.length) alerts += `<div class="alert-line bad">⚠️ ${openNC.length} non-conformité(s) ouverte(s) à traiter</div>`;
+  dlcAlerts.forEach(r => { alerts += `<div class="alert-line bad">🏷️ DLC ${r.data.dlc < today ? 'DÉPASSÉE' : 'imminente'} : <b>${esc(r.data.produit)}</b> (${fmtDateFR(r.data.dlc)})</div>`; });
+  if (!alerts) alerts = `<div class="alert-line ok">✅ Tout est à jour, aucune alerte.</div>`;
+
+  $('#content').innerHTML = `
+    <div class="card"><h2>📋 À faire aujourd'hui — ${fmtDateFR(today)}</h2>${alerts}</div>
+    <div class="dash-tiles">
+      <button class="tile ${missingTemp.length ? 'alerte' : 'ok-b'}" data-go="temp">
+        <span class="t-icon">🌡️</span><span class="t-label">Températures</span>
+        <span class="t-sub">${temps.length} relevé(s) aujourd'hui</span></button>
+      <button class="tile" data-go="recep"><span class="t-icon">📦</span><span class="t-label">Réception</span>
+        <span class="t-sub">Contrôle à la livraison</span></button>
+      <button class="tile" data-go="trace"><span class="t-icon">🏷️</span><span class="t-label">Traçabilité</span>
+        <span class="t-sub">Étiquettes &amp; DLC</span></button>
+      <button class="tile ${notDone.length ? 'alerte' : 'ok-b'}" data-go="clean">
+        <span class="t-icon">🧽</span><span class="t-label">Nettoyage</span>
+        <span class="t-sub">${dueTasks.length - notDone.length}/${dueTasks.length} tâche(s) faite(s)</span></button>
+      <button class="tile" data-go="oil"><span class="t-icon">🍟</span><span class="t-label">Huiles</span>
+        <span class="t-sub">Contrôle friteuses</span></button>
+      <button class="tile" data-go="cool"><span class="t-icon">❄️</span><span class="t-label">Refroidissement</span>
+        <span class="t-sub">Suivi 63°C → 10°C</span></button>
+      <button class="tile ${openNC.length ? 'alerte' : 'ok-b'}" data-go="nc">
+        <span class="t-icon">⚠️</span><span class="t-label">Non-conformités</span>
+        <span class="t-sub">${openNC.length} ouverte(s)</span></button>
+      <button class="tile" data-go="hist"><span class="t-icon">📊</span><span class="t-label">Historique</span>
+        <span class="t-sub">Consulter &amp; exporter</span></button>
+    </div>`;
+  $('#content').querySelectorAll('[data-go]').forEach(t => t.addEventListener('click', () => go(t.dataset.go)));
+}
+
+/* ================================================================
+   PAGE : TEMPÉRATURES
+   ================================================================ */
+async function renderTemp() {
+  const today = todayISO();
+  const recs = await getRecords('temp', today, today);
+  const eqOpts = settings.equipements.map(e =>
+    `<option value="${e.id}">${esc(e.nom)} (${e.min}°C à ${e.max}°C)</option>`).join('');
+
+  $('#content').innerHTML = `
+    <div class="card">
+      <h2>Nouveau relevé de température</h2>
+      <div class="grid cols3">
+        <label class="fld"><span>Équipement</span><select id="tEquip">${eqOpts}</select></label>
+        <label class="fld"><span>Température (°C)</span>
+          <input type="number" id="tVal" step="0.1" inputmode="decimal" placeholder="ex : 3.5"></label>
+        ${operatorSelect('tOp')}
+      </div>
+      <div id="tConf"></div>
+      <div id="tAction" style="display:none">
+        <label class="fld"><span>Action corrective (obligatoire si non conforme)</span>
+          <textarea id="tActionTxt" placeholder="ex : produits déplacés dans le frigo 2, appel du frigoriste…"></textarea></label>
+      </div>
+      <div class="actions"><button class="btn btn-primary" id="tSave">💾 Enregistrer le relevé</button></div>
+    </div>
+    <div class="card">
+      <h2>Relevés du jour</h2>
+      ${recs.length ? `<div class="table-wrap"><table>
+        <tr><th>Heure</th><th>Équipement</th><th>T°</th><th>Conformité</th><th>Opérateur</th></tr>
+        ${recs.map(r => `<tr><td>${esc(r.time)}</td><td>${esc(r.data.equipNom)}</td>
+          <td><b>${esc(r.data.temp)}°C</b></td>
+          <td><span class="pill ${r.conforme ? 'ok' : 'bad'}">${r.conforme ? 'Conforme' : 'NON conforme'}</span></td>
+          <td>${esc(r.operator)}</td></tr>`).join('')}
+      </table></div>` : `<div class="empty">Aucun relevé aujourd'hui.</div>`}
+    </div>`;
+
+  const check = () => {
+    const eq = settings.equipements.find(e => e.id === $('#tEquip').value);
+    const v = parseFloat($('#tVal').value);
+    const box = $('#tConf'), act = $('#tAction');
+    if (!eq || isNaN(v)) { box.innerHTML = ''; act.style.display = 'none'; return null; }
+    const ok = v >= eq.min && v <= eq.max;
+    box.innerHTML = `<div class="conf-banner ${ok ? 'ok' : 'bad'}">${ok
+      ? '✅ Température conforme'
+      : `❌ NON CONFORME — attendu entre ${eq.min}°C et ${eq.max}°C`}</div>`;
+    act.style.display = ok ? 'none' : '';
+    return ok;
+  };
+  $('#tVal').addEventListener('input', check);
+  $('#tEquip').addEventListener('change', check);
+
+  $('#tSave').addEventListener('click', async () => {
+    const eq = settings.equipements.find(e => e.id === $('#tEquip').value);
+    const v = parseFloat($('#tVal').value);
+    if (!eq || isNaN(v)) return toast('⚠️ Saisissez une température.');
+    const ok = v >= eq.min && v <= eq.max;
+    const action = $('#tActionTxt').value.trim();
+    if (!ok && !action) return toast('⚠️ Indiquez l\'action corrective.');
+    await saveRecord({
+      module: 'temp', operator: currentOperator($('#tOp')), conforme: ok,
+      data: { equipId: eq.id, equipNom: eq.nom, temp: v, min: eq.min, max: eq.max, action }
+    });
+    if (!ok) await createNC(`Température non conforme : ${eq.nom} à ${v}°C (attendu ${eq.min} à ${eq.max}°C). Action : ${action}`, 'Températures');
+    toast('✅ Relevé enregistré'); updateBadges(); renderTemp();
+  });
+}
+
+/* ================================================================
+   PAGE : RÉCEPTION MARCHANDISES
+   ================================================================ */
+async function renderRecep() {
+  const recs = await getRecords('recep', daysAgoISO(7));
+  $('#content').innerHTML = `
+    <div class="card">
+      <h2>Contrôle à réception</h2>
+      <div class="grid cols2">
+        <label class="fld"><span>Fournisseur</span><input id="rFour" placeholder="ex : Metro, Promocash…"></label>
+        <label class="fld"><span>Produits livrés</span><input id="rProd" placeholder="ex : viandes, légumes…"></label>
+        <label class="fld"><span>Température produit (°C) — optionnel</span>
+          <input type="number" id="rTemp" step="0.1" inputmode="decimal" placeholder="ex : 2.0"></label>
+        <label class="fld"><span>État de la livraison</span>
+          <select id="rEtat">
+            <option value="conforme">✅ Conforme (emballages, DLC, propreté)</option>
+            <option value="non-conforme">❌ Non conforme</option>
+          </select></label>
+        ${operatorSelect('rOp')}
+        <label class="fld"><span>Photo bon de livraison / anomalie (optionnel)</span>
+          <input type="file" id="rPhoto" accept="image/*" capture="environment"></label>
+      </div>
+      <label class="fld"><span>Remarques / anomalies</span>
+        <textarea id="rRem" placeholder="ex : carton abîmé refusé, DLC courte…"></textarea></label>
+      <div class="actions"><button class="btn btn-primary" id="rSave">💾 Enregistrer la réception</button></div>
+    </div>
+    <div class="card">
+      <h2>Réceptions des 7 derniers jours</h2>
+      ${recs.length ? `<div class="table-wrap"><table>
+        <tr><th>Date</th><th>Fournisseur</th><th>Produits</th><th>T°</th><th>État</th><th>Photo</th></tr>
+        ${recs.map(r => `<tr><td>${fmtDateFR(r.date)} ${esc(r.time)}</td><td>${esc(r.data.fournisseur)}</td>
+          <td>${esc(r.data.produits)}</td><td>${r.data.temp != null && r.data.temp !== '' ? esc(r.data.temp)+'°C' : '—'}</td>
+          <td><span class="pill ${r.conforme ? 'ok' : 'bad'}">${r.conforme ? 'Conforme' : 'NON conforme'}</span></td>
+          <td>${r.photo ? `<img class="thumb" src="${r.photo}" data-photo>` : '—'}</td></tr>`).join('')}
+      </table></div>` : `<div class="empty">Aucune réception enregistrée cette semaine.</div>`}
+    </div>`;
+  bindThumbs();
+  $('#rSave').addEventListener('click', async () => {
+    const four = $('#rFour').value.trim(), prod = $('#rProd').value.trim();
+    if (!four) return toast('⚠️ Indiquez le fournisseur.');
+    const ok = $('#rEtat').value === 'conforme';
+    const rem = $('#rRem').value.trim();
+    if (!ok && !rem) return toast('⚠️ Décrivez l\'anomalie dans les remarques.');
+    let photo = null;
+    const f = $('#rPhoto').files[0];
+    if (f) { try { photo = await readPhoto(f); } catch (e) { toast('Photo illisible, enregistrée sans photo'); } }
+    await saveRecord({
+      module: 'recep', operator: currentOperator($('#rOp')), conforme: ok, photo,
+      data: { fournisseur: four, produits: prod, temp: $('#rTemp').value, remarques: rem }
+    });
+    if (!ok) await createNC(`Livraison non conforme — ${four} (${prod}). ${rem}`, 'Réception');
+    toast('✅ Réception enregistrée'); updateBadges(); renderRecep();
+  });
+}
+
+/* ================================================================
+   PAGE : TRAÇABILITÉ (étiquettes)
+   ================================================================ */
+async function renderTrace() {
+  const recs = await getRecords('trace', daysAgoISO(30));
+  const today = todayISO();
+  $('#content').innerHTML = `
+    <div class="card">
+      <h2>Nouvel enregistrement de traçabilité</h2>
+      <p class="muted">Photographiez l'étiquette du produit (n° de lot, DLC) à l'ouverture ou à la réception.</p>
+      <div class="grid cols2">
+        <label class="fld"><span>Produit</span><input id="pProd" placeholder="ex : Jambon blanc"></label>
+        <label class="fld"><span>Fournisseur / marque</span><input id="pFour" placeholder="ex : Fleury Michon"></label>
+        <label class="fld"><span>N° de lot (optionnel)</span><input id="pLot" placeholder="ex : L2345"></label>
+        <label class="fld"><span>DLC / DDM</span><input type="date" id="pDlc"></label>
+        <label class="fld"><span>📷 Photo de l'étiquette</span>
+          <input type="file" id="pPhoto" accept="image/*" capture="environment"></label>
+        ${operatorSelect('pOp')}
+      </div>
+      <div class="actions"><button class="btn btn-primary" id="pSave">💾 Enregistrer</button></div>
+    </div>
+    <div class="card">
+      <h2>Étiquettes des 30 derniers jours</h2>
+      ${recs.length ? `<div class="table-wrap"><table>
+        <tr><th>Date</th><th>Produit</th><th>Fournisseur</th><th>Lot</th><th>DLC</th><th>Photo</th></tr>
+        ${recs.map(r => {
+          const dlcBad = r.data.dlc && r.data.dlc < today;
+          return `<tr><td>${fmtDateFR(r.date)}</td><td><b>${esc(r.data.produit)}</b></td>
+          <td>${esc(r.data.fournisseur)}</td><td>${esc(r.data.lot) || '—'}</td>
+          <td>${r.data.dlc ? `<span class="pill ${dlcBad ? 'bad' : 'neutral'}">${fmtDateFR(r.data.dlc)}</span>` : '—'}</td>
+          <td>${r.photo ? `<img class="thumb" src="${r.photo}" data-photo>` : '—'}</td></tr>`;
+        }).join('')}
+      </table></div>` : `<div class="empty">Aucune étiquette enregistrée.</div>`}
+    </div>`;
+  bindThumbs();
+  $('#pSave').addEventListener('click', async () => {
+    const prod = $('#pProd').value.trim();
+    if (!prod) return toast('⚠️ Indiquez le produit.');
+    let photo = null;
+    const f = $('#pPhoto').files[0];
+    if (f) { try { photo = await readPhoto(f); } catch (e) { toast('Photo illisible, enregistrée sans photo'); } }
+    await saveRecord({
+      module: 'trace', operator: currentOperator($('#pOp')), conforme: null, photo,
+      data: { produit: prod, fournisseur: $('#pFour').value.trim(), lot: $('#pLot').value.trim(), dlc: $('#pDlc').value }
+    });
+    toast('✅ Traçabilité enregistrée'); renderTrace();
+  });
+}
+
+/* ================================================================
+   PAGE : NETTOYAGE
+   ================================================================ */
+async function cleaningTasksDue() {
+  const today = todayISO();
+  const recent = await getRecords('clean', daysAgoISO(31));
+  return settings.zones.map(z => {
+    const doneToday = recent.some(r => r.data.zoneId === z.id && r.date === today);
+    let due = false;
+    if (z.freq === 'quotidien') due = true;
+    else if (z.freq === 'hebdomadaire') due = !recent.some(r => r.data.zoneId === z.id && r.date >= daysAgoISO(6));
+    else due = !recent.some(r => r.data.zoneId === z.id && r.date >= daysAgoISO(29));
+    const last = recent.find(r => r.data.zoneId === z.id);
+    return { zone: z, done: doneToday, due: due || doneToday, last: last ? last.date : null };
+  }).filter(t => t.due);
+}
+async function renderClean() {
+  const tasks = await cleaningTasksDue();
+  const recs = await getRecords('clean', daysAgoISO(7));
+  const FREQ = { quotidien: 'Quotidien', hebdomadaire: 'Hebdomadaire', mensuel: 'Mensuel' };
+  $('#content').innerHTML = `
+    <div class="card">
+      <h2>Plan de nettoyage — tâches du jour</h2>
+      <div class="grid cols2" style="margin-bottom:12px">${operatorSelect('cOp')}</div>
+      ${tasks.length ? tasks.map(t => `
+        <div class="checkline ${t.done ? 'done' : ''}">
+          <div class="grow">${esc(t.zone.nom)}
+            <div class="sub">${FREQ[t.zone.freq]}${t.last ? ' — dernier nettoyage : ' + fmtDateFR(t.last) : ''}</div></div>
+          ${t.done ? '<span class="pill ok">✅ Fait</span>'
+                   : `<button class="btn btn-ok btn-sm" data-zone="${t.zone.id}">Valider</button>`}
+        </div>`).join('') : `<div class="empty">Aucune tâche prévue aujourd'hui.</div>`}
+    </div>
+    <div class="card">
+      <h2>Nettoyages validés (7 derniers jours)</h2>
+      ${recs.length ? `<div class="table-wrap"><table>
+        <tr><th>Date</th><th>Heure</th><th>Zone</th><th>Opérateur</th></tr>
+        ${recs.map(r => `<tr><td>${fmtDateFR(r.date)}</td><td>${esc(r.time)}</td>
+          <td>${esc(r.data.zone)}</td><td>${esc(r.operator)}</td></tr>`).join('')}
+      </table></div>` : `<div class="empty">Aucun nettoyage validé cette semaine.</div>`}
+    </div>`;
+  $('#content').querySelectorAll('[data-zone]').forEach(b => b.addEventListener('click', async () => {
+    const z = settings.zones.find(x => x.id === b.dataset.zone);
+    await saveRecord({
+      module: 'clean', operator: currentOperator($('#cOp')), conforme: true,
+      data: { zoneId: z.id, zone: z.nom, freq: z.freq }
+    });
+    toast('✅ ' + z.nom + ' : nettoyage validé'); renderClean();
+  }));
+}
+
+/* ================================================================
+   PAGE : HUILES DE FRITURE
+   ================================================================ */
+async function renderOil() {
+  const recs = await getRecords('oil', daysAgoISO(30));
+  const frOpts = settings.friteuses.map(f => `<option>${esc(f)}</option>`).join('');
+  $('#content').innerHTML = `
+    <div class="card">
+      <h2>Contrôle des huiles de friture</h2>
+      <div class="grid cols2">
+        <label class="fld"><span>Friteuse</span><select id="oFri">${frOpts}</select></label>
+        <label class="fld"><span>Opération</span>
+          <select id="oAct">
+            <option>Contrôle visuel</option><option>Filtration</option><option>Changement d'huile</option>
+          </select></label>
+        <label class="fld"><span>État de l'huile</span>
+          <select id="oEtat">
+            <option value="bonne">✅ Bonne (claire)</option>
+            <option value="correcte">🟡 Correcte (à surveiller)</option>
+            <option value="a-changer">❌ À changer (foncée, mousse, odeur)</option>
+          </select></label>
+        ${operatorSelect('oOp')}
+      </div>
+      <div class="actions"><button class="btn btn-primary" id="oSave">💾 Enregistrer</button></div>
+    </div>
+    <div class="card">
+      <h2>Suivi des 30 derniers jours</h2>
+      ${recs.length ? `<div class="table-wrap"><table>
+        <tr><th>Date</th><th>Friteuse</th><th>Opération</th><th>État</th><th>Opérateur</th></tr>
+        ${recs.map(r => {
+          const pill = r.data.etat === 'bonne' ? 'ok' : (r.data.etat === 'correcte' ? 'warn' : 'bad');
+          const lbl = { bonne: 'Bonne', correcte: 'Correcte', 'a-changer': 'À changer' }[r.data.etat] || r.data.etat;
+          return `<tr><td>${fmtDateFR(r.date)}</td><td>${esc(r.data.friteuse)}</td>
+            <td>${esc(r.data.operation)}</td><td><span class="pill ${pill}">${lbl}</span></td>
+            <td>${esc(r.operator)}</td></tr>`;
+        }).join('')}
+      </table></div>` : `<div class="empty">Aucun contrôle enregistré.</div>`}
+    </div>`;
+  $('#oSave').addEventListener('click', async () => {
+    const etat = $('#oEtat').value, op = $('#oAct').value;
+    const bad = etat === 'a-changer' && op !== "Changement d'huile";
+    await saveRecord({
+      module: 'oil', operator: currentOperator($('#oOp')), conforme: !bad,
+      data: { friteuse: $('#oFri').value, operation: op, etat }
+    });
+    if (bad) { await createNC(`Huile à changer : ${$('#oFri').value} (contrôle du ${fmtDateFR(todayISO())})`, 'Huiles', 'mineure'); toast('⚠️ Enregistré — pensez à changer l\'huile !', 3500); }
+    else toast('✅ Contrôle enregistré');
+    updateBadges(); renderOil();
+  });
+}
+
+/* ================================================================
+   PAGE : REFROIDISSEMENT
+   ================================================================ */
+async function renderCool() {
+  const recs = await getRecords('cool', daysAgoISO(14));
+  $('#content').innerHTML = `
+    <div class="card">
+      <h2>Suivi de refroidissement rapide</h2>
+      <p class="muted">Règle : passer de +63°C à +10°C à cœur en moins de 2 heures.</p>
+      <div class="grid cols2">
+        <label class="fld"><span>Produit / préparation</span><input id="clProd" placeholder="ex : Blanquette de veau"></label>
+        ${operatorSelect('clOp')}
+        <label class="fld"><span>Heure de début</span><input type="time" id="clH1" value="${nowTime()}"></label>
+        <label class="fld"><span>T° de début (°C)</span><input type="number" id="clT1" step="0.1" inputmode="decimal" placeholder="ex : 63"></label>
+        <label class="fld"><span>Heure de fin</span><input type="time" id="clH2"></label>
+        <label class="fld"><span>T° de fin (°C)</span><input type="number" id="clT2" step="0.1" inputmode="decimal" placeholder="ex : 8"></label>
+      </div>
+      <div id="clConf"></div>
+      <div class="actions"><button class="btn btn-primary" id="clSave">💾 Enregistrer</button></div>
+    </div>
+    <div class="card">
+      <h2>Refroidissements des 14 derniers jours</h2>
+      ${recs.length ? `<div class="table-wrap"><table>
+        <tr><th>Date</th><th>Produit</th><th>Début</th><th>Fin</th><th>Durée</th><th>Conformité</th></tr>
+        ${recs.map(r => `<tr><td>${fmtDateFR(r.date)}</td><td><b>${esc(r.data.produit)}</b></td>
+          <td>${esc(r.data.h1)} (${esc(r.data.t1)}°C)</td><td>${esc(r.data.h2)} (${esc(r.data.t2)}°C)</td>
+          <td>${esc(r.data.duree)}</td>
+          <td><span class="pill ${r.conforme ? 'ok' : 'bad'}">${r.conforme ? 'Conforme' : 'NON conforme'}</span></td></tr>`).join('')}
+      </table></div>` : `<div class="empty">Aucun suivi enregistré.</div>`}
+    </div>`;
+
+  const minutes = t => { if (!t) return null; const [h, m] = t.split(':').map(Number); return h * 60 + m; };
+  const evalCool = () => {
+    const m1 = minutes($('#clH1').value), m2 = minutes($('#clH2').value);
+    const t2 = parseFloat($('#clT2').value);
+    if (m1 == null || m2 == null || isNaN(t2)) { $('#clConf').innerHTML = ''; return null; }
+    let dur = m2 - m1; if (dur < 0) dur += 24 * 60; // passage minuit
+    const ok = dur <= 120 && t2 <= 10;
+    $('#clConf').innerHTML = `<div class="conf-banner ${ok ? 'ok' : 'bad'}">
+      Durée : ${Math.floor(dur/60)}h${pad(dur%60)} — ${ok ? '✅ Refroidissement conforme'
+      : '❌ NON CONFORME (limite : 2h et ≤ 10°C)'}</div>`;
+    return { ok, dur };
+  };
+  ['clH1','clH2','clT2'].forEach(id => $('#'+id).addEventListener('input', evalCool));
+
+  $('#clSave').addEventListener('click', async () => {
+    const prod = $('#clProd').value.trim();
+    const r = evalCool();
+    if (!prod) return toast('⚠️ Indiquez le produit.');
+    if (!r) return toast('⚠️ Renseignez les heures et la T° de fin.');
+    await saveRecord({
+      module: 'cool', operator: currentOperator($('#clOp')), conforme: r.ok,
+      data: { produit: prod, h1: $('#clH1').value, t1: $('#clT1').value, h2: $('#clH2').value,
+              t2: $('#clT2').value, duree: Math.floor(r.dur/60) + 'h' + pad(r.dur%60) }
+    });
+    if (!r.ok) await createNC(`Refroidissement non conforme : ${prod} (${Math.floor(r.dur/60)}h${pad(r.dur%60)}, fin à ${$('#clT2').value}°C)`, 'Refroidissement');
+    toast('✅ Refroidissement enregistré'); updateBadges(); renderCool();
+  });
+}
+
+/* ================================================================
+   PAGE : NON-CONFORMITÉS
+   ================================================================ */
+async function renderNC() {
+  const recs = await getRecords('nc');
+  const open = recs.filter(r => r.data.statut === 'ouverte');
+  const closed = recs.filter(r => r.data.statut !== 'ouverte').slice(0, 20);
+  const GRAV = { mineure: ['neutral','Mineure'], majeure: ['warn','Majeure'], critique: ['bad','Critique'] };
+
+  $('#content').innerHTML = `
+    <div class="card">
+      <h2>Déclarer une non-conformité</h2>
+      <div class="grid cols2">
+        <label class="fld"><span>Gravité</span>
+          <select id="nGrav"><option value="mineure">Mineure</option>
+            <option value="majeure" selected>Majeure</option><option value="critique">Critique</option></select></label>
+        ${operatorSelect('nOp')}
+      </div>
+      <label class="fld"><span>Description du problème</span>
+        <textarea id="nDesc" placeholder="ex : panne du congélateur, présence de nuisibles…"></textarea></label>
+      <div class="actions"><button class="btn btn-primary" id="nSave">💾 Déclarer</button></div>
+    </div>
+    <div class="card">
+      <h2>Non-conformités ouvertes (${open.length})</h2>
+      ${open.length ? open.map(r => {
+        const g = GRAV[r.data.gravite] || GRAV.majeure;
+        return `<div class="item-row">
+          <div class="grow"><b>${esc(r.data.desc)}</b>
+            <div class="muted">${fmtDateFR(r.date)} ${esc(r.time)} — ${esc(r.data.source || 'Manuel')} — ${esc(r.operator)}</div></div>
+          <span class="pill ${g[0]}">${g[1]}</span>
+          <button class="btn btn-ok btn-sm" data-close="${r.id}">Clôturer</button>
+        </div>`;
+      }).join('') : `<div class="empty">✅ Aucune non-conformité ouverte.</div>`}
+    </div>
+    <div class="card">
+      <h2>Dernières non-conformités clôturées</h2>
+      ${closed.length ? closed.map(r => `<div class="item-row">
+        <div class="grow">${esc(r.data.desc)}
+          <div class="muted">Clôturée le ${fmtDateFR(r.data.closedAt || '')} — action : ${esc(r.data.action || '—')}</div></div>
+        <span class="pill ok">Clôturée</span></div>`).join('')
+      : `<div class="empty">Aucune.</div>`}
+    </div>`;
+
+  $('#nSave').addEventListener('click', async () => {
+    const desc = $('#nDesc').value.trim();
+    if (!desc) return toast('⚠️ Décrivez le problème.');
+    await saveRecord({
+      module: 'nc', operator: currentOperator($('#nOp')), conforme: false,
+      data: { desc, gravite: $('#nGrav').value, source: 'Manuel', action: '', statut: 'ouverte' }
+    });
+    toast('✅ Non-conformité déclarée'); updateBadges(); renderNC();
+  });
+  $('#content').querySelectorAll('[data-close]').forEach(b => b.addEventListener('click', async () => {
+    const action = prompt('Action corrective réalisée :');
+    if (action === null) return;
+    if (!action.trim()) return toast('⚠️ Indiquez l\'action réalisée.');
+    const rec = await dbGet('records', b.dataset.close);
+    rec.data.statut = 'cloturee'; rec.data.action = action.trim(); rec.data.closedAt = todayISO();
+    await dbPut('records', rec);
+    toast('✅ Non-conformité clôturée'); updateBadges(); renderNC();
+  }));
+}
+
+/* ================================================================
+   PAGE : HISTORIQUE & EXPORTS
+   ================================================================ */
+const MODULE_LABELS = {
+  temp: 'Températures', recep: 'Réception', trace: 'Traçabilité',
+  clean: 'Nettoyage', oil: 'Huiles', cool: 'Refroidissement', nc: 'Non-conformités'
+};
+function recDetail(r) {
+  const d = r.data;
+  switch (r.module) {
+    case 'temp': return `${d.equipNom} : ${d.temp}°C (attendu ${d.min} à ${d.max}°C)` + (d.action ? ` — Action : ${d.action}` : '');
+    case 'recep': return `${d.fournisseur} — ${d.produits}` + (d.temp ? ` — ${d.temp}°C` : '') + (d.remarques ? ` — ${d.remarques}` : '');
+    case 'trace': return `${d.produit} (${d.fournisseur || '—'})` + (d.lot ? ` — lot ${d.lot}` : '') + (d.dlc ? ` — DLC ${fmtDateFR(d.dlc)}` : '');
+    case 'clean': return `${d.zone} (${d.freq})`;
+    case 'oil': return `${d.friteuse} — ${d.operation} — état : ${d.etat}`;
+    case 'cool': return `${d.produit} : ${d.t1}°C→${d.t2}°C en ${d.duree}`;
+    case 'nc': return `[${d.gravite}] ${d.desc}` + (d.action ? ` — Action : ${d.action}` : '') + ` (${d.statut === 'ouverte' ? 'OUVERTE' : 'clôturée'})`;
+    default: return JSON.stringify(d);
+  }
+}
+async function renderHist() {
+  const modOpts = ['<option value="">Tous les modules</option>']
+    .concat(Object.entries(MODULE_LABELS).map(([k, v]) => `<option value="${k}">${v}</option>`)).join('');
+  $('#content').innerHTML = `
+    <div class="card no-print">
+      <h2>Historique des enregistrements</h2>
+      <div class="grid cols3">
+        <label class="fld"><span>Module</span><select id="hMod">${modOpts}</select></label>
+        <label class="fld"><span>Du</span><input type="date" id="hFrom" value="${daysAgoISO(30)}"></label>
+        <label class="fld"><span>Au</span><input type="date" id="hTo" value="${todayISO()}"></label>
+      </div>
+      <div class="actions">
+        <button class="btn btn-primary" id="hShow">🔍 Afficher</button>
+        <button class="btn btn-light" id="hCsv">⬇️ Export CSV</button>
+        <button class="btn btn-light" id="hPrint">🖨️ Imprimer / PDF</button>
+      </div>
+    </div>
+    <div class="card"><h2 id="hTitle">Résultats</h2><div id="hResults"><div class="empty">Choisissez une période puis « Afficher ».</div></div></div>`;
+
+  let current = [];
+  const load = async () => {
+    current = await getRecords($('#hMod').value || null, $('#hFrom').value, $('#hTo').value);
+    $('#hTitle').textContent = `Résultats (${current.length}) — ${settings.etablissement} — du ${fmtDateFR($('#hFrom').value)} au ${fmtDateFR($('#hTo').value)}`;
+    $('#hResults').innerHTML = current.length ? `<div class="table-wrap"><table>
+      <tr><th>Date</th><th>Heure</th><th>Module</th><th>Détail</th><th>Conf.</th><th>Opérateur</th><th class="no-print"></th></tr>
+      ${current.map(r => `<tr><td>${fmtDateFR(r.date)}</td><td>${esc(r.time)}</td>
+        <td>${MODULE_LABELS[r.module] || r.module}</td><td>${esc(recDetail(r))}${r.photo ? ` <img class="thumb" src="${r.photo}" data-photo style="width:34px;height:34px">` : ''}</td>
+        <td>${r.conforme === null || r.conforme === undefined ? '—' : `<span class="pill ${r.conforme ? 'ok' : 'bad'}">${r.conforme ? 'OK' : 'NC'}</span>`}</td>
+        <td>${esc(r.operator)}</td>
+        <td class="no-print"><button class="btn btn-light btn-sm" data-del="${r.id}">🗑️</button></td></tr>`).join('')}
+    </table></div>` : `<div class="empty">Aucun enregistrement sur cette période.</div>`;
+    bindThumbs();
+    $('#hResults').querySelectorAll('[data-del]').forEach(b => b.addEventListener('click', async () => {
+      if (!confirm('Supprimer définitivement cet enregistrement ?\n\n⚠️ Attention : un registre HACCP doit normalement être conservé.')) return;
+      await dbDelete('records', b.dataset.del); toast('Enregistrement supprimé'); updateBadges(); load();
+    }));
+  };
+  $('#hShow').addEventListener('click', load);
+  $('#hPrint').addEventListener('click', () => window.print());
+  $('#hCsv').addEventListener('click', async () => {
+    if (!current.length) await load();
+    if (!current.length) return toast('Rien à exporter.');
+    const rows = [['Date','Heure','Module','Détail','Conformité','Opérateur']]
+      .concat(current.map(r => [fmtDateFR(r.date), r.time, MODULE_LABELS[r.module] || r.module,
+        recDetail(r), r.conforme == null ? '' : (r.conforme ? 'Conforme' : 'Non conforme'), r.operator]));
+    const csv = '﻿' + rows.map(row => row.map(c => '"' + String(c == null ? '' : c).replace(/"/g, '""') + '"').join(';')).join('\r\n');
+    downloadFile(csv, `haccp_${$('#hMod').value || 'tous'}_${$('#hFrom').value}_${$('#hTo').value}.csv`, 'text/csv;charset=utf-8');
+    toast('✅ Fichier CSV téléchargé');
+  });
+  load();
+}
+function downloadFile(content, name, type) {
+  const blob = content instanceof Blob ? content : new Blob([content], { type });
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob); a.download = name;
+  document.body.appendChild(a); a.click();
+  setTimeout(() => { URL.revokeObjectURL(a.href); a.remove(); }, 500);
+}
+function bindThumbs() {
+  $('#content').querySelectorAll('[data-photo]').forEach(img =>
+    img.addEventListener('click', () => showPhoto(img.src)));
+}
+
+/* ================================================================
+   PAGE : PARAMÈTRES
+   ================================================================ */
+async function renderParams() {
+  const s = settings;
+  const listHTML = (arr, render, delAttr) => arr.map((x, i) =>
+    `<div class="item-row"><div class="grow">${render(x)}</div>
+     <button class="btn btn-light btn-sm" data-${delAttr}="${i}">🗑️</button></div>`).join('') || '<div class="empty">Aucun élément.</div>';
+
+  $('#content').innerHTML = `
+    <div class="card">
+      <h2>Établissement</h2>
+      <div class="grid cols2">
+        <label class="fld"><span>Nom de l'établissement</span>
+          <input id="sEtab" value="${esc(s.etablissement)}"></label>
+      </div>
+      <div class="actions"><button class="btn btn-primary btn-sm" id="sEtabSave">💾 Enregistrer</button></div>
+    </div>
+
+    <div class="card">
+      <h2>👤 Employés</h2>
+      ${listHTML(s.employes, e => esc(e), 'delemp')}
+      <div class="actions"><input id="sNewEmp" placeholder="Nom du nouvel employé" style="max-width:300px">
+        <button class="btn btn-primary btn-sm" id="sAddEmp">➕ Ajouter</button></div>
+    </div>
+
+    <div class="card">
+      <h2>🌡️ Équipements froids</h2>
+      ${listHTML(s.equipements, e => `<b>${esc(e.nom)}</b> <span class="muted">(${esc(e.type)}, ${e.min}°C à ${e.max}°C)</span>`, 'deleq')}
+      <div class="section-title">Ajouter un équipement</div>
+      <div class="grid cols3">
+        <label class="fld"><span>Nom</span><input id="sEqNom" placeholder="ex : Frigo 2"></label>
+        <label class="fld"><span>Type</span>
+          <select id="sEqType">
+            <option data-min="0" data-max="4">Réfrigérateur</option>
+            <option data-min="-24" data-max="-18">Congélateur</option>
+            <option data-min="63" data-max="90">Maintien au chaud</option>
+          </select></label>
+        <div class="grid cols2">
+          <label class="fld"><span>T° min</span><input type="number" id="sEqMin" value="0" step="0.5"></label>
+          <label class="fld"><span>T° max</span><input type="number" id="sEqMax" value="4" step="0.5"></label>
+        </div>
+      </div>
+      <div class="actions"><button class="btn btn-primary btn-sm" id="sAddEq">➕ Ajouter l'équipement</button></div>
+    </div>
+
+    <div class="card">
+      <h2>🧽 Zones de nettoyage</h2>
+      ${listHTML(s.zones, z => `<b>${esc(z.nom)}</b> <span class="muted">(${esc(z.freq)})</span>`, 'delzone')}
+      <div class="grid cols2" style="margin-top:8px">
+        <label class="fld"><span>Nouvelle zone</span><input id="sZoneNom" placeholder="ex : Chambre froide"></label>
+        <label class="fld"><span>Fréquence</span>
+          <select id="sZoneFreq"><option value="quotidien">Quotidien</option>
+            <option value="hebdomadaire">Hebdomadaire</option><option value="mensuel">Mensuel</option></select></label>
+      </div>
+      <div class="actions"><button class="btn btn-primary btn-sm" id="sAddZone">➕ Ajouter la zone</button></div>
+    </div>
+
+    <div class="card">
+      <h2>🍟 Friteuses</h2>
+      ${listHTML(s.friteuses, f => esc(f), 'delfri')}
+      <div class="actions"><input id="sNewFri" placeholder="Nom de la friteuse" style="max-width:300px">
+        <button class="btn btn-primary btn-sm" id="sAddFri">➕ Ajouter</button></div>
+    </div>
+
+    <div class="card">
+      <h2>💾 Sauvegarde des données</h2>
+      <p class="muted">Les données sont stockées uniquement sur cette tablette. Faites régulièrement une sauvegarde
+      (fichier téléchargé, à copier sur clé USB, e-mail ou Drive).</p>
+      <div class="actions">
+        <button class="btn btn-primary" id="sExport">⬇️ Exporter toutes les données</button>
+        <label class="btn btn-light" style="position:relative;overflow:hidden">📥 Restaurer une sauvegarde
+          <input type="file" id="sImport" accept=".json,application/json" style="position:absolute;inset:0;opacity:0"></label>
+      </div>
+    </div>`;
+
+  $('#sEtabSave').addEventListener('click', async () => { s.etablissement = $('#sEtab').value.trim() || 'Mon établissement'; await saveSettings(); toast('✅ Enregistré'); });
+
+  $('#sAddEmp').addEventListener('click', async () => {
+    const v = $('#sNewEmp').value.trim(); if (!v) return;
+    s.employes.push(v); await saveSettings(); renderParams();
+  });
+  $('#content').querySelectorAll('[data-delemp]').forEach(b => b.addEventListener('click', async () => {
+    if (s.employes.length <= 1) return toast('⚠️ Gardez au moins un employé.');
+    s.employes.splice(+b.dataset.delemp, 1); await saveSettings(); renderParams();
+  }));
+
+  $('#sEqType').addEventListener('change', e => {
+    const o = e.target.selectedOptions[0];
+    $('#sEqMin').value = o.dataset.min; $('#sEqMax').value = o.dataset.max;
+  });
+  $('#sAddEq').addEventListener('click', async () => {
+    const nom = $('#sEqNom').value.trim(); if (!nom) return toast('⚠️ Indiquez un nom.');
+    const min = parseFloat($('#sEqMin').value), max = parseFloat($('#sEqMax').value);
+    if (isNaN(min) || isNaN(max) || min >= max) return toast('⚠️ Températures min/max invalides.');
+    s.equipements.push({ id: uid(), nom, type: $('#sEqType').value, min, max });
+    await saveSettings(); renderParams();
+  });
+  $('#content').querySelectorAll('[data-deleq]').forEach(b => b.addEventListener('click', async () => {
+    if (s.equipements.length <= 1) return toast('⚠️ Gardez au moins un équipement.');
+    if (!confirm('Supprimer cet équipement ? (les relevés existants sont conservés)')) return;
+    s.equipements.splice(+b.dataset.deleq, 1); await saveSettings(); renderParams();
+  }));
+
+  $('#sAddZone').addEventListener('click', async () => {
+    const nom = $('#sZoneNom').value.trim(); if (!nom) return toast('⚠️ Indiquez un nom.');
+    s.zones.push({ id: uid(), nom, freq: $('#sZoneFreq').value });
+    await saveSettings(); renderParams();
+  });
+  $('#content').querySelectorAll('[data-delzone]').forEach(b => b.addEventListener('click', async () => {
+    if (!confirm('Supprimer cette zone du plan de nettoyage ?')) return;
+    s.zones.splice(+b.dataset.delzone, 1); await saveSettings(); renderParams();
+  }));
+
+  $('#sAddFri').addEventListener('click', async () => {
+    const v = $('#sNewFri').value.trim(); if (!v) return;
+    s.friteuses.push(v); await saveSettings(); renderParams();
+  });
+  $('#content').querySelectorAll('[data-delfri]').forEach(b => b.addEventListener('click', async () => {
+    if (s.friteuses.length <= 1) return toast('⚠️ Gardez au moins une friteuse.');
+    s.friteuses.splice(+b.dataset.delfri, 1); await saveSettings(); renderParams();
+  }));
+
+  $('#sExport').addEventListener('click', async () => {
+    const data = { app: 'haccp-cuisine', version: 1, exportedAt: new Date().toISOString(),
+                   settings, records: await dbGetAll('records') };
+    downloadFile(JSON.stringify(data), `sauvegarde_haccp_${todayISO()}.json`, 'application/json');
+    toast('✅ Sauvegarde téléchargée');
+  });
+  $('#sImport').addEventListener('change', async e => {
+    const f = e.target.files[0]; if (!f) return;
+    try {
+      const data = JSON.parse(await f.text());
+      if (data.app !== 'haccp-cuisine' || !Array.isArray(data.records)) throw new Error('format');
+      if (!confirm(`Restaurer la sauvegarde du ${new Date(data.exportedAt).toLocaleDateString('fr-FR')} ?\n(${data.records.length} enregistrements — les données actuelles seront fusionnées)`)) return;
+      settings = data.settings; settings.key = 'main'; await saveSettings();
+      for (const r of data.records) await dbPut('records', r);
+      toast('✅ Sauvegarde restaurée'); updateBadges(); renderParams();
+    } catch (err) { toast('❌ Fichier de sauvegarde invalide.'); }
+  });
+}
+
+/* ================================================================
+   Démarrage
+   ================================================================ */
+const RENDER = {
+  home: renderHome, temp: renderTemp, recep: renderRecep, trace: renderTrace,
+  clean: renderClean, oil: renderOil, cool: renderCool, nc: renderNC,
+  hist: renderHist, params: renderParams
+};
+
+function tickClock() {
+  const d = new Date();
+  $('#clock').innerHTML = d.toLocaleDateString('fr-FR', { weekday: 'long', day: 'numeric', month: 'long' })
+    + '<br><b>' + pad(d.getHours()) + ':' + pad(d.getMinutes()) + '</b>';
+}
+
+(async function init() {
+  try {
+    await openDB();
+    await loadSettings();
+    $('#brandEtab').textContent = settings.etablissement;
+    buildNav();
+    tickClock(); setInterval(tickClock, 15000);
+    go('home');
+    updateBadges();
+    // Demande de stockage persistant (évite que Android purge les données)
+    if (navigator.storage && navigator.storage.persist) navigator.storage.persist();
+    // Service worker (mode hors-ligne) — uniquement en HTTPS/localhost
+    if ('serviceWorker' in navigator && (location.protocol === 'https:' || location.hostname === 'localhost')) {
+      navigator.serviceWorker.register('sw.js').catch(() => {});
+    }
+  } catch (e) {
+    document.body.innerHTML = '<div style="padding:40px;font-family:sans-serif"><h2>Erreur de démarrage</h2><p>' + esc(e.message) + '</p></div>';
+  }
+})();
+</script>
+</body>
+</html>
