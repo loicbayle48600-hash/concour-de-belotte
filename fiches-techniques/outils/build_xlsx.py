@@ -13,6 +13,15 @@ MENU = IN + '56eaa7fb-menu-2026-ehpad-fam.xlsx'
 TCUIS = IN + '2e12933a-T_-Cuisson.xlsx'
 fiches_path, out_path = sys.argv[1], sys.argv[2]
 PORTIONS_DEFAULT = 100
+BASE_PORTIONS = 70          # recette de base pour 70 personnes
+EFFECTIF_EHPAD = 70         # hypothèse à confirmer par le chef
+EFFECTIF_FAM = 40
+CATALOGUE = json.load(open('/tmp/claude-0/-home-user-concour-de-belotte/64d19263-231e-5d7c-a7b5-8e2986a86600/scratchpad/work/catalogue.json', encoding='utf-8'))['produits']
+ALIAS2CODE = {}
+for _p in CATALOGUE:
+    for _a in _p['aliases']: ALIAS2CODE[re.sub(r'\s+', ' ', _a).strip()] = _p['code']
+PU_FORMULA = "=IFERROR(INDEX(Correspondance!$D$2:$D$3000,MATCH(A{r},Correspondance!$A$2:$A$3000,0)),0)"
+used_products = set()
 
 fiches = json.load(open(fiches_path, encoding='utf-8'))
 if isinstance(fiches, dict): fiches = fiches['fiches']
@@ -48,6 +57,15 @@ order = ['Entrée', 'Plat', 'Garniture', 'Dessert']
 names_by_cat = {c: [n for n, (cat, _) in CANON.items() if cat == c] for c in order}
 orig_by_canon = {v: k for k, v in ORIG.items()}
 
+def link_chef_sheet(ws):
+    sumrow = next(r for r in range(4, 40) if isinstance(ws[f'F{r}'].value, str) and 'SUM' in ws[f'F{r}'].value.upper())
+    for r in range(4, sumrow):
+        v = ws[f'A{r}'].value
+        if v is not None and str(v).strip():
+            ws[f'A{r}'] = re.sub(r'\s+', ' ', str(v)).strip()
+            used_products.add(ws[f'A{r}'].value)
+            ws[f'E{r}'] = PU_FORMULA.format(r=r)
+
 def clear_row(ws, r):
     for col in 'ABDE':
         ws[f'{col}{r}'].value = None
@@ -58,6 +76,7 @@ for cat in order:
         if nom in orig_by_canon:
             src = wb[orig_by_canon[nom]]
             ws = wb.copy_worksheet(src); ws.title = sname
+            link_chef_sheet(ws)
             title = str(src['A1'].value or '').strip()
             index.append((cat, nom, sname, 'CHEF', title))
             continue
@@ -69,19 +88,28 @@ for cat in order:
         ws['E2'] = f['vp']
         ws['G1'] = f['cuisson']
         ings = f['ingredients'][:15]
+        tot = sum(i['qte'] for i in ings if i['qte'])
+        k = (BASE_PORTIONS * f['poids_portion'] / tot) if tot else 1
         for i in range(15):
             r = 4 + i
             clear_row(ws, r)
             if i < len(ings):
                 ing = ings[i]
                 ws[f'A{r}'] = ing['produit'] if ing['qte'] is not None else (ing['produit'] if 'PM' in ing['produit'] else ing['produit'] + ' PM')
-                ws[f'B{r}'] = ing['qte']
+                q = ing['qte']
+                if q is not None:
+                    q = q * k
+                    q = round(q, 2) if q >= 1 else round(q, 3)
+                ws[f'B{r}'] = q
                 ws[f'D{r}'] = ing['unite']
+                ws[f'A{r}'] = re.sub(r'\s+', ' ', str(ws[f'A{r}'].value)).strip()
+                used_products.add(ws[f'A{r}'].value)
+            ws[f'E{r}'] = PU_FORMULA.format(r=r)
         ws['G4'] = f['mode_operatoire']
         ws['B23'] = f['poids_portion']
-        ws['B24'] = PORTIONS_DEFAULT
+        ws['B24'] = '=Paramètres!$B$5'
         ws['C23'] = 'Possibilité de saisir le grammage'
-        ws['C24'] = 'Possibilité de saisir le nombre de portions'
+        ws['C24'] = 'Effectif EHPAD + FAM (feuille Paramètres) – possibilité de saisir un autre nombre'
         # un peu plus de hauteur pour le mode opératoire long
         nlines = f['mode_operatoire'].count('\n') + 1
         if nlines > 14:
@@ -95,6 +123,7 @@ for cat in order:
 # fiches bonus du chef (non présentes au menu)
 for s in BONUS:
     src = wb[s]; ws = wb.copy_worksheet(src); ws.title = ('X-' + s)[:31]
+    link_chef_sheet(ws)
     index.append(('Autres fiches du chef', s, ws.title, 'CHEF', str(src['A1'].value or '').strip()))
 
 # supprimer les feuilles d'origine
@@ -177,6 +206,78 @@ for row in tw.iter_rows():
             n.font = copy.copy(c.font); n.alignment = copy.copy(c.alignment); n.border = copy.copy(c.border); n.fill = copy.copy(c.fill)
 for k, v in tw.column_dimensions.items(): tc.column_dimensions[k].width = v.width
 for m in tw.merged_cells.ranges: tc.merge_cells(str(m))
+
+# ---------- Paramètres ----------
+pa = wb.create_sheet('Paramètres', 1)
+pa['A1'] = 'PARAMÈTRES DE PRODUCTION'; pa['A1'].font = Font(name='Calibri', size=16, bold=True)
+rows = [('Nombre de portions de la recette de base', BASE_PORTIONS, 'Les quantités de la colonne B de chaque fiche sont calculées pour ce nombre de portions.'),
+        ('Effectif maison de retraite (EHPAD)', EFFECTIF_EHPAD, 'À CONFIRMER – valeur provisoire, à saisir.'),
+        ('Effectif FAM', EFFECTIF_FAM, 'Saisi d\'après les indications du chef.'),
+        ('Nombre de portions à produire (total)', '=B3+B4', 'Utilisé par défaut en B24 de chaque fiche (modifiable fiche par fiche).')]
+for i, (lab, val, note) in enumerate(rows, start=2):
+    pa.cell(row=i, column=1, value=lab).font = Font(name='Calibri', size=12, bold=(i == 5))
+    c = pa.cell(row=i, column=2, value=val); c.font = Font(name='Calibri', size=14, bold=True, color=('0000FF' if i < 5 else '000000'))
+    c.fill = PatternFill('solid', fgColor=('FFFF00' if i in (3, 4) else 'DDEBF7')); c.border = bd; c.alignment = Alignment(horizontal='center')
+    pa.cell(row=i, column=3, value=note).font = Font(name='Calibri', size=10, italic=True)
+pa['A7'] = 'Cellules jaunes = à saisir. Le total se recalcule automatiquement.'; pa['A7'].font = Font(name='Calibri', size=10, italic=True)
+pa.column_dimensions['A'].width = 44; pa.column_dimensions['B'].width = 14; pa.column_dimensions['C'].width = 80
+
+# ---------- Cadencier ----------
+ca = wb.create_sheet('Cadencier', 2)
+ca['A1'] = 'CADENCIER – CATALOGUE DES PRODUITS'; ca['A1'].font = Font(name='Calibri', size=16, bold=True)
+ca['A2'] = "Prix de base = estimation grossiste collectivité 2026 (HT, par unité d'achat), à remplacer par vos prix facture. Saisir le prix facture (colonne G, jaune), la date et le fournisseur : le prix retenu (J) bascule automatiquement sur le prix facture et met à jour toutes les fiches."
+ca['A2'].font = Font(name='Calibri', size=10, italic=True)
+heads = ['Code', 'Famille', 'Produit', 'Unité', 'Conditionnement', 'Prix de base estimé HT (€/unité)', 'Prix facture HT (€/unité)', 'Date facture', 'Fournisseur', 'Prix retenu (€/unité)', 'Nb de fiches', 'Observations']
+for j, h in enumerate(heads, 1):
+    c = ca.cell(row=4, column=j, value=h); c.font = hdr_font; c.fill = hdr_fill; c.border = bd; c.alignment = Alignment(horizontal='center', vertical='center', wrap_text=True)
+ca.row_dimensions[4].height = 42
+fam_order = ['Viandes', 'Volailles', 'Charcuterie', 'Poissons et produits de la mer', 'Produits laitiers et œufs (BOF)', 'Fruits et légumes frais', 'Surgelés', 'Épicerie sèche', 'Conserves et sauces', 'Épices, herbes et condiments', 'Vins, alcools et boissons', 'Produits élaborés (prêts à l\'emploi)', 'Pain, pâtisserie et desserts', 'Divers']
+cat_sorted = sorted(CATALOGUE, key=lambda p: (fam_order.index(p['famille']) if p['famille'] in fam_order else 99, p['code']))
+# nb de fiches par produit
+fiche_count = {}
+for f in fiches:
+    codes = set(ALIAS2CODE.get(re.sub(r'\s+', ' ', i['produit']).strip()) for i in f['ingredients'])
+    for cde in codes:
+        if cde: fiche_count[cde] = fiche_count.get(cde, 0) + 1
+r = 5
+code_row = {}
+for p in cat_sorted:
+    vals = [p['code'], p['famille'], p['produit'], p['unite'], p.get('conditionnement', ''), p['prix_base'], None, None, None, f'=IF(G{r}<>"",G{r},F{r})', fiche_count.get(p['code'], 0), p.get('observations', '')]
+    for j, v in enumerate(vals, 1):
+        c = ca.cell(row=r, column=j, value=v); c.border = bd; c.font = Font(name='Calibri', size=11)
+    ca.cell(row=r, column=6).number_format = '#,##0.00 "€"'; ca.cell(row=r, column=6).font = Font(name='Calibri', size=11, color='0000FF')
+    ca.cell(row=r, column=7).number_format = '#,##0.00 "€"'; ca.cell(row=r, column=7).fill = PatternFill('solid', fgColor='FFFF00'); ca.cell(row=r, column=7).font = Font(name='Calibri', size=11, color='0000FF')
+    ca.cell(row=r, column=8).number_format = 'DD/MM/YYYY'; ca.cell(row=r, column=8).fill = PatternFill('solid', fgColor='FFFF00')
+    ca.cell(row=r, column=9).fill = PatternFill('solid', fgColor='FFFF00')
+    ca.cell(row=r, column=10).number_format = '#,##0.00 "€"'; ca.cell(row=r, column=10).font = Font(name='Calibri', size=11, bold=True)
+    code_row[p['code']] = r
+    r += 1
+LAST_CAT = r - 1
+for col, w in zip('ABCDEFGHIJKL', [10, 30, 44, 7, 22, 16, 16, 12, 18, 14, 10, 30]): ca.column_dimensions[col].width = w
+ca.freeze_panes = 'A5'; ca.auto_filter.ref = f"A4:L{LAST_CAT}"
+
+# ---------- Correspondance (intitulé de fiche -> produit du cadencier) ----------
+co = wb.create_sheet('Correspondance', 3)
+co['A1'] = "Correspondance entre les intitulés utilisés dans les fiches et les produits du cadencier (le prix est repris du cadencier par formule). Modifier le code (colonne B) pour rattacher un intitulé à un autre produit."
+co['A1'].font = Font(name='Calibri', size=10, italic=True)
+# la ligne 1 est une note ; le tableau commence ligne 2 (en-têtes) pour rester dans $A$2:$A$3000
+heads = ['Intitulé dans les fiches', 'Code produit', 'Produit du cadencier', 'Prix retenu (€/unité)']
+for j, h in enumerate(heads, 1):
+    c = co.cell(row=2, column=j, value=h); c.font = hdr_font; c.fill = hdr_fill; c.border = bd
+r = 3
+missing_alias = []
+for raw in sorted(used_products, key=lambda x: x.lower()):
+    code = ALIAS2CODE.get(raw)
+    if code is None: missing_alias.append(raw); continue
+    co.cell(row=r, column=1, value=raw).border = bd
+    co.cell(row=r, column=2, value=code).border = bd
+    co.cell(row=r, column=3, value=f'=IFERROR(INDEX(Cadencier!$C$5:$C${LAST_CAT},MATCH(B{r},Cadencier!$A$5:$A${LAST_CAT},0)),"code inconnu")').border = bd
+    c = co.cell(row=r, column=4, value=f'=IFERROR(INDEX(Cadencier!$J$5:$J${LAST_CAT},MATCH(B{r},Cadencier!$A$5:$A${LAST_CAT},0)),0)'); c.border = bd; c.number_format = '#,##0.00 "€"'
+    r += 1
+if missing_alias: print('PRODUITS SANS CORRESPONDANCE:', missing_alias)
+for col, w in zip('ABCD', [60, 12, 44, 16]): co.column_dimensions[col].width = w
+co.freeze_panes = 'A3'; co.auto_filter.ref = f"A2:D{r-1}"
+# PU_FORMULA utilise la colonne D de Correspondance, lignes 2..3000 : OK
 
 wb.active = 0
 wb.save(out_path)

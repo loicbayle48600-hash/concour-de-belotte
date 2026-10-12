@@ -3194,9 +3194,9 @@
     "unite": "Kg"
    },
    {
-    "produit": "Bouchées feuilletées vides",
-    "qte": 80,
-    "unite": "Pièce"
+    "produit": "Bouchées feuilletées vides (≈ 40 g pièce, 80 pièces)",
+    "qte": 3.2,
+    "unite": "Kg"
    },
    {
     "produit": "Poireaux émincés surgelés",
@@ -3365,9 +3365,9 @@
   "cuisson": "Four mixte 160°C\nPlaques gastro, crêpes garnies et roulées\nService liaison chaude ≥ 63°C",
   "ingredients": [
    {
-    "produit": "Crêpes salées prêtes à l'emploi (ou pâte maison)",
-    "qte": 80,
-    "unite": "Pièce"
+    "produit": "Crêpes salées prêtes à l'emploi (ou pâte maison) (≈ 50 g pièce, 80 pièces)",
+    "qte": 4.0,
+    "unite": "Kg"
    },
    {
     "produit": "Jambon blanc tranché",
@@ -3479,9 +3479,9 @@
   "cuisson": "Préparation froide\nProduit prêt à l'emploi (conserve)\nAssiette filmée, 0/+3°C",
   "ingredients": [
    {
-    "produit": "Sardines à l'huile (boîtes 1/4)",
-    "qte": 80,
-    "unite": "Pièce"
+    "produit": "Sardines à l'huile (boîtes 1/4) (≈ 125 g pièce, 80 pièces)",
+    "qte": 10.0,
+    "unite": "Kg"
    },
    {
     "produit": "Beurre doux portions",
@@ -3598,9 +3598,9 @@
   "cuisson": "Four mixte 180°C\nPlaques gastro ou cercles à tarte\nService chaud ≥ 63°C ou froid 0/+3°C",
   "ingredients": [
    {
-    "produit": "Pâte feuilletée en plaque 60x40",
-    "qte": 4,
-    "unite": "Pièce"
+    "produit": "Pâte feuilletée en plaque 60x40 (≈ 900 g pièce, 4 pièces)",
+    "qte": 3.6,
+    "unite": "Kg"
    },
    {
     "produit": "Tomates fraîches",
@@ -3655,9 +3655,9 @@
   "cuisson": "Four mixte 180°C\nPlaques gastro\nService chaud ≥ 63°C ou froid 0/+3°C",
   "ingredients": [
    {
-    "produit": "Pâte brisée en plaque 60x40",
-    "qte": 4,
-    "unite": "Pièce"
+    "produit": "Pâte brisée en plaque 60x40 (≈ 900 g pièce, 4 pièces)",
+    "qte": 3.6,
+    "unite": "Kg"
    },
    {
     "produit": "Ratatouille cuisinée (ou légumes grillés surgelés)",
@@ -3717,9 +3717,9 @@
   "cuisson": "Four mixte 180°C\nPlaques gastro\nService chaud ≥ 63°C",
   "ingredients": [
    {
-    "produit": "Pâte brisée en plaque 60x40",
-    "qte": 4,
-    "unite": "Pièce"
+    "produit": "Pâte brisée en plaque 60x40 (≈ 900 g pièce, 4 pièces)",
+    "qte": 3.6,
+    "unite": "Kg"
    },
    {
     "produit": "Oignons émincés surgelés",
@@ -3779,9 +3779,9 @@
   "cuisson": "Four mixte 180°C\nPlaques gastro\nService chaud ≥ 63°C",
   "ingredients": [
    {
-    "produit": "Pâte brisée en plaque 60x40",
-    "qte": 4,
-    "unite": "Pièce"
+    "produit": "Pâte brisée en plaque 60x40 (≈ 900 g pièce, 4 pièces)",
+    "qte": 3.6,
+    "unite": "Kg"
    },
    {
     "produit": "Emmental râpé",
@@ -3831,9 +3831,9 @@
   "cuisson": "Four mixte 180°C\nPlaques gastro\nService chaud ≥ 63°C",
   "ingredients": [
    {
-    "produit": "Pâte brisée en plaque 60x40",
-    "qte": 4,
-    "unite": "Pièce"
+    "produit": "Pâte brisée en plaque 60x40 (≈ 900 g pièce, 4 pièces)",
+    "qte": 3.6,
+    "unite": "Kg"
    },
    {
     "produit": "Lardons fumés",
@@ -3883,9 +3883,9 @@
   "cuisson": "Four mixte 180°C\nPlaques gastro\nService chaud ≥ 63°C",
   "ingredients": [
    {
-    "produit": "Pâte brisée en plaque 60x40",
-    "qte": 4,
-    "unite": "Pièce"
+    "produit": "Pâte brisée en plaque 60x40 (≈ 900 g pièce, 4 pièces)",
+    "qte": 3.6,
+    "unite": "Kg"
    },
    {
     "produit": "Thon au naturel égoutté",
@@ -4079,9 +4079,9 @@
   "cuisson": "Four mixte 200°C chaleur sèche\nPlaques gastro avec papier cuisson\nService liaison chaude ≥ 63°C",
   "ingredients": [
    {
-    "produit": "Nems au poulet ou au porc surgelés (50 g)",
-    "qte": 160,
-    "unite": "Pièce"
+    "produit": "Nems au poulet ou au porc surgelés (50 g) (≈ 50 g pièce, 160 pièces)",
+    "qte": 8.0,
+    "unite": "Kg"
    },
    {
     "produit": "Huile de tournesol",
@@ -4208,9 +4208,9 @@
   "cuisson": "Four mixte 180°C\nPlaques gastro\nService liaison chaude ≥ 63°C",
   "ingredients": [
    {
-    "produit": "Pain de mie tranché",
-    "qte": 160,
-    "unite": "Pièce"
+    "produit": "Pain de mie tranché (≈ 30 g pièce, 160 pièces)",
+    "qte": 4.8,
+    "unite": "Kg"
    },
    {
     "produit": "Jambon blanc tranché",
@@ -4387,9 +4387,9 @@
     "unite": "Kg"
    },
    {
-    "produit": "Pain toasté ou blinis",
-    "qte": 80,
-    "unite": "Pièce"
+    "produit": "Pain toasté ou blinis (≈ 30 g pièce, 80 pièces)",
+    "qte": 2.4,
+    "unite": "Kg"
    }
   ],
   "poids_portion": 0.1,
@@ -4831,9 +4831,9 @@
   "cuisson": "Cuisson œufs four vapeur 100°C 12 min\nGrilles gastro, refroidissement en cellule\nDressage en liaison froide 0/+3°C",
   "ingredients": [
    {
-    "produit": "Œufs coquille calibre moyen",
-    "qte": 120,
-    "unite": "Pièce"
+    "produit": "Œufs coquille calibre moyen (≈ 60 g pièce, 120 pièces)",
+    "qte": 7.2,
+    "unite": "Kg"
    },
    {
     "produit": "Mayonnaise ovoproduit pasteurisée",
@@ -12448,9 +12448,9 @@
   "cuisson": "Four mixte 160°C\nBacs gastro 1/1 H6 couverts\nGratinage 220°C 5 min",
   "ingredients": [
    {
-    "produit": "Crêpes nature prêtes à l'emploi Ø 28 cm (1 par portion)",
-    "qte": 80,
-    "unite": "Pièce"
+    "produit": "Crêpes nature prêtes à l'emploi Ø 28 cm (1 par portion) (≈ 60 g pièce, 80 pièces)",
+    "qte": 4.8,
+    "unite": "Kg"
    },
    {
     "produit": "Champignons de Paris émincés surgelés",
@@ -13598,9 +13598,9 @@
     "unite": "Kg"
    },
    {
-    "produit": "Croustades feuilletées pur beurre (1 par portion)",
-    "qte": 80,
-    "unite": "Pièce"
+    "produit": "Croustades feuilletées pur beurre (1 par portion) (≈ 25 g pièce, 80 pièces)",
+    "qte": 2.0,
+    "unite": "Kg"
    },
    {
     "produit": "Beurre",
@@ -15289,11 +15289,6 @@
     "unite": "Kg"
    },
    {
-    "produit": "Papier cuisson",
-    "qte": 10,
-    "unite": "Pièce"
-   },
-   {
     "produit": "Poivre PM",
     "qte": null,
     "unite": "Kg"
@@ -15331,11 +15326,6 @@
     "unite": "Kg"
    },
    {
-    "produit": "Papier cuisson",
-    "qte": 10,
-    "unite": "Pièce"
-   },
-   {
     "produit": "Muscade PM",
     "qte": null,
     "unite": "Kg"
@@ -15371,11 +15361,6 @@
     "produit": "Sel fin",
     "qte": 0.08,
     "unite": "Kg"
-   },
-   {
-    "produit": "Papier cuisson",
-    "qte": 12,
-    "unite": "Pièce"
    },
    {
     "produit": "Paprika PM",
@@ -15420,11 +15405,6 @@
     "unite": "Kg"
    },
    {
-    "produit": "Papier cuisson",
-    "qte": 12,
-    "unite": "Pièce"
-   },
-   {
     "produit": "Cumin moulu PM",
     "qte": null,
     "unite": "Kg"
@@ -15465,11 +15445,6 @@
     "produit": "Persil haché surgelé",
     "qte": 0.05,
     "unite": "Kg"
-   },
-   {
-    "produit": "Papier cuisson",
-    "qte": 10,
-    "unite": "Pièce"
    },
    {
     "produit": "Poivre PM",
