@@ -83,6 +83,8 @@ def link_chef_sheet(ws):
     ws[f'B{pu_row + 4}'] = '=Paramètres!$B$5'
     ws[f'C{pu_row + 4}'] = 'Effectif EHPAD + FAM (feuille Paramètres) – possibilité de saisir un autre nombre'
     ws[f'C{pu_row + 3}'] = 'Possibilité de saisir le grammage'
+    for rr in (pu_row + 3, pu_row + 4):
+        ws[f'C{rr}'].alignment = Alignment(horizontal='left'); ws[f'C{rr}'].font = Font(name='Calibri', size=10, italic=True)
     g = ws['G4'].value
     if isinstance(g, str):
         g = g.replace('(voir colonne B quantité pour un bac)', '(colonne B = recette de base 70 portions, à répartir en bacs 1/1 H10 : environ 1,5 kg de légumineuses sèches par bac)')
