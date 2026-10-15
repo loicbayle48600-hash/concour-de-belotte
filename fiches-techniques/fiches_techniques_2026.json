@@ -15951,10 +15951,10 @@
  {
   "nom": "Fondue de poireaux",
   "categorie": "Garniture",
-  "mode": "NORMAL",
-  "titre": "Fondue de poireaux au Vario",
-  "vp": "63°C à cœur",
-  "cuisson": "Cuisson au Vario (sauteuse multifonction)\nCuve 140°C puis 95°C à couvert\nDébarrassage en bacs gastro 1/1",
+  "mode": "CBT_NUIT",
+  "titre": "Fondue de poireaux cuisson de nuit",
+  "vp": "> à 10 000",
+  "cuisson": "Cuisson de nuit au Vario\n85°C fonction mijotage à couvert\nOu four vapeur 85°C bac gastro avec couvercles",
   "ingredients": [
    {
     "produit": "Poireaux émincés surgelés (ou 4ème gamme)",
@@ -16003,7 +16003,7 @@
    }
   ],
   "poids_portion": 0.18,
-  "mode_operatoire": "Mode opératoire :\nPeser tous les ingrédients d'épicerie\nPréchauffer la cuve du Vario à 140°C (mode cuire / sauter), ajouter le beurre\nAjouter les poireaux surgelés sans décongélation et les oignons ; faire suer 10 à 15 min sans coloration avec le mélangeur automatique (ou brasser toutes les 3 min)\nDéglacer au vin blanc, laisser réduire 2 à 3 min\nBaisser la cuve à 95°C, ajouter la crème, le sel, le poivre et la muscade ; cuire à couvert 20 à 25 min jusqu'à ce que les poireaux soient fondants\nLier avec la fécule délayée dans un peu d'eau froide, mélanger 2 min, rectifier l'assaisonnement\nContrôle 63°C à cœur minimum, noter la T° sur la fiche de traçabilité\nService en liaison chaude : débarrasser en bacs gastro 1/1 (H65), maintien en étuve ≥ 63°C, 2 h maximum\nService différé : refroidir en cellule (63°C à 10°C en moins de deux heures), bacs filmés et étiquetés, 0/+3°C, J+3\nRemise en température : four mixte 120°C vapeur jusqu'à ≥ 63°C à cœur\nOption cuisson de nuit au Vario : après le déglaçage, tous les ingrédients sauf la fécule, fonction mijotage 85°C à couvert 8 à 10 h, lier le matin"
+  "mode_operatoire": "Mode opératoire :\nPeser tous les ingrédients d'épicerie\nPréchauffer la cuve du Vario à 140°C, ajouter le beurre ; suer les poireaux surgelés (sans décongélation) et les oignons 10 min sans coloration avec le mélangeur automatique\nDéglacer au vin blanc, laisser réduire 2 à 3 min\nAjouter la crème, le sel, le poivre, la muscade et la fécule délayée dans un peu d'eau froide ; mélanger\nFermer le couvercle et appliquer le programme cuisson de nuit : fonction mijotage 85°C, 10H00 minimum et 14H00 maximum, sans brassage\nAlternative four : répartir en bacs gastro 1/1 (H10) avec couvercle sans trou, vapeur 85°C 10H00 à 14H00\nLe lendemain : mélanger délicatement, rectifier l'assaisonnement et la texture (allonger avec un peu de crème si besoin), contrôle T° ≥ 63°C notée sur la fiche de traçabilité\nMaintenir en étuve ≥ 63°C pour un service en liaison chaude (2 h maximum)\nOu refroidir en cellule (63°C à 10°C en moins de deux heures) pour une remise en T° différée : bacs filmés, étiquetés, 0/+3°C, J+3\nRemise en température : four mixte 120°C vapeur jusqu'à ≥ 63°C à cœur"
  },
  {
   "nom": "Épinards à la crème",
