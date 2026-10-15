@@ -1195,17 +1195,6 @@
    ]
   },
   {
-   "code": "BOF-003",
-   "famille": "Produits laitiers et œufs (BOF)",
-   "produit": "Blancs d'œufs liquides pasteurisés",
-   "unite": "L",
-   "conditionnement": "brique 1 L",
-   "prix_base": 4.5,
-   "aliases": [
-    "Blancs d'œufs liquides pasteurisés"
-   ]
-  },
-  {
    "code": "BOF-004",
    "famille": "Produits laitiers et œufs (BOF)",
    "produit": "Bleu d'Auvergne",
@@ -1348,20 +1337,6 @@
    ]
   },
   {
-   "code": "BOF-016",
-   "famille": "Produits laitiers et œufs (BOF)",
-   "produit": "Jaunes d'œufs pasteurisés",
-   "unite": "L",
-   "conditionnement": "brique 1 L",
-   "prix_base": 6.5,
-   "aliases": [
-    "Jaune d'œuf pasteurisé (dorure)",
-    "Jaunes d'œufs pasteurisés",
-    "Jaunes d'œufs pasteurisés (dorure)",
-    "Jaunes d'œufs pasteurisés (ovoproduit)"
-   ]
-  },
-  {
    "code": "BOF-017",
    "famille": "Produits laitiers et œufs (BOF)",
    "produit": "Lait demi-écrémé UHT",
@@ -1472,44 +1447,35 @@
    "famille": "Produits laitiers et œufs (BOF)",
    "produit": "Œufs coquille calibre moyen",
    "unite": "Kg",
-   "conditionnement": "plateau 30 x 6 (≈ 0.18 €/pièce)",
+   "conditionnement": "plateau 30 x 6 (≈ 0,18 €/pièce)",
    "prix_base": 3.0,
    "aliases": [
     "Œufs coquille calibre moyen",
-    "Œufs coquille calibre moyen (≈ 60 g pièce, 120 pièces)"
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 120 pièces)",
+    "Œufs coquille calibre moyen pour dorure (≈ 60 g pièce, 4 pièces)",
+    "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 16 pièces)",
+    "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 10 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 40 pièces)",
+    "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 8 pièces)",
+    "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 30 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 30 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 50 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 24 pièces)",
+    "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 20 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 28 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 180 pièces)",
+    "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 160 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 10 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 8 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 6 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 20 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 32 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 36 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 22 pièces)",
+    "Œufs coquille calibre moyen pour les jaunes (≈ 60 g pièce, 28 pièces)",
+    "Œufs coquille calibre moyen pour les jaunes (crème pâtissière) (≈ 60 g pièce, 22 pièces)"
    ],
-   "observations": "Prix converti au kg sur la base de 60 g par pièce"
-  },
-  {
-   "code": "BOF-027",
-   "famille": "Produits laitiers et œufs (BOF)",
-   "produit": "Œufs durs écalés pasteurisés",
-   "unite": "Kg",
-   "conditionnement": "seau 75 pièces (≈ 0.28 €/pièce)",
-   "prix_base": 5.6,
-   "aliases": [
-    "Œufs durs écalés",
-    "Œufs durs écalés (ovoproduit)",
-    "Œufs durs écalés pasteurisés",
-    "Œufs durs écalés pasteurisés (50 g)",
-    "Œufs durs écalés pasteurisés (ovoproduit)"
-   ],
-   "observations": "Prix converti au kg sur la base de 50 g par pièce"
-  },
-  {
-   "code": "BOF-028",
-   "famille": "Produits laitiers et œufs (BOF)",
-   "produit": "Œufs entiers liquides pasteurisés",
-   "unite": "L",
-   "conditionnement": "brique 1 L x 6",
-   "prix_base": 3.8,
-   "aliases": [
-    "Œufs entiers liquides pasteurisés",
-    "Œufs entiers liquides pasteurisés (ovoproduit)",
-    "Œufs entiers pasteurisés",
-    "Œufs entiers pasteurisés (ovoproduit)",
-    "Œufs liquides pasteurisés"
-   ]
+   "observations": "Prix au kg sur la base de 60 g par œuf ; seul produit œuf utilisé (œufs coquille)"
   },
   {
    "code": "BOF-029",
@@ -3937,7 +3903,7 @@
   {
    "code": "CON-015",
    "famille": "Conserves et sauces",
-   "produit": "Mayonnaise ovoproduit pasteurisée",
+   "produit": "Mayonnaise collectivité (seau)",
    "unite": "Kg",
    "conditionnement": "seau 5 kg",
    "prix_base": 4.5,
@@ -4541,10 +4507,10 @@
   {
    "code": "EPC-034",
    "famille": "Épices, herbes et condiments",
-   "produit": "Safran / spigol",
+   "produit": "Spigol (mélange safrané)",
    "unite": "Kg",
    "conditionnement": "boîte 100 g",
-   "prix_base": 120.0,
+   "prix_base": 110.0,
    "aliases": [
     "Safran ou spigol"
    ]

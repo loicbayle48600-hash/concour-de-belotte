@@ -301,13 +301,13 @@
     "unite": "Kg"
    },
    {
-    "produit": "Jaune d'œuf pasteurisé (dorure)",
-    "qte": 0.2,
-    "unite": "L"
+    "produit": "Œufs coquille calibre moyen pour dorure (≈ 60 g pièce, 4 pièces)",
+    "qte": 0.24,
+    "unite": "Kg"
    }
   ],
   "poids_portion": 0.11,
-  "mode_operatoire": "Mode opératoire :\nDisposer les feuilletés surgelés sans décongélation sur plaques gastro recouvertes de papier cuisson, espacer\nDorer au jaune d'œuf pasteurisé\nFour mixte 180°C chaleur sèche 15 à 20 min jusqu'à belle coloration\nContrôle 63°C à cœur minimum, enregistrer la T°\nMaintenir en étuve ≥ 63°C jusqu'au service (30 min maximum pour garder le croustillant)\nSalade : décontaminer, rincer, essorer, préparer la vinaigrette\nDressage : 1 feuilleté par personne sur lit de salade assaisonnée au dernier moment\nEn remise en T° différée : refroidir en cellule puis régénérer 180°C 8 min, 63°C à cœur"
+  "mode_operatoire": "Mode opératoire :\nDisposer les feuilletés surgelés sans décongélation sur plaques gastro recouvertes de papier cuisson, espacer\nDorer à l'œuf coquille battu\nFour mixte 180°C chaleur sèche 15 à 20 min jusqu'à belle coloration\nContrôle 63°C à cœur minimum, enregistrer la T°\nMaintenir en étuve ≥ 63°C jusqu'au service (30 min maximum pour garder le croustillant)\nSalade : décontaminer, rincer, essorer, préparer la vinaigrette\nDressage : 1 feuilleté par personne sur lit de salade assaisonnée au dernier moment\nEn remise en T° différée : refroidir en cellule puis régénérer 180°C 8 min, 63°C à cœur"
  },
  {
   "nom": "Salade d'endives",
@@ -524,8 +524,8 @@
     "unite": "Kg"
    },
    {
-    "produit": "Œufs durs écalés pasteurisés",
-    "qte": 0.8,
+    "produit": "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 16 pièces)",
+    "qte": 0.96,
     "unite": "Kg"
    },
    {
@@ -918,8 +918,8 @@
     "unite": "Kg"
    },
    {
-    "produit": "Œufs durs écalés pasteurisés",
-    "qte": 0.5,
+    "produit": "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 10 pièces)",
+    "qte": 0.6,
     "unite": "Kg"
    },
    {
@@ -996,7 +996,7 @@
    }
   ],
   "poids_portion": 0.12,
-  "mode_operatoire": "Mode opératoire :\nRéceptionner des avocats à maturité, laver et décontaminer la peau\nPréparer la vinaigrette (moutarde, sel, poivre, vinaigre, huile) et la mayonnaise citronnée\nCouper les avocats en deux au plus près du service, dénoyauter, citronner immédiatement la chair\nDresser 1/2 avocat par personne, garnir le creux de vinaigrette ou de mayonnaise selon le menu\nTexture modifiée : écraser la chair avec citron et mayonnaise, dresser à la poche\nParsemer de ciboulette, filmer, étiqueter\nStocker à 0/+3°C, service en liaison froide dans les 4 heures (oxydation rapide)\nMayonnaise : exclusivement à base d'ovoproduits pasteurisés, conservation 0/+3°C"
+  "mode_operatoire": "Mode opératoire :\nRéceptionner des avocats à maturité, laver et décontaminer la peau\nPréparer la vinaigrette (moutarde, sel, poivre, vinaigre, huile) et la mayonnaise citronnée\nCouper les avocats en deux au plus près du service, dénoyauter, citronner immédiatement la chair\nDresser 1/2 avocat par personne, garnir le creux de vinaigrette ou de mayonnaise selon le menu\nTexture modifiée : écraser la chair avec citron et mayonnaise, dresser à la poche\nParsemer de ciboulette, filmer, étiqueter\nStocker à 0/+3°C, service en liaison froide dans les 4 heures (oxydation rapide)\nMayonnaise collectivité prête à l'emploi, conservation 0/+3°C"
  },
  {
   "nom": "Salade de lentilles",
@@ -1094,9 +1094,9 @@
     "unite": "Kg"
    },
    {
-    "produit": "Œufs entiers liquides pasteurisés",
-    "qte": 2,
-    "unite": "L"
+    "produit": "Œufs coquille calibre moyen (≈ 60 g pièce, 40 pièces)",
+    "qte": 2.4,
+    "unite": "Kg"
    },
    {
     "produit": "Crème 35%",
@@ -1130,7 +1130,7 @@
    }
   ],
   "poids_portion": 0.13,
-  "mode_operatoire": "Mode opératoire :\nPeser tous les ingrédients d'épicerie\nCuire les légumes vapeur 100°C 8 à 10 min, égoutter, refroidir en cellule\nAppareil : mélanger œufs pasteurisés, crème, fécule délayée, sel, poivre, muscade\nMixer la moitié des carottes et des brocolis avec l'appareil, garder le reste des légumes entiers pour le visuel\nChemiser les moules à terrine ou bacs 1/3 de film cuisson, monter en couches (carottes, brocolis, haricots verts) en alternant avec l'appareil\nFilmer hermétiquement puis conditionner en poche sous vide\nCuisson : 85°C vapeur 1H30, contrôle 75°C à cœur\nRefroidir en cellule (63°C à 10°C en moins de deux heures), réserver 12 heures à 0/+3°C avant démoulage, DLC J+5 en poche fermée\nDémouler, trancher 1 tranche de 130 g, servir avec un coulis de tomates ou une sauce fromage blanc ciboulette\nService en liaison froide, consommation dans les 24h après ouverture"
+  "mode_operatoire": "Mode opératoire :\nPeser tous les ingrédients d'épicerie\nCuire les légumes vapeur 100°C 8 à 10 min, égoutter, refroidir en cellule\nAppareil : mélanger œufs coquille battus, crème, fécule délayée, sel, poivre, muscade\nMixer la moitié des carottes et des brocolis avec l'appareil, garder le reste des légumes entiers pour le visuel\nChemiser les moules à terrine ou bacs 1/3 de film cuisson, monter en couches (carottes, brocolis, haricots verts) en alternant avec l'appareil\nFilmer hermétiquement puis conditionner en poche sous vide\nCuisson : 85°C vapeur 1H30, contrôle 75°C à cœur\nRefroidir en cellule (63°C à 10°C en moins de deux heures), réserver 12 heures à 0/+3°C avant démoulage, DLC J+5 en poche fermée\nDémouler, trancher 1 tranche de 130 g, servir avec un coulis de tomates ou une sauce fromage blanc ciboulette\nService en liaison froide, consommation dans les 24h après ouverture"
  },
  {
   "nom": "Salade de pois chiches",
@@ -1223,8 +1223,8 @@
     "unite": "Kg"
    },
    {
-    "produit": "Œufs durs écalés pasteurisés",
-    "qte": 0.5,
+    "produit": "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 10 pièces)",
+    "qte": 0.6,
     "unite": "Kg"
    },
    {
@@ -1254,7 +1254,7 @@
    }
   ],
   "poids_portion": 0.1,
-  "mode_operatoire": "Mode opératoire :\nOuvrir les boîtes, égoutter et rincer la macédoine, laisser égoutter 30 min sur grille au froid\nDétendre la mayonnaise avec la moutarde, le jus de citron, sel et poivre\nMélanger délicatement la macédoine et la mayonnaise sans écraser les légumes\nRectifier l'assaisonnement\nConditionner en bacs gastro, décorer de quartiers d'œuf dur et de persil, filmer, étiqueter\nStocker à 0/+3°C, service en liaison froide dans les 24h\nMayonnaise exclusivement à base d'ovoproduits pasteurisés, ne jamais rompre la chaîne du froid"
+  "mode_operatoire": "Mode opératoire :\nOuvrir les boîtes, égoutter et rincer la macédoine, laisser égoutter 30 min sur grille au froid\nDétendre la mayonnaise avec la moutarde, le jus de citron, sel et poivre\nMélanger délicatement la macédoine et la mayonnaise sans écraser les légumes\nRectifier l'assaisonnement\nConditionner en bacs gastro, décorer de quartiers d'œuf dur et de persil, filmer, étiqueter\nStocker à 0/+3°C, service en liaison froide dans les 24h\nMayonnaise collectivité prête à l'emploi, ne jamais rompre la chaîne du froid"
  },
  {
   "nom": "Salade de mâche",
@@ -1840,8 +1840,8 @@
     "unite": "Kg"
    },
    {
-    "produit": "Œufs durs écalés pasteurisés",
-    "qte": 0.5,
+    "produit": "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 10 pièces)",
+    "qte": 0.6,
     "unite": "Kg"
    },
    {
@@ -1881,7 +1881,7 @@
    }
   ],
   "poids_portion": 0.15,
-  "mode_operatoire": "Mode opératoire :\nDécontaminer et rincer les tomates, couper un chapeau, évider à la cuillère, saler l'intérieur et retourner sur grille 20 min\nFarce : émietter le thon, mélanger avec mayonnaise, œufs durs hachés, câpres, échalotes, citron, poivre, persil\nRectifier l'assaisonnement, réserver la farce à 0/+3°C\nGarnir les tomates à la poche ou à la cuillère (60 g de farce par tomate), reposer le chapeau\nDresser sur lit de salade frisée décontaminée\nFilmer, étiqueter, stocker à 0/+3°C\nService en liaison froide, consommation dans les 24h\nMayonnaise exclusivement à base d'ovoproduits pasteurisés"
+  "mode_operatoire": "Mode opératoire :\nDécontaminer et rincer les tomates, couper un chapeau, évider à la cuillère, saler l'intérieur et retourner sur grille 20 min\nFarce : émietter le thon, mélanger avec mayonnaise, œufs durs hachés, câpres, échalotes, citron, poivre, persil\nRectifier l'assaisonnement, réserver la farce à 0/+3°C\nGarnir les tomates à la poche ou à la cuillère (60 g de farce par tomate), reposer le chapeau\nDresser sur lit de salade frisée décontaminée\nFilmer, étiqueter, stocker à 0/+3°C\nService en liaison froide, consommation dans les 24h\nMayonnaise collectivité prête à l'emploi"
  },
  {
   "nom": "Tomate à la russe",
@@ -1907,8 +1907,8 @@
     "unite": "Kg"
    },
    {
-    "produit": "Œufs durs écalés pasteurisés",
-    "qte": 0.5,
+    "produit": "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 10 pièces)",
+    "qte": 0.6,
     "unite": "Kg"
    },
    {
@@ -1938,7 +1938,7 @@
    }
   ],
   "poids_portion": 0.15,
-  "mode_operatoire": "Mode opératoire :\nDécontaminer et rincer les tomates, couper un chapeau, évider, saler l'intérieur et retourner sur grille 20 min\nÉgoutter et rincer la macédoine, laisser égoutter 30 min au froid\nMélanger macédoine, mayonnaise citronnée, sel, poivre et persil\nGarnir les tomates (60 g de macédoine par tomate), décorer d'un quartier d'œuf dur, reposer le chapeau\nDresser sur lit de salade frisée décontaminée\nFilmer, étiqueter, stocker à 0/+3°C\nService en liaison froide, consommation dans les 24h\nMayonnaise exclusivement à base d'ovoproduits pasteurisés"
+  "mode_operatoire": "Mode opératoire :\nDécontaminer et rincer les tomates, couper un chapeau, évider, saler l'intérieur et retourner sur grille 20 min\nÉgoutter et rincer la macédoine, laisser égoutter 30 min au froid\nMélanger macédoine, mayonnaise citronnée, sel, poivre et persil\nGarnir les tomates (60 g de macédoine par tomate), décorer d'un quartier d'œuf dur, reposer le chapeau\nDresser sur lit de salade frisée décontaminée\nFilmer, étiqueter, stocker à 0/+3°C\nService en liaison froide, consommation dans les 24h\nMayonnaise collectivité prête à l'emploi"
  },
  {
   "nom": "Salade de pâtes",
@@ -2118,8 +2118,8 @@
     "unite": "Kg"
    },
    {
-    "produit": "Œufs durs écalés pasteurisés",
-    "qte": 0.4,
+    "produit": "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 8 pièces)",
+    "qte": 0.48,
     "unite": "Kg"
    },
    {
@@ -2306,8 +2306,8 @@
     "unite": "Kg"
    },
    {
-    "produit": "Œufs durs écalés pasteurisés",
-    "qte": 0.4,
+    "produit": "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 8 pièces)",
+    "qte": 0.48,
     "unite": "Kg"
    },
    {
@@ -2616,8 +2616,8 @@
     "unite": "Kg"
    },
    {
-    "produit": "Œufs durs écalés",
-    "qte": 1.5,
+    "produit": "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 30 pièces)",
+    "qte": 1.8,
     "unite": "Kg"
    },
    {
@@ -3665,9 +3665,9 @@
     "unite": "Kg"
    },
    {
-    "produit": "Œufs liquides pasteurisés",
-    "qte": 1.5,
-    "unite": "L"
+    "produit": "Œufs coquille calibre moyen (≈ 60 g pièce, 30 pièces)",
+    "qte": 1.8,
+    "unite": "Kg"
    },
    {
     "produit": "Crème 35%",
@@ -3732,9 +3732,9 @@
     "unite": "Kg"
    },
    {
-    "produit": "Œufs liquides pasteurisés",
-    "qte": 2,
-    "unite": "L"
+    "produit": "Œufs coquille calibre moyen (≈ 60 g pièce, 40 pièces)",
+    "qte": 2.4,
+    "unite": "Kg"
    },
    {
     "produit": "Crème 35%",
@@ -3794,9 +3794,9 @@
     "unite": "Kg"
    },
    {
-    "produit": "Œufs liquides pasteurisés",
-    "qte": 2.5,
-    "unite": "L"
+    "produit": "Œufs coquille calibre moyen (≈ 60 g pièce, 50 pièces)",
+    "qte": 3.0,
+    "unite": "Kg"
    },
    {
     "produit": "Crème 35%",
@@ -3841,9 +3841,9 @@
     "unite": "Kg"
    },
    {
-    "produit": "Œufs liquides pasteurisés",
-    "qte": 2.5,
-    "unite": "L"
+    "produit": "Œufs coquille calibre moyen (≈ 60 g pièce, 50 pièces)",
+    "qte": 3.0,
+    "unite": "Kg"
    },
    {
     "produit": "Crème 35%",
@@ -3903,9 +3903,9 @@
     "unite": "Kg"
    },
    {
-    "produit": "Œufs liquides pasteurisés",
-    "qte": 2.5,
-    "unite": "L"
+    "produit": "Œufs coquille calibre moyen (≈ 60 g pièce, 50 pièces)",
+    "qte": 3.0,
+    "unite": "Kg"
    },
    {
     "produit": "Crème 35%",
@@ -4270,9 +4270,9 @@
     "unite": "Kg"
    },
    {
-    "produit": "Blancs d'œufs liquides pasteurisés",
-    "qte": 0.8,
-    "unite": "L"
+    "produit": "Œufs coquille calibre moyen (≈ 60 g pièce, 24 pièces)",
+    "qte": 1.44,
+    "unite": "Kg"
    },
    {
     "produit": "Crème 35%",
@@ -5285,8 +5285,8 @@
     "unite": "Kg"
    },
    {
-    "produit": "Œufs durs écalés (ovoproduit)",
-    "qte": 1,
+    "produit": "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 20 pièces)",
+    "qte": 1.2,
     "unite": "Kg"
    },
    {
@@ -7318,8 +7318,8 @@
     "unite": "Kg"
    },
    {
-    "produit": "Œufs durs écalés pasteurisés",
-    "qte": 1,
+    "produit": "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 20 pièces)",
+    "qte": 1.2,
     "unite": "Kg"
    },
    {
@@ -8105,8 +8105,8 @@
     "unite": "Kg"
    },
    {
-    "produit": "Jaunes d'œufs pasteurisés (ovoproduit)",
-    "qte": 0.5,
+    "produit": "Œufs coquille calibre moyen pour les jaunes (≈ 60 g pièce, 28 pièces)",
+    "qte": 1.68,
     "unite": "Kg"
    },
    {
@@ -8141,7 +8141,7 @@
    }
   ],
   "poids_portion": 0.25,
-  "mode_operatoire": "Mode opératoire :\nPeser tous les ingrédients d'épicerie\nFaire rissoler les lardons à l'huile en sauteuse, ajouter les oignons, suer sans coloration, dégraisser\nAjouter la crème, sel, poivre, muscade, réduire 10 min\nHors du feu, incorporer les jaunes d'œufs pasteurisés et le parmesan au fouet (ovoproduit uniquement, public fragile), remettre à chauffer jusqu'à 75°C sans bouillir\nPâtes : cuire à l'eau bouillante salée 8 à 10 min, égoutter\nMélanger pâtes et sauce, dresser en bacs gastro 1/1 (H6), emmental au dressage\nMaintenir ≥ 63°C en étuve, service dans les 2 heures (pas de remise en T° différée recommandée)\nPortion : 250 g"
+  "mode_operatoire": "Mode opératoire :\nPeser tous les ingrédients d'épicerie\nFaire rissoler les lardons à l'huile en sauteuse, ajouter les oignons, suer sans coloration, dégraisser\nAjouter la crème, sel, poivre, muscade, réduire 10 min\nHors du feu, incorporer les jaunes d'œufs coquille et le parmesan au fouet, remettre à chauffer jusqu'à 75°C sans bouillir\nPâtes : cuire à l'eau bouillante salée 8 à 10 min, égoutter\nMélanger pâtes et sauce, dresser en bacs gastro 1/1 (H6), emmental au dressage\nMaintenir ≥ 63°C en étuve, service dans les 2 heures (pas de remise en T° différée recommandée)\nPortion : 250 g"
  },
  {
   "nom": "Pâtes au chorizo",
@@ -8770,9 +8770,9 @@
   "cuisson": "Four mixte 140°C\nBac gastro 1/1 (H4) ou plaques",
   "ingredients": [
    {
-    "produit": "Œufs entiers liquides pasteurisés (ovoproduit)",
-    "qte": 9,
-    "unite": "L"
+    "produit": "Œufs coquille calibre moyen (≈ 60 g pièce, 180 pièces)",
+    "qte": 10.8,
+    "unite": "Kg"
    },
    {
     "produit": "Lait",
@@ -8816,7 +8816,7 @@
    }
   ],
   "poids_portion": 0.15,
-  "mode_operatoire": "Mode opératoire :\nUtiliser exclusivement des ovoproduits pasteurisés (œufs liquides), stockage 0/+3°C, déconditionner au dernier moment\nMélanger œufs, lait, crème, sel, poivre, ciboulette au fouet sans faire mousser\nBeurrer/huiler des bacs gastro 1/1 (H4) ou plaques, verser 2,5 L par bac (épaisseur 2 cm)\nFour mixte 140°C chaleur mixte 20 à 25 min jusqu'à prise complète, 72°C à cœur (minimum 63°C)\nOption : emmental parsemé 5 min avant la fin de cuisson\nDétailler en portions de 150 g, maintenir ≥ 63°C en étuve, service dans les 2 heures\nSi différé : refroidir en cellule (63°C à 10°C en moins de deux heures), filmer, DLC J+2, remise en T° four vapeur 120°C jusqu'à 63°C à cœur"
+  "mode_operatoire": "Mode opératoire :\nCasser les œufs coquille dans un bac propre (coquilles à l'écart de la zone propre), battre, assaisonner ; ne pas garder l'appareil cru plus de 2 h au froid\nMélanger œufs, lait, crème, sel, poivre, ciboulette au fouet sans faire mousser\nBeurrer/huiler des bacs gastro 1/1 (H4) ou plaques, verser 2,5 L par bac (épaisseur 2 cm)\nFour mixte 140°C chaleur mixte 20 à 25 min jusqu'à prise complète, 72°C à cœur (minimum 63°C)\nOption : emmental parsemé 5 min avant la fin de cuisson\nDétailler en portions de 150 g, maintenir ≥ 63°C en étuve, service dans les 2 heures\nSi différé : refroidir en cellule (63°C à 10°C en moins de deux heures), filmer, DLC J+2, remise en T° four vapeur 120°C jusqu'à 63°C à cœur"
  },
  {
   "nom": "Omelette piperade",
@@ -8827,9 +8827,9 @@
   "cuisson": "Four mixte 140°C\nBac gastro 1/1 (H4) ou plaques",
   "ingredients": [
    {
-    "produit": "Œufs entiers liquides pasteurisés (ovoproduit)",
-    "qte": 9,
-    "unite": "L"
+    "produit": "Œufs coquille calibre moyen (≈ 60 g pièce, 180 pièces)",
+    "qte": 10.8,
+    "unite": "Kg"
    },
    {
     "produit": "Poivrons lanières surgelés",
@@ -8888,7 +8888,7 @@
    }
   ],
   "poids_portion": 0.2,
-  "mode_operatoire": "Mode opératoire :\nPiperade : suer oignons, ail et poivrons à l'huile d'olive en sauteuse, ajouter la pulpe de tomates, piment, thym, sel, compoter 20 min jusqu'à évaporation, refroidir en cellule jusqu'à +10°C\nUtiliser exclusivement des ovoproduits pasteurisés (œufs liquides), stockage 0/+3°C\nMélanger œufs, lait, sel, poivre au fouet sans faire mousser, incorporer la piperade refroidie\nBeurrer des bacs gastro 1/1 (H4) ou plaques, verser 3 L par bac (épaisseur 2 cm)\nFour mixte 140°C chaleur mixte 25 min jusqu'à prise complète, 72°C à cœur (minimum 63°C)\nDétailler en portions de 200 g, maintenir ≥ 63°C en étuve, service dans les 2 heures\nSi différé : refroidir en cellule (63°C à 10°C en moins de deux heures), filmer, DLC J+2, remise en T° four vapeur 120°C jusqu'à 63°C à cœur"
+  "mode_operatoire": "Mode opératoire :\nPiperade : suer oignons, ail et poivrons à l'huile d'olive en sauteuse, ajouter la pulpe de tomates, piment, thym, sel, compoter 20 min jusqu'à évaporation, refroidir en cellule jusqu'à +10°C\nCasser les œufs coquille dans un bac propre (coquilles à l'écart de la zone propre), battre, assaisonner ; ne pas garder l'appareil cru plus de 2 h au froid\nMélanger œufs, lait, sel, poivre au fouet sans faire mousser, incorporer la piperade refroidie\nBeurrer des bacs gastro 1/1 (H4) ou plaques, verser 3 L par bac (épaisseur 2 cm)\nFour mixte 140°C chaleur mixte 25 min jusqu'à prise complète, 72°C à cœur (minimum 63°C)\nDétailler en portions de 200 g, maintenir ≥ 63°C en étuve, service dans les 2 heures\nSi différé : refroidir en cellule (63°C à 10°C en moins de deux heures), filmer, DLC J+2, remise en T° four vapeur 120°C jusqu'à 63°C à cœur"
  },
  {
   "nom": "Endives au jambon",
@@ -9331,8 +9331,8 @@
   "cuisson": "Four mixte 160°C\nBac gastro 1/1",
   "ingredients": [
    {
-    "produit": "Œufs durs écalés pasteurisés (50 g)",
-    "qte": 8,
+    "produit": "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 160 pièces)",
+    "qte": 9.6,
     "unite": "Kg"
    },
    {
@@ -9377,7 +9377,7 @@
    }
   ],
   "poids_portion": 0.21,
-  "mode_operatoire": "Mode opératoire :\nUtiliser des œufs durs écalés pasteurisés prêts à l'emploi (ou cuire les œufs coquille 10 min à 100°C vapeur, refroidir en cellule, écaler, utiliser sous 24h)\nBéchamel : roux blanc beurre/farine, mouiller au lait froid au fouet, cuire 5 min, crème, sel, poivre, muscade\nCouper les œufs en deux, ranger en bacs gastro 1/1 (H6) beurrés, face coupée vers le haut\nNapper de béchamel chaude, parsemer d'emmental\nFour mixte 160°C chaleur mixte 15 à 20 min jusqu'à 63°C à cœur, gratiner\nMaintenir ≥ 63°C en étuve, service dans les 2 heures (éviter les remises en T° répétées)\nSi différé : refroidir en cellule (63°C à 10°C en moins de deux heures), filmer, DLC J+2, remise en T° four 140°C jusqu'à 63°C à cœur\nPortion : 2 œufs + 100 g de béchamel"
+  "mode_operatoire": "Mode opératoire :\nCuire les œufs coquille 10 min à l'eau bouillante (ou four vapeur 100°C 12 min), refroidir en eau glacée, écaler\nBéchamel : roux blanc beurre/farine, mouiller au lait froid au fouet, cuire 5 min, crème, sel, poivre, muscade\nCouper les œufs en deux, ranger en bacs gastro 1/1 (H6) beurrés, face coupée vers le haut\nNapper de béchamel chaude, parsemer d'emmental\nFour mixte 160°C chaleur mixte 15 à 20 min jusqu'à 63°C à cœur, gratiner\nMaintenir ≥ 63°C en étuve, service dans les 2 heures (éviter les remises en T° répétées)\nSi différé : refroidir en cellule (63°C à 10°C en moins de deux heures), filmer, DLC J+2, remise en T° four 140°C jusqu'à 63°C à cœur\nPortion : 2 œufs + 100 g de béchamel"
  },
  {
   "nom": "Œufs à la florentine",
@@ -9388,8 +9388,8 @@
   "cuisson": "Four mixte 180°C\nBacs gastro 1/1 (gratin)",
   "ingredients": [
    {
-    "produit": "Œufs durs écalés pasteurisés (ovoproduit)",
-    "qte": 8,
+    "produit": "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 160 pièces)",
+    "qte": 9.6,
     "unite": "Kg"
    },
    {
@@ -10657,8 +10657,8 @@
     "unite": "Kg"
    },
    {
-    "produit": "Œufs entiers pasteurisés (ovoproduit)",
-    "qte": 0.5,
+    "produit": "Œufs coquille calibre moyen (≈ 60 g pièce, 10 pièces)",
+    "qte": 0.6,
     "unite": "Kg"
    },
    {
@@ -11524,8 +11524,8 @@
     "unite": "Kg"
    },
    {
-    "produit": "Œufs entiers pasteurisés (ovoproduit)",
-    "qte": 0.4,
+    "produit": "Œufs coquille calibre moyen (≈ 60 g pièce, 8 pièces)",
+    "qte": 0.48,
     "unite": "Kg"
    },
    {
@@ -11601,8 +11601,8 @@
     "unite": "Kg"
    },
    {
-    "produit": "Œufs entiers pasteurisés (ovoproduit)",
-    "qte": 0.3,
+    "produit": "Œufs coquille calibre moyen (≈ 60 g pièce, 6 pièces)",
+    "qte": 0.36,
     "unite": "Kg"
    },
    {
@@ -11693,8 +11693,8 @@
     "unite": "Kg"
    },
    {
-    "produit": "Œufs entiers pasteurisés (ovoproduit)",
-    "qte": 0.3,
+    "produit": "Œufs coquille calibre moyen (≈ 60 g pièce, 6 pièces)",
+    "qte": 0.36,
     "unite": "Kg"
    },
    {
@@ -11770,9 +11770,9 @@
     "unite": "Kg"
    },
    {
-    "produit": "Œufs entiers pasteurisés",
-    "qte": 0.5,
-    "unite": "L"
+    "produit": "Œufs coquille calibre moyen (≈ 60 g pièce, 10 pièces)",
+    "qte": 0.6,
+    "unite": "Kg"
    },
    {
     "produit": "Chapelure",
@@ -12530,9 +12530,9 @@
     "unite": "Kg"
    },
    {
-    "produit": "Jaune d'œuf pasteurisé (dorure)",
-    "qte": 0.2,
-    "unite": "L"
+    "produit": "Œufs coquille calibre moyen pour dorure (≈ 60 g pièce, 4 pièces)",
+    "qte": 0.24,
+    "unite": "Kg"
    },
    {
     "produit": "Farine (fleurage)",
@@ -13685,9 +13685,9 @@
     "unite": "Kg"
    },
    {
-    "produit": "Œufs entiers pasteurisés",
-    "qte": 1,
-    "unite": "L"
+    "produit": "Œufs coquille calibre moyen (≈ 60 g pièce, 20 pièces)",
+    "qte": 1.2,
+    "unite": "Kg"
    },
    {
     "produit": "Crème 35%",
@@ -13782,9 +13782,9 @@
     "unite": "Kg"
    },
    {
-    "produit": "Jaune d'œuf pasteurisé (dorure)",
-    "qte": 0.2,
-    "unite": "L"
+    "produit": "Œufs coquille calibre moyen pour dorure (≈ 60 g pièce, 4 pièces)",
+    "qte": 0.24,
+    "unite": "Kg"
    },
    {
     "produit": "Persil haché surgelé",
@@ -13859,9 +13859,9 @@
     "unite": "Kg"
    },
    {
-    "produit": "Jaune d'œuf pasteurisé (dorure)",
-    "qte": 0.2,
-    "unite": "L"
+    "produit": "Œufs coquille calibre moyen pour dorure (≈ 60 g pièce, 4 pièces)",
+    "qte": 0.24,
+    "unite": "Kg"
    },
    {
     "produit": "Persil haché surgelé",
@@ -13906,9 +13906,9 @@
     "unite": "L"
    },
    {
-    "produit": "Œufs entiers pasteurisés",
-    "qte": 2,
-    "unite": "L"
+    "produit": "Œufs coquille calibre moyen (≈ 60 g pièce, 40 pièces)",
+    "qte": 2.4,
+    "unite": "Kg"
    },
    {
     "produit": "Jambon blanc en dés",
@@ -13962,7 +13962,7 @@
    }
   ],
   "poids_portion": 0.25,
-  "mode_operatoire": "Mode opératoire :\nPeser tous les ingrédients d'épicerie\nRiz pilaf : riz + 1,5 fois son volume d'eau salée en bacs gastro 1/1 H10 couverts, four vapeur 100°C 20 à 25 min, égrener à la fourchette, étaler sur plaques et refroidir en cellule si cuisson différée\nŒufs : cuire les œufs pasteurisés en omelette fine sur sauteuse huilée, détailler en lanières\nCuire petits pois et carottes vapeur 100°C 5 min, sauter les crevettes décongelées 3 min à feu vif\nSauteuse : chauffer l'huile, suer les oignons, ajouter le jambon, le riz, les petits pois, les carottes, les œufs et les crevettes\nAssaisonner avec la sauce soja et le poivre, sauter 5 min en mélangeant\nContrôler ≥ 63°C à cœur\nRépartir en bacs gastro, parsemer de ciboulette, maintenir en étuve ≥ 63°C pour le service ou refroidir en cellule (63°C à 10°C en moins de deux heures), remise en T° ≥ 63°C à cœur"
+  "mode_operatoire": "Mode opératoire :\nPeser tous les ingrédients d'épicerie\nRiz pilaf : riz + 1,5 fois son volume d'eau salée en bacs gastro 1/1 H10 couverts, four vapeur 100°C 20 à 25 min, égrener à la fourchette, étaler sur plaques et refroidir en cellule si cuisson différée\nŒufs : cuire les œufs coquille battus en omelette fine sur sauteuse huilée, détailler en lanières\nCuire petits pois et carottes vapeur 100°C 5 min, sauter les crevettes décongelées 3 min à feu vif\nSauteuse : chauffer l'huile, suer les oignons, ajouter le jambon, le riz, les petits pois, les carottes, les œufs et les crevettes\nAssaisonner avec la sauce soja et le poivre, sauter 5 min en mélangeant\nContrôler ≥ 63°C à cœur\nRépartir en bacs gastro, parsemer de ciboulette, maintenir en étuve ≥ 63°C pour le service ou refroidir en cellule (63°C à 10°C en moins de deux heures), remise en T° ≥ 63°C à cœur"
  },
  {
   "nom": "Riz pilaf",
@@ -15311,9 +15311,9 @@
     "unite": "Kg"
    },
    {
-    "produit": "Jaunes d'œufs pasteurisés (dorure)",
-    "qte": 0.3,
-    "unite": "L"
+    "produit": "Œufs coquille calibre moyen pour dorure (≈ 60 g pièce, 4 pièces)",
+    "qte": 0.24,
+    "unite": "Kg"
    },
    {
     "produit": "Beurre fondu",
@@ -15337,7 +15337,7 @@
    }
   ],
   "poids_portion": 0.12,
-  "mode_operatoire": "Mode opératoire :\nPréchauffer le four mixte à 200°C air pulsé\nDéconditionner les pommes duchesse surgelées sans décongélation\nDisposer sur plaques gastro avec papier cuisson, en une seule couche (1 kg par plaque maxi)\nDorer au pinceau avec les jaunes pasteurisés mélangés au beurre fondu, pointe de muscade\nCuisson 200°C air pulsé 15 à 18 min jusqu'à coloration dorée\nSaler légèrement, parsemer de persil à la sortie\nContrôle 63°C à cœur\nService rapide (4 à 5 pièces par portion) ; maintien en étuve ≥ 63°C 45 min maximum, sans couvercle\nPas de refroidissement pour remise en T° différée : produit à consommer après cuisson"
+  "mode_operatoire": "Mode opératoire :\nPréchauffer le four mixte à 200°C air pulsé\nDéconditionner les pommes duchesse surgelées sans décongélation\nDisposer sur plaques gastro avec papier cuisson, en une seule couche (1 kg par plaque maxi)\nDorer au pinceau avec les œufs battus mélangés au beurre fondu, pointe de muscade\nCuisson 200°C air pulsé 15 à 18 min jusqu'à coloration dorée\nSaler légèrement, parsemer de persil à la sortie\nContrôle 63°C à cœur\nService rapide (4 à 5 pièces par portion) ; maintien en étuve ≥ 63°C 45 min maximum, sans couvercle\nPas de refroidissement pour remise en T° différée : produit à consommer après cuisson"
  },
  {
   "nom": "Frites",
@@ -15469,9 +15469,9 @@
     "unite": "Kg"
    },
    {
-    "produit": "Œufs entiers pasteurisés",
-    "qte": 1,
-    "unite": "L"
+    "produit": "Œufs coquille calibre moyen (≈ 60 g pièce, 20 pièces)",
+    "qte": 1.2,
+    "unite": "Kg"
    },
    {
     "produit": "Farine",
@@ -15515,7 +15515,7 @@
    }
   ],
   "poids_portion": 0.15,
-  "mode_operatoire": "Mode opératoire :\nPeser tous les ingrédients d'épicerie\nDéconditionner les pommes de terre râpées, presser pour retirer l'excédent d'eau (si fraîches : râper et presser aussitôt pour éviter l'oxydation)\nMélanger avec les œufs pasteurisés, farine, oignons, emmental, persil, sel, poivre, muscade\nHuiler généreusement les plaques gastro, étaler l'appareil sur 2 cm (2,5 kg par plaque), lisser, huiler le dessus\nCuisson four mixte 200°C air pulsé 25 à 30 min jusqu'à coloration dorée\nPossibilité de retourner à mi-cuisson ou de passer sous la voûte pour colorer\nContrôle 63°C à cœur, détailler en portions\nMaintien en étuve ≥ 63°C 1h maximum, sans couvercle\nSinon refroidir en cellule (63°C à 10°C en moins de deux heures), filmer, étiqueter, 0/+3°C, J+3 ; remise en T° four 180°C jusqu'à ≥ 63°C à cœur"
+  "mode_operatoire": "Mode opératoire :\nPeser tous les ingrédients d'épicerie\nDéconditionner les pommes de terre râpées, presser pour retirer l'excédent d'eau (si fraîches : râper et presser aussitôt pour éviter l'oxydation)\nMélanger avec les œufs coquille battus, farine, oignons, emmental, persil, sel, poivre, muscade\nHuiler généreusement les plaques gastro, étaler l'appareil sur 2 cm (2,5 kg par plaque), lisser, huiler le dessus\nCuisson four mixte 200°C air pulsé 25 à 30 min jusqu'à coloration dorée\nPossibilité de retourner à mi-cuisson ou de passer sous la voûte pour colorer\nContrôle 63°C à cœur, détailler en portions\nMaintien en étuve ≥ 63°C 1h maximum, sans couvercle\nSinon refroidir en cellule (63°C à 10°C en moins de deux heures), filmer, étiqueter, 0/+3°C, J+3 ; remise en T° four 180°C jusqu'à ≥ 63°C à cœur"
  },
  {
   "nom": "Pommes de terre rissolées",
@@ -16713,9 +16713,9 @@
     "unite": "L"
    },
    {
-    "produit": "Œufs entiers pasteurisés",
-    "qte": 1,
-    "unite": "L"
+    "produit": "Œufs coquille calibre moyen (≈ 60 g pièce, 20 pièces)",
+    "qte": 1.2,
+    "unite": "Kg"
    },
    {
     "produit": "Emmental râpé",
@@ -16749,7 +16749,7 @@
    }
   ],
   "poids_portion": 0.2,
-  "mode_operatoire": "Mode opératoire :\nPeser tous les ingrédients d'épicerie ; si potimarron frais : laver, désinfecter, épépiner, tailler en cubes avec la peau\nPré-cuire potimarron et oignons en bacs gastro perforés au four vapeur 100°C 15 min, bien égoutter\nAppareil : mélanger crème, lait, œufs pasteurisés, sel, poivre, muscade et la moitié de l'emmental\nRépartir le potimarron en bacs gastro 1/1 H6,5 beurrés, verser l'appareil, parsemer du reste d'emmental et de chapelure\nCuisson : four mixte 180°C 30 à 35 min, appareil pris et surface dorée, contrôle 63°C à cœur\nLiaison chaude : maintien en étuve ≥ 63°C, service dans les 2 heures\nLiaison froide : refroidir en cellule (63°C à 10°C en moins de deux heures), 0/+3°C, DLC J+3\nRemise en température four mixte 160°C 20 min, contrôle 63°C à cœur noté sur la fiche"
+  "mode_operatoire": "Mode opératoire :\nPeser tous les ingrédients d'épicerie ; si potimarron frais : laver, désinfecter, épépiner, tailler en cubes avec la peau\nPré-cuire potimarron et oignons en bacs gastro perforés au four vapeur 100°C 15 min, bien égoutter\nAppareil : mélanger crème, lait, œufs coquille battus, sel, poivre, muscade et la moitié de l'emmental\nRépartir le potimarron en bacs gastro 1/1 H6,5 beurrés, verser l'appareil, parsemer du reste d'emmental et de chapelure\nCuisson : four mixte 180°C 30 à 35 min, appareil pris et surface dorée, contrôle 63°C à cœur\nLiaison chaude : maintien en étuve ≥ 63°C, service dans les 2 heures\nLiaison froide : refroidir en cellule (63°C à 10°C en moins de deux heures), 0/+3°C, DLC J+3\nRemise en température four mixte 160°C 20 min, contrôle 63°C à cœur noté sur la fiche"
  },
  {
   "nom": "Flan de légumes",
@@ -16775,9 +16775,9 @@
     "unite": "Kg"
    },
    {
-    "produit": "Œufs entiers pasteurisés",
-    "qte": 2.5,
-    "unite": "L"
+    "produit": "Œufs coquille calibre moyen (≈ 60 g pièce, 50 pièces)",
+    "qte": 3.0,
+    "unite": "Kg"
    },
    {
     "produit": "Crème 35%",
@@ -16816,7 +16816,7 @@
    }
   ],
   "poids_portion": 0.15,
-  "mode_operatoire": "Mode opératoire :\nPeser tous les ingrédients d'épicerie, utiliser exclusivement des ovoproduits pasteurisés\nCuire les légumes en bacs gastro perforés au four vapeur 100°C 10 min, égoutter et presser (pas d'eau dans l'appareil)\nAppareil : fouetter œufs, crème, lait, sel, poivre, muscade, ajouter l'emmental\nRépartir les légumes en bacs gastro 1/1 H6,5 beurrés (ou moules individuels), verser l'appareil à 3 cm de hauteur\nCuisson : four vapeur 90°C 40 à 45 min (ou four mixte 120°C), flan pris, lame sèche, contrôle 63°C à cœur minimum\nLiaison chaude : maintien en étuve ≥ 63°C, service dans les 2 heures, portionner en carrés\nLiaison froide : refroidir en cellule (63°C à 10°C en moins de deux heures), 0/+3°C, DLC J+3\nRemise en température four mixte 140°C couvert 20 min, contrôle 63°C à cœur ; possible service froid en entrée"
+  "mode_operatoire": "Mode opératoire :\nPeser tous les ingrédients d'épicerie\nCuire les légumes en bacs gastro perforés au four vapeur 100°C 10 min, égoutter et presser (pas d'eau dans l'appareil)\nAppareil : fouetter œufs, crème, lait, sel, poivre, muscade, ajouter l'emmental\nRépartir les légumes en bacs gastro 1/1 H6,5 beurrés (ou moules individuels), verser l'appareil à 3 cm de hauteur\nCuisson : four vapeur 90°C 40 à 45 min (ou four mixte 120°C), flan pris, lame sèche, contrôle 63°C à cœur minimum\nLiaison chaude : maintien en étuve ≥ 63°C, service dans les 2 heures, portionner en carrés\nLiaison froide : refroidir en cellule (63°C à 10°C en moins de deux heures), 0/+3°C, DLC J+3\nRemise en température four mixte 140°C couvert 20 min, contrôle 63°C à cœur ; possible service froid en entrée"
  },
  {
   "nom": "Ratatouille",
@@ -17013,9 +17013,9 @@
     "unite": "L"
    },
    {
-    "produit": "Œufs entiers pasteurisés",
-    "qte": 1.5,
-    "unite": "L"
+    "produit": "Œufs coquille calibre moyen (≈ 60 g pièce, 30 pièces)",
+    "qte": 1.8,
+    "unite": "Kg"
    },
    {
     "produit": "Crème 35%",
@@ -17054,7 +17054,7 @@
    }
   ],
   "poids_portion": 0.22,
-  "mode_operatoire": "Mode opératoire :\nPeser tous les ingrédients d'épicerie, utiliser des ovoproduits pasteurisés\nPré-cuire les courgettes et les oignons sur plaques gastro huilées, four mixte 220°C 15 min, égoutter l'eau rendue (indispensable)\nAppareil : fouetter œufs, crème, lait, ail, sel, poivre, muscade, ajouter la moitié de l'emmental\nRépartir les courgettes en bacs gastro 1/1 H6,5, verser l'appareil, parsemer du reste d'emmental\nCuisson : four mixte 180°C 30 min, appareil pris et surface dorée, contrôle 63°C à cœur\nLiaison chaude : maintien en étuve ≥ 63°C, service dans les 2 heures\nLiaison froide : refroidir en cellule (63°C à 10°C en moins de deux heures), 0/+3°C, DLC J+3\nRemise en température four mixte 160°C 20 min, contrôle 63°C à cœur noté sur la fiche"
+  "mode_operatoire": "Mode opératoire :\nPeser tous les ingrédients d'épicerie\nPré-cuire les courgettes et les oignons sur plaques gastro huilées, four mixte 220°C 15 min, égoutter l'eau rendue (indispensable)\nAppareil : fouetter œufs, crème, lait, ail, sel, poivre, muscade, ajouter la moitié de l'emmental\nRépartir les courgettes en bacs gastro 1/1 H6,5, verser l'appareil, parsemer du reste d'emmental\nCuisson : four mixte 180°C 30 min, appareil pris et surface dorée, contrôle 63°C à cœur\nLiaison chaude : maintien en étuve ≥ 63°C, service dans les 2 heures\nLiaison froide : refroidir en cellule (63°C à 10°C en moins de deux heures), 0/+3°C, DLC J+3\nRemise en température four mixte 160°C 20 min, contrôle 63°C à cœur noté sur la fiche"
  },
  {
   "nom": "Légumes de pot-au-feu",
@@ -17400,9 +17400,9 @@
     "unite": "Kg"
    },
    {
-    "produit": "Œufs entiers pasteurisés",
-    "qte": 1.6,
-    "unite": "L"
+    "produit": "Œufs coquille calibre moyen (≈ 60 g pièce, 32 pièces)",
+    "qte": 1.92,
+    "unite": "Kg"
    },
    {
     "produit": "Lait entier",
@@ -17441,7 +17441,7 @@
    }
   ],
   "poids_portion": 0.12,
-  "mode_operatoire": "Mode opératoire :\nPeser tous les ingrédients d'épicerie, utiliser des ovoproduits pasteurisés\nPâte : mélanger farine, sucre et sel, creuser un puits, ajouter les œufs puis le lait progressivement au fouet, sans grumeaux\nIncorporer le beurre fondu et la vanille ou le rhum, passer au chinois, laisser reposer 1h à 0/+3°C\nCuisson : crêpière ou plaque à 200°C légèrement huilée, 1 louche de 60 g par crêpe, 1 min par face, crêpe dorée\nEmpiler sur plaques gastro, 2 crêpes de 60 g par portion, sucrer\nService chaud : maintien en étuve ≥ 63°C sous film ou couvercle, service dans les 2 heures\nService froid ou différé : refroidir en cellule (63°C à 10°C en moins de deux heures), filmer, 0/+3°C, DLC J+2\nRemise en température four mixte 140°C couvert 10 min, contrôle 63°C à cœur ; garnir au service (sucre, confiture, chocolat)"
+  "mode_operatoire": "Mode opératoire :\nPeser tous les ingrédients d'épicerie\nPâte : mélanger farine, sucre et sel, creuser un puits, ajouter les œufs puis le lait progressivement au fouet, sans grumeaux\nIncorporer le beurre fondu et la vanille ou le rhum, passer au chinois, laisser reposer 1h à 0/+3°C\nCuisson : crêpière ou plaque à 200°C légèrement huilée, 1 louche de 60 g par crêpe, 1 min par face, crêpe dorée\nEmpiler sur plaques gastro, 2 crêpes de 60 g par portion, sucrer\nService chaud : maintien en étuve ≥ 63°C sous film ou couvercle, service dans les 2 heures\nService froid ou différé : refroidir en cellule (63°C à 10°C en moins de deux heures), filmer, 0/+3°C, DLC J+2\nRemise en température four mixte 140°C couvert 10 min, contrôle 63°C à cœur ; garnir au service (sucre, confiture, chocolat)"
  },
  {
   "nom": "Bûche de Noël",
@@ -17498,7 +17498,7 @@
    }
   ],
   "poids_portion": 0.13,
-  "mode_operatoire": "Mode opératoire :\nLa veille : ganache montée, porter 1,5 kg de crème à ébullition, verser sur le chocolat haché, lisser, ajouter le reste de crème froide, filmer, 0/+3°C 12h\nPréparer le sirop d'imbibage (eau + sucre portés à ébullition, parfumé rhum ou vanille), refroidir\nLe jour : travail en liaison froide, lavage des mains, plan de travail désinfecté, ovoproduits et produits laitiers sortis au dernier moment\nMonter la ganache au batteur jusqu'à consistance souple, réserver 1/3 pour le masquage\nDérouler les génoises, imbiber au pinceau, garnir de 2/3 de la ganache en couche régulière, rouler serré dans le papier\nMasquer les bûches avec le reste de ganache, strier à la fourchette, décorer : cacao, vermicelles, sucre glace\nFilmer, étiqueter (produit, date), stocker 0/+3°C 4h minimum, DLC J+2\nTrancher au service (portions de 3 cm), contrôler T° ≤ 3°C, dresser en assiette"
+  "mode_operatoire": "Mode opératoire :\nLa veille : ganache montée, porter 1,5 kg de crème à ébullition, verser sur le chocolat haché, lisser, ajouter le reste de crème froide, filmer, 0/+3°C 12h\nPréparer le sirop d'imbibage (eau + sucre portés à ébullition, parfumé rhum ou vanille), refroidir\nLe jour : travail en liaison froide, lavage des mains, plan de travail désinfecté, œufs et produits laitiers sortis au dernier moment\nMonter la ganache au batteur jusqu'à consistance souple, réserver 1/3 pour le masquage\nDérouler les génoises, imbiber au pinceau, garnir de 2/3 de la ganache en couche régulière, rouler serré dans le papier\nMasquer les bûches avec le reste de ganache, strier à la fourchette, décorer : cacao, vermicelles, sucre glace\nFilmer, étiqueter (produit, date), stocker 0/+3°C 4h minimum, DLC J+2\nTrancher au service (portions de 3 cm), contrôler T° ≤ 3°C, dresser en assiette"
  },
  {
   "nom": "Entremets croustillant chocolat",
@@ -17777,9 +17777,9 @@
     "unite": "Kg"
    },
    {
-    "produit": "Œufs entiers pasteurisés",
-    "qte": 1.8,
-    "unite": "L"
+    "produit": "Œufs coquille calibre moyen (≈ 60 g pièce, 36 pièces)",
+    "qte": 2.16,
+    "unite": "Kg"
    },
    {
     "produit": "Sel",
@@ -17802,9 +17802,9 @@
     "unite": "Kg"
    },
    {
-    "produit": "Jaunes d'œufs pasteurisés",
-    "qte": 0.4,
-    "unite": "L"
+    "produit": "Œufs coquille calibre moyen pour les jaunes (crème pâtissière) (≈ 60 g pièce, 22 pièces)",
+    "qte": 1.32,
+    "unite": "Kg"
    },
    {
     "produit": "Poudre à crème",
@@ -17823,7 +17823,7 @@
    }
   ],
   "poids_portion": 0.13,
-  "mode_operatoire": "Mode opératoire :\nPeser tous les ingrédients, utiliser des ovoproduits pasteurisés\nPâte à choux : porter eau, lait, beurre, sel, sucre à ébullition, ajouter la farine en une fois, dessécher 2 min, incorporer les œufs progressivement\nDresser à la poche sur plaques : gros choux (5 cm) et petits choux (2,5 cm), 1 de chaque par portion\nCuisson : four mixte 180°C chaleur sèche, oura ouvert, 30 à 35 min sans ouvrir la porte, refroidir sur grille\nCrème pâtissière : blanchir jaunes, sucre, poudre à crème, verser le lait bouillant, cuire à ébullition 2 min en fouettant, parfumer chocolat ou café\nDébarrasser en bac gastro, filmer au contact, refroidir en cellule (63°C à 10°C en moins de deux heures), 0/+3°C\nGarnir les choux à la poche par le dessous, glacer au fondant tiédi à 37°C parfumé, poser le petit chou sur le gros\nStocker 0/+3°C, DLC J+1, service à T° ≤ 3°C"
+  "mode_operatoire": "Mode opératoire :\nPeser tous les ingrédients\nPâte à choux : porter eau, lait, beurre, sel, sucre à ébullition, ajouter la farine en une fois, dessécher 2 min, incorporer les œufs progressivement\nDresser à la poche sur plaques : gros choux (5 cm) et petits choux (2,5 cm), 1 de chaque par portion\nCuisson : four mixte 180°C chaleur sèche, oura ouvert, 30 à 35 min sans ouvrir la porte, refroidir sur grille\nCrème pâtissière : blanchir jaunes, sucre, poudre à crème, verser le lait bouillant, cuire à ébullition 2 min en fouettant, parfumer chocolat ou café\nDébarrasser en bac gastro, filmer au contact, refroidir en cellule (63°C à 10°C en moins de deux heures), 0/+3°C\nGarnir les choux à la poche par le dessous, glacer au fondant tiédi à 37°C parfumé, poser le petit chou sur le gros\nStocker 0/+3°C, DLC J+1, service à T° ≤ 3°C"
  },
  {
   "nom": "Tarte aux framboises",
@@ -17849,9 +17849,9 @@
     "unite": "Kg"
    },
    {
-    "produit": "Jaunes d'œufs pasteurisés",
-    "qte": 0.4,
-    "unite": "L"
+    "produit": "Œufs coquille calibre moyen pour les jaunes (crème pâtissière) (≈ 60 g pièce, 22 pièces)",
+    "qte": 1.32,
+    "unite": "Kg"
    },
    {
     "produit": "Poudre à crème",
@@ -17885,6 +17885,6 @@
    }
   ],
   "poids_portion": 0.14,
-  "mode_operatoire": "Mode opératoire :\nPeser tous les ingrédients, utiliser des ovoproduits pasteurisés\nFoncer les cadres ou plaques gastro de pâte sucrée, piquer, 0/+3°C 30 min\nCuisson à blanc : four mixte 170°C chaleur sèche 20 à 25 min (billes de cuisson 15 min puis 10 min à nu), fond doré, refroidir sur grille\nCrème pâtissière : blanchir jaunes, sucre, poudre à crème, verser le lait bouillant vanillé, cuire à ébullition 2 min, incorporer le beurre\nDébarrasser en bac gastro, filmer au contact, refroidir en cellule (63°C à 10°C en moins de deux heures), 0/+3°C\nGarnir les fonds de crème pâtissière lissée sur 1,5 cm, disposer les framboises (surgelées : décongelées 0/+3°C sur grille et égouttées)\nNapper au pinceau, saupoudrer de sucre glace sur les bords, étiqueter (produit, date)\nStocker 0/+3°C, DLC J+1, portionner en carrés de 7 cm, service à T° ≤ 3°C"
+  "mode_operatoire": "Mode opératoire :\nPeser tous les ingrédients\nFoncer les cadres ou plaques gastro de pâte sucrée, piquer, 0/+3°C 30 min\nCuisson à blanc : four mixte 170°C chaleur sèche 20 à 25 min (billes de cuisson 15 min puis 10 min à nu), fond doré, refroidir sur grille\nCrème pâtissière : blanchir jaunes, sucre, poudre à crème, verser le lait bouillant vanillé, cuire à ébullition 2 min, incorporer le beurre\nDébarrasser en bac gastro, filmer au contact, refroidir en cellule (63°C à 10°C en moins de deux heures), 0/+3°C\nGarnir les fonds de crème pâtissière lissée sur 1,5 cm, disposer les framboises (surgelées : décongelées 0/+3°C sur grille et égouttées)\nNapper au pinceau, saupoudrer de sucre glace sur les bords, étiqueter (produit, date)\nStocker 0/+3°C, DLC J+1, portionner en carrés de 7 cm, service à T° ≤ 3°C"
  }
 ]

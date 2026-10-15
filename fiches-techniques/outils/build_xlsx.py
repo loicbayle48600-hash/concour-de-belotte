@@ -253,9 +253,9 @@ pa.column_dimensions['A'].width = 44; pa.column_dimensions['B'].width = 14; pa.c
 # ---------- Cadencier ----------
 ca = wb.create_sheet('Cadencier', 2)
 ca['A1'] = 'CADENCIER – CATALOGUE DES PRODUITS'; ca['A1'].font = Font(name='Calibri', size=16, bold=True)
-ca['A2'] = "Prix de base = estimation grossiste collectivité 2026 (HT, par unité d'achat), à remplacer par vos prix facture. Saisir le prix facture (colonne G, jaune), la date et le fournisseur : le prix retenu (J) bascule automatiquement sur le prix facture et met à jour toutes les fiches."
+ca['A2'] = "Prix moyen collectivité = prix moyen grossiste restauration collective 2026 (HT, par unité d'achat), utilisé tant qu'aucun prix facture n'est saisi. Saisir le prix facture (colonne G, jaune), la date et le fournisseur : le prix retenu (J) bascule automatiquement sur le prix facture et met à jour toutes les fiches."
 ca['A2'].font = Font(name='Calibri', size=10, italic=True)
-heads = ['Code', 'Famille', 'Produit', 'Unité', 'Conditionnement', 'Prix de base estimé HT (€/unité)', 'Prix facture HT (€/unité)', 'Date facture', 'Fournisseur', 'Prix retenu (€/unité)', 'Nb de fiches', 'Observations']
+heads = ['Code', 'Famille', 'Produit', 'Unité', 'Conditionnement', 'Prix moyen collectivité HT (€/unité)', 'Prix facture HT (€/unité)', 'Date facture', 'Fournisseur', 'Prix retenu (€/unité)', 'Nb de fiches', 'Observations']
 for j, h in enumerate(heads, 1):
     c = ca.cell(row=4, column=j, value=h); c.font = hdr_font; c.fill = hdr_fill; c.border = bd; c.alignment = Alignment(horizontal='center', vertical='center', wrap_text=True)
 ca.row_dimensions[4].height = 42
