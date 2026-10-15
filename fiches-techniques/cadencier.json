@@ -1473,7 +1473,32 @@
     "Œufs coquille calibre moyen (≈ 60 g pièce, 36 pièces)",
     "Œufs coquille calibre moyen (≈ 60 g pièce, 22 pièces)",
     "Œufs coquille calibre moyen pour les jaunes (≈ 60 g pièce, 28 pièces)",
-    "Œufs coquille calibre moyen pour les jaunes (crème pâtissière) (≈ 60 g pièce, 22 pièces)"
+    "Œufs coquille calibre moyen pour les jaunes (crème pâtissière) (≈ 60 g pièce, 22 pièces)",
+    "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 17 pièces)",
+    "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 9 pièces)",
+    "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 7 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 19 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 21 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 29 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 26 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 11 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 68 pièces)",
+    "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 15 pièces)",
+    "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 14 pièces)",
+    "Œufs coquille calibre moyen pour les jaunes (≈ 60 g pièce, 26 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 134 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 146 pièces)",
+    "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 126 pièces)",
+    "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 143 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 9 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 7 pièces)",
+    "Œufs coquille calibre moyen pour dorure (≈ 60 g pièce, 3 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 16 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 31 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 18 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 27 pièces)",
+    "Œufs coquille calibre moyen pour les jaunes (crème pâtissière) (≈ 60 g pièce, 17 pièces)",
+    "Œufs coquille calibre moyen pour les jaunes (crème pâtissière) (≈ 60 g pièce, 18 pièces)"
    ],
    "observations": "Prix au kg sur la base de 60 g par œuf ; seul produit œuf utilisé (œufs coquille)"
   },
@@ -2729,7 +2754,8 @@
    "prix_base": 8.0,
    "aliases": [
     "Nems au poulet ou au porc surgelés (50 g)",
-    "Nems au poulet ou au porc surgelés (50 g) (≈ 50 g pièce, 160 pièces)"
+    "Nems au poulet ou au porc surgelés (50 g) (≈ 50 g pièce, 160 pièces)",
+    "Nems au poulet ou au porc surgelés (50 g) (≈ 50 g pièce, 99 pièces)"
    ]
   },
   {
@@ -4002,7 +4028,8 @@
    "prix_base": 9.0,
    "aliases": [
     "Sardines à l'huile (boîtes 1/4)",
-    "Sardines à l'huile (boîtes 1/4) (≈ 125 g pièce, 80 pièces)"
+    "Sardines à l'huile (boîtes 1/4) (≈ 125 g pièce, 80 pièces)",
+    "Sardines à l'huile (boîtes 1/4) (≈ 125 g pièce, 32 pièces)"
    ]
   },
   {
@@ -4856,7 +4883,8 @@
    "aliases": [
     "Bouchées feuilletées vides",
     "Croûtes feuilletées bouchée à la reine (80 pièces de 40 g)",
-    "Bouchées feuilletées vides (≈ 40 g pièce, 80 pièces)"
+    "Bouchées feuilletées vides (≈ 40 g pièce, 80 pièces)",
+    "Bouchées feuilletées vides (≈ 40 g pièce, 50 pièces)"
    ],
    "observations": "Prix converti au kg sur la base de 40 g par pièce"
   },
@@ -4880,7 +4908,8 @@
    "prix_base": 6.67,
    "aliases": [
     "Crêpes nature prêtes à l'emploi Ø 28 cm (1 par portion)",
-    "Crêpes nature prêtes à l'emploi Ø 28 cm (1 par portion) (≈ 60 g pièce, 80 pièces)"
+    "Crêpes nature prêtes à l'emploi Ø 28 cm (1 par portion) (≈ 60 g pièce, 80 pièces)",
+    "Crêpes nature prêtes à l'emploi Ø 28 cm (1 par portion) (≈ 60 g pièce, 63 pièces)"
    ],
    "observations": "Prix converti au kg sur la base de 60 g par pièce"
   },
@@ -4894,7 +4923,8 @@
    "aliases": [
     "Crêpes salées prêtes à l'emploi (50 g, 2 par portion)",
     "Crêpes salées prêtes à l'emploi (ou pâte maison)",
-    "Crêpes salées prêtes à l'emploi (ou pâte maison) (≈ 50 g pièce, 80 pièces)"
+    "Crêpes salées prêtes à l'emploi (ou pâte maison) (≈ 50 g pièce, 80 pièces)",
+    "Crêpes salées prêtes à l'emploi (ou pâte maison) (≈ 50 g pièce, 56 pièces)"
    ],
    "observations": "Prix converti au kg sur la base de 50 g par pièce"
   },
@@ -4907,7 +4937,8 @@
    "prix_base": 18.0,
    "aliases": [
     "Croustades feuilletées pur beurre (1 par portion)",
-    "Croustades feuilletées pur beurre (1 par portion) (≈ 25 g pièce, 80 pièces)"
+    "Croustades feuilletées pur beurre (1 par portion) (≈ 25 g pièce, 80 pièces)",
+    "Croustades feuilletées pur beurre (1 par portion) (≈ 25 g pièce, 66 pièces)"
    ],
    "observations": "Prix converti au kg sur la base de 25 g par pièce"
   },
@@ -5018,7 +5049,9 @@
     "Pain de mie tranché",
     "Pain toasté ou blinis",
     "Pain de mie tranché (≈ 30 g pièce, 160 pièces)",
-    "Pain toasté ou blinis (≈ 30 g pièce, 80 pièces)"
+    "Pain toasté ou blinis (≈ 30 g pièce, 80 pièces)",
+    "Pain de mie tranché (≈ 30 g pièce, 118 pièces)",
+    "Pain toasté ou blinis (≈ 30 g pièce, 48 pièces)"
    ]
   },
   {
@@ -5081,7 +5114,9 @@
     "Pâte brisée en plaque 60x40 (≈ 900 g pièce, 4 pièces)",
     "Pâte brisée en plaque 60x40 (≈ 900 g pièce, 4 pièces)",
     "Pâte brisée en plaque 60x40 (≈ 900 g pièce, 4 pièces)",
-    "Pâte brisée en plaque 60x40 (≈ 900 g pièce, 4 pièces)"
+    "Pâte brisée en plaque 60x40 (≈ 900 g pièce, 4 pièces)",
+    "Pâte brisée en plaque 60x40 (≈ 900 g pièce, 3 pièces)",
+    "Pâte brisée en plaque 60x40 (≈ 900 g pièce, 2 pièces)"
    ],
    "observations": "Prix converti au kg sur la base de 900 g par pièce"
   },
@@ -5096,7 +5131,8 @@
     "Pâte feuilletée en plaque 60x40",
     "Pâte feuilletée prête à l'emploi",
     "Pâte feuilletée prête à l'emploi (plaques ou rouleaux)",
-    "Pâte feuilletée en plaque 60x40 (≈ 900 g pièce, 4 pièces)"
+    "Pâte feuilletée en plaque 60x40 (≈ 900 g pièce, 4 pièces)",
+    "Pâte feuilletée en plaque 60x40 (≈ 900 g pièce, 3 pièces)"
    ],
    "observations": "Prix converti au kg sur la base de 900 g par pièce"
   },
