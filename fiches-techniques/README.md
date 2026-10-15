@@ -1,6 +1,6 @@
 # Fiches techniques – menu annuel 2026 EHPAD / FAM
 
-**Fichier principal : `Fiches_techniques_menu_2026.xlsx`** (282 feuilles).
+**Fichier principal : `Fiches_techniques_menu_2026.xlsx`** (285 feuilles). Version imprimable de toutes les fiches (une page par fiche, valeurs figées) : `Toutes_les_fiches_70_portions.pdf`.
 
 ## Contenu du classeur
 | Feuille | Rôle |
@@ -17,7 +17,7 @@
 | `D-…` (10) | Fiches desserts. |
 | `X-…` (5) | Fiches originales du chef non présentes au menu (joue de bœuf, haricots rouges, chili viande à part, coco catalans, pois chiches) conservées telles quelles. |
 
-Les fiches déjà rédigées par le chef dans `Fiche_techniques_CBT.xlsx` (bourguignon, blanquette de veau, pot-au-feu, chili con carne, haricots blancs, lentilles, lentilles vinaigrette, ratatouille, sauté de veau, rôti de porc/échine) ont été reprises **telles quelles** à la place d'une version réécrite.
+Les fiches déjà rédigées par le chef dans `Fiche_techniques_CBT.xlsx` (bourguignon, blanquette de veau, pot-au-feu, chili con carne, haricots blancs, lentilles, lentilles vinaigrette, ratatouille, sauté de veau, rôti de porc/échine) ont été reprises **telles quelles** (ingrédients et mode opératoire du chef) à la place d'une version réécrite ; seules leurs quantités ont été ramenées à 70 portions de base.
 
 ## Modèle de fiche (identique à l'exemple CBT)
 - A1 titre · E2 valeur pasteurisatrice théorique minimum · G1 mode / température de cuisson.

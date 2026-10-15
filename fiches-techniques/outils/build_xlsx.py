@@ -59,12 +59,39 @@ orig_by_canon = {v: k for k, v in ORIG.items()}
 
 def link_chef_sheet(ws):
     sumrow = next(r for r in range(4, 40) if isinstance(ws[f'F{r}'].value, str) and 'SUM' in ws[f'F{r}'].value.upper())
+    pu_row = next(r for r in range(sumrow, sumrow + 4) if ws[f'A{r}'].value and 'Prix unitaire' in str(ws[f'A{r}'].value))
+    # recette de base ramenée à BASE_PORTIONS
+    tot_cell = ws[f'B{pu_row + 1}'].value   # 'Poids total ou ingrédient principal' : formule SUM ou valeur saisie par le chef
+    if isinstance(tot_cell, (int, float)):
+        total = tot_cell
+    else:
+        total = sum(ws[f'B{r}'].value for r in range(4, sumrow) if isinstance(ws[f'B{r}'].value, (int, float)))
+    pn = ws[f'B{pu_row + 3}'].value
+    k = (BASE_PORTIONS * pn / total) if (total and isinstance(pn, (int, float)) and pn) else 1
+    if isinstance(tot_cell, (int, float)):
+        ws[f'B{pu_row + 1}'] = round(tot_cell * k, 2)
     for r in range(4, sumrow):
         v = ws[f'A{r}'].value
         if v is not None and str(v).strip():
             ws[f'A{r}'] = re.sub(r'\s+', ' ', str(v)).strip()
             used_products.add(ws[f'A{r}'].value)
             ws[f'E{r}'] = PU_FORMULA.format(r=r)
+        q = ws[f'B{r}'].value
+        if isinstance(q, (int, float)):
+            q = q * k
+            ws[f'B{r}'] = round(q, 2) if q >= 1 else round(q, 3)
+    ws[f'B{pu_row + 4}'] = '=Paramètres!$B$5'
+    ws[f'C{pu_row + 4}'] = 'Effectif EHPAD + FAM (feuille Paramètres) – possibilité de saisir un autre nombre'
+    ws[f'C{pu_row + 3}'] = 'Possibilité de saisir le grammage'
+    g = ws['G4'].value
+    if isinstance(g, str):
+        g = g.replace('(voir colonne B quantité pour un bac)', '(colonne B = recette de base 70 portions, à répartir en bacs 1/1 H10 : environ 1,5 kg de légumineuses sèches par bac)')
+        g = g.replace('(voir colonne C quantité production)', '(colonne C = quantité de production)')
+        ws['G4'] = g
+    ws.page_setup.orientation = 'landscape'
+    ws.page_setup.fitToWidth = 1; ws.page_setup.fitToHeight = 1
+    ws.sheet_properties.pageSetUpPr.fitToPage = True
+    ws.print_area = f'A1:G{pu_row + 4}'
 
 def clear_row(ws, r):
     for col in 'ABDE':
@@ -78,8 +105,7 @@ for cat in order:
             ws = wb.copy_worksheet(src); ws.title = sname
             link_chef_sheet(ws)
             title = str(src['A1'].value or '').strip()
-            index.append((cat, nom, sname, 'CHEF', title))
-            continue
+            index.append((cat, nom, sname, 'CHEF', title)); continue
         f = by_name.get(nom)
         if f is None:
             print('MANQUANTE:', nom); continue
