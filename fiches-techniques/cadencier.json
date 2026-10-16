@@ -1,0 +1,5666 @@
+{
+ "produits": [
+  {
+   "code": "VIA-001",
+   "famille": "Viandes",
+   "produit": "Agneau haché 15 % MG",
+   "unite": "Kg",
+   "conditionnement": "barquette 2,5 kg",
+   "prix_base": 12.5,
+   "aliases": [
+    "Agneau ou bœuf haché",
+    "Viande hachée d'agneau ou de bœuf 15% MG"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-002",
+   "famille": "Viandes",
+   "produit": "Boulettes de bœuf crues surgelées 30 g",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 8.5,
+   "aliases": [
+    "Boulettes de bœuf crues surgelées (30 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-003",
+   "famille": "Viandes",
+   "produit": "Brochettes de bœuf 100 g",
+   "unite": "Kg",
+   "conditionnement": "barquette 5 kg (50 pièces)",
+   "prix_base": 14.0,
+   "aliases": [
+    "Brochettes de bœuf 100 g (rumsteck ou poire, poivrons, oignons)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-004",
+   "famille": "Viandes",
+   "produit": "Bœuf haché 15 % MG frais",
+   "unite": "Kg",
+   "conditionnement": "barquette 2,5 kg",
+   "prix_base": 9.5,
+   "aliases": [
+    "Bœuf haché 15% MG",
+    "Bœuf haché 15% MG (VBF)",
+    "Viande hachée de bœuf 15% MG"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-005",
+   "famille": "Viandes",
+   "produit": "Bœuf haché 15 % MG surgelé",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 8.5,
+   "aliases": [
+    "Bœuf haché 15 % MG surgelé"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-006",
+   "famille": "Viandes",
+   "produit": "Cuisses de lapin surgelées 180 g",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 9.5,
+   "aliases": [
+    "Cuisses de lapin surgelées (env. 180 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-007",
+   "famille": "Viandes",
+   "produit": "Égrené de bœuf",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 8.0,
+   "aliases": [
+    "Égréné de bœuf"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-008",
+   "famille": "Viandes",
+   "produit": "Escalopes de porc 110 g",
+   "unite": "Kg",
+   "conditionnement": "barquette 5 kg",
+   "prix_base": 8.0,
+   "aliases": [
+    "Escalopes de porc (110 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-009",
+   "famille": "Viandes",
+   "produit": "Escalopes de veau 110 g",
+   "unite": "Kg",
+   "conditionnement": "barquette 5 kg",
+   "prix_base": 18.0,
+   "aliases": [
+    "Escalopes de veau (110 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-010",
+   "famille": "Viandes",
+   "produit": "Filet mignon de porc paré",
+   "unite": "Kg",
+   "conditionnement": "sous vide 5 kg",
+   "prix_base": 9.5,
+   "aliases": [
+    "Filet mignon de porc paré"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-011",
+   "famille": "Viandes",
+   "produit": "Gigot d'agneau désossé ficelé",
+   "unite": "Kg",
+   "conditionnement": "sous vide 2-2,5 kg",
+   "prix_base": 15.5,
+   "aliases": [
+    "Gigot d'agneau désossé ficelé (2 à 2,5 kg)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-012",
+   "famille": "Viandes",
+   "produit": "Joue de bœuf parée",
+   "unite": "Kg",
+   "conditionnement": "sous vide 3 kg",
+   "prix_base": 10.5,
+   "aliases": [
+    "joue de bœuf découpée"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-013",
+   "famille": "Viandes",
+   "produit": "Langues de bœuf surgelées",
+   "unite": "Kg",
+   "conditionnement": "carton 10 kg",
+   "prix_base": 7.5,
+   "aliases": [
+    "Langues de bœuf (surgelées)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-014",
+   "famille": "Viandes",
+   "produit": "Paleron / macreuse de bœuf en morceaux 80 g",
+   "unite": "Kg",
+   "conditionnement": "sous vide 5 kg",
+   "prix_base": 11.0,
+   "aliases": [
+    "Paleron / macreuse de bœuf en morceaux de 80 g",
+    "Pièces de bœuf à braiser"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-015",
+   "famille": "Viandes",
+   "produit": "Palette de porc demi-sel désossée",
+   "unite": "Kg",
+   "conditionnement": "sous vide 2-3 kg",
+   "prix_base": 7.0,
+   "aliases": [
+    "Palette de porc demi-sel désossée"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-016",
+   "famille": "Viandes",
+   "produit": "Paupiettes de veau 120 g",
+   "unite": "Kg",
+   "conditionnement": "barquette 6 kg (50 pièces)",
+   "prix_base": 11.0,
+   "aliases": [
+    "Paupiettes de veau (120 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-017",
+   "famille": "Viandes",
+   "produit": "Petit salé demi-sel (palette et poitrine)",
+   "unite": "Kg",
+   "conditionnement": "sous vide 5 kg",
+   "prix_base": 7.0,
+   "aliases": [
+    "Petit salé (palette et poitrine demi-sel)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-018",
+   "famille": "Viandes",
+   "produit": "Pieds de veau fendus",
+   "unite": "Kg",
+   "conditionnement": "carton 10 kg",
+   "prix_base": 4.5,
+   "aliases": [
+    "Pieds de veau fendus"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-019",
+   "famille": "Viandes",
+   "produit": "Poitrine de porc demi-sel",
+   "unite": "Kg",
+   "conditionnement": "sous vide 3 kg",
+   "prix_base": 6.5,
+   "aliases": [
+    "Poitrine de porc demi-sel"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-020",
+   "famille": "Viandes",
+   "produit": "Rôti de bœuf ficelé (rumsteck / tende de tranche)",
+   "unite": "Kg",
+   "conditionnement": "sous vide 2-2,5 kg",
+   "prix_base": 14.5,
+   "aliases": [
+    "Rôti de bœuf (rumsteck ou tende de tranche) ficelé"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-021",
+   "famille": "Viandes",
+   "produit": "Rôti de porc échine / longe ficelé",
+   "unite": "Kg",
+   "conditionnement": "sous vide 2-2,5 kg",
+   "prix_base": 7.5,
+   "aliases": [
+    "Rôti de porc Echine",
+    "Rôti de porc échine ou longe ficelé",
+    "Rôti de porc longe ou échine ficelé"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-022",
+   "famille": "Viandes",
+   "produit": "Rôti de veau bas carré / épaule ficelé",
+   "unite": "Kg",
+   "conditionnement": "sous vide 2-2,5 kg",
+   "prix_base": 15.0,
+   "aliases": [
+    "Rôti de veau bas carré ou épaule ficelé"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-023",
+   "famille": "Viandes",
+   "produit": "Sauté d'agneau épaule 40/60 g",
+   "unite": "Kg",
+   "conditionnement": "sous vide 5 kg",
+   "prix_base": 13.5,
+   "aliases": [
+    "Sauté d'agneau épaule 40/60 g"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-024",
+   "famille": "Viandes",
+   "produit": "Sauté de bœuf gélatineux 40/60 g",
+   "unite": "Kg",
+   "conditionnement": "sous vide 5 kg",
+   "prix_base": 11.0,
+   "aliases": [
+    "Sauté de bœuf de préférence gélatineux 40/60 g",
+    "Sauté de bœuf de préférence gélatineux 40/60g",
+    "Sauté de bœuf gélatineux (paleron, basse côte) 40/60 g",
+    "Sauté de bœuf gélatineux (paleron, macreuse) 40/60 g",
+    "Sauté ou émincé de bœuf gélatineux 40/60 g"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-025",
+   "famille": "Viandes",
+   "produit": "Sauté de lapin (cuisses et râbles) 130 g",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 10.0,
+   "aliases": [
+    "Sauté de lapin, cuisses et râbles (morceaux de 130 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-026",
+   "famille": "Viandes",
+   "produit": "Sauté de porc épaule 40/60 g",
+   "unite": "Kg",
+   "conditionnement": "sous vide 5 kg",
+   "prix_base": 7.5,
+   "aliases": [
+    "Sauté de porc épaule 40/60 g"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-027",
+   "famille": "Viandes",
+   "produit": "Sauté de taureau AOP Camargue 40/60 g",
+   "unite": "Kg",
+   "conditionnement": "sous vide 5 kg",
+   "prix_base": 13.0,
+   "aliases": [
+    "Sauté de taureau AOP Camargue (ou bœuf gélatineux) 40/60 g"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-028",
+   "famille": "Viandes",
+   "produit": "Sauté de veau blanquette (épaule) 40/60 g",
+   "unite": "Kg",
+   "conditionnement": "sous vide 5 kg",
+   "prix_base": 14.0,
+   "aliases": [
+    "Sauté de veau à blanquette collagénique",
+    "Sauté de veau blanquette",
+    "Sauté de veau épaule 40/60 g"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-029",
+   "famille": "Viandes",
+   "produit": "Souris d'agneau 300/350 g",
+   "unite": "Kg",
+   "conditionnement": "carton 10 kg",
+   "prix_base": 13.0,
+   "aliases": [
+    "Souris d'agneau (300/350 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-030",
+   "famille": "Viandes",
+   "produit": "Steaks de bœuf 120 g",
+   "unite": "Kg",
+   "conditionnement": "barquette 5 kg",
+   "prix_base": 16.5,
+   "aliases": [
+    "Steaks de bœuf 120 g (rumsteck ou tende de tranche)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-031",
+   "famille": "Viandes",
+   "produit": "Steaks hachés 15 % MG 100 g frais",
+   "unite": "Kg",
+   "conditionnement": "barquette 4 kg (40 pièces)",
+   "prix_base": 10.5,
+   "aliases": [
+    "Steaks hachés 15% MG 100 g (VBF)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-032",
+   "famille": "Viandes",
+   "produit": "Steaks hachés 15 % MG 100 g surgelés",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg (50 pièces)",
+   "prix_base": 9.0,
+   "aliases": [
+    "Steaks hachés surgelés 100 g, 15% MG"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-033",
+   "famille": "Viandes",
+   "produit": "Tête de veau roulée désossée blanchie",
+   "unite": "Kg",
+   "conditionnement": "sous vide 2-3 kg",
+   "prix_base": 8.5,
+   "aliases": [
+    "Tête de veau roulée désossée (blanchie)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-034",
+   "famille": "Viandes",
+   "produit": "Tripes de bœuf blanchies coupées",
+   "unite": "Kg",
+   "conditionnement": "seau 5 kg",
+   "prix_base": 6.5,
+   "aliases": [
+    "Tripes de bœuf blanchies coupées"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIA-035",
+   "famille": "Viandes",
+   "produit": "Tripoux crus ficelés 80/100 g",
+   "unite": "Kg",
+   "conditionnement": "barquette 5 kg",
+   "prix_base": 9.0,
+   "aliases": [
+    "Tripoux crus ficelés (paquets de 80 à 100 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VOL-001",
+   "famille": "Volailles",
+   "produit": "Aiguillettes de poulet",
+   "unite": "Kg",
+   "conditionnement": "barquette 2,5 kg",
+   "prix_base": 10.5,
+   "aliases": [
+    "Aiguillettes de poulet"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VOL-002",
+   "famille": "Volailles",
+   "produit": "Brochettes de poulet 100 g",
+   "unite": "Kg",
+   "conditionnement": "barquette 5 kg (50 pièces)",
+   "prix_base": 11.0,
+   "aliases": [
+    "Brochettes de poulet 100 g (fraîches ou surgelées)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VOL-003",
+   "famille": "Volailles",
+   "produit": "Cuisses de canard",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 7.5,
+   "aliases": [
+    "Cuisses de canard"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VOL-004",
+   "famille": "Volailles",
+   "produit": "Cuisses de canard confites",
+   "unite": "Kg",
+   "conditionnement": "sous vide 5 kg",
+   "prix_base": 12.0,
+   "aliases": [
+    "Cuisses ou manchons de canard confits"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VOL-005",
+   "famille": "Volailles",
+   "produit": "Cuisses de pintade 200/220 g",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 9.0,
+   "aliases": [
+    "Cuisses de pintade (200/220 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VOL-006",
+   "famille": "Volailles",
+   "produit": "Cuisses de poulet 220/250 g",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 4.5,
+   "aliases": [
+    "Cuisses de poulet (220/250 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VOL-007",
+   "famille": "Volailles",
+   "produit": "Escalopes de dinde 120 g",
+   "unite": "Kg",
+   "conditionnement": "barquette 5 kg",
+   "prix_base": 9.0,
+   "aliases": [
+    "Escalopes de dinde 120 g"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VOL-008",
+   "famille": "Volailles",
+   "produit": "Gésiers de canard crus",
+   "unite": "Kg",
+   "conditionnement": "sous vide 2,5 kg",
+   "prix_base": 7.0,
+   "aliases": [
+    "Gésiers de canard crus"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VOL-009",
+   "famille": "Volailles",
+   "produit": "Hauts de cuisse de poulet avec os",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 5.0,
+   "aliases": [
+    "Hauts de cuisse de poulet",
+    "Hauts de cuisse de poulet (env. 150 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VOL-010",
+   "famille": "Volailles",
+   "produit": "Hauts de cuisse de poulet désossés (sauté de volaille) 40/60 g",
+   "unite": "Kg",
+   "conditionnement": "sous vide 5 kg",
+   "prix_base": 7.5,
+   "aliases": [
+    "Hauts de cuisse de poulet désossés",
+    "Sauté de volaille (haut de cuisse désossé sans peau 40/60 g)",
+    "Sauté de volaille (haut de cuisse désossé)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VOL-011",
+   "famille": "Volailles",
+   "produit": "Jambonnettes de volaille farcies 150/180 g",
+   "unite": "Kg",
+   "conditionnement": "barquette 5 kg",
+   "prix_base": 8.5,
+   "aliases": [
+    "Jambonnettes de volaille crues farcies (150/180 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VOL-012",
+   "famille": "Volailles",
+   "produit": "Magret de canard 350/400 g",
+   "unite": "Kg",
+   "conditionnement": "sous vide 2 kg",
+   "prix_base": 17.0,
+   "aliases": [
+    "Magret de canard 350/400 g"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VOL-013",
+   "famille": "Volailles",
+   "produit": "Paupiettes de volaille 120 g",
+   "unite": "Kg",
+   "conditionnement": "barquette 6 kg (50 pièces)",
+   "prix_base": 8.5,
+   "aliases": [
+    "Paupiettes de volaille (120 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VOL-014",
+   "famille": "Volailles",
+   "produit": "Rôti de dinde filet ficelé",
+   "unite": "Kg",
+   "conditionnement": "sous vide 2-2,5 kg",
+   "prix_base": 8.5,
+   "aliases": [
+    "Rôti de dinde filet ficelé sans barde (2 à 2,5 kg)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VOL-015",
+   "famille": "Volailles",
+   "produit": "Sauté de dinde (cuisse) 40/60 g",
+   "unite": "Kg",
+   "conditionnement": "sous vide 5 kg",
+   "prix_base": 8.0,
+   "aliases": [
+    "Sauté de dinde (cuisse) 40/60 g"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VOL-016",
+   "famille": "Volailles",
+   "produit": "Sot-l'y-laisse de dinde",
+   "unite": "Kg",
+   "conditionnement": "sous vide 2,5 kg",
+   "prix_base": 9.5,
+   "aliases": [
+    "Sot-l'y-laisse de dinde"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VOL-017",
+   "famille": "Volailles",
+   "produit": "Suprêmes / filets de volaille 130/150 g",
+   "unite": "Kg",
+   "conditionnement": "barquette 5 kg",
+   "prix_base": 9.0,
+   "aliases": [
+    "Filets de poulet",
+    "Suprêmes de poulet",
+    "Suprêmes de volaille 130/150 g"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-001",
+   "famille": "Charcuterie",
+   "produit": "Andouillettes AAAAA 150 g",
+   "unite": "Kg",
+   "conditionnement": "carton 10 kg (65 pièces)",
+   "prix_base": 11.0,
+   "aliases": [
+    "Andouillettes AAAAA 150 g (environ 65 pièces)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-002",
+   "famille": "Charcuterie",
+   "produit": "Bloc de foie gras de canard",
+   "unite": "Kg",
+   "conditionnement": "bloc 1 kg",
+   "prix_base": 45.0,
+   "aliases": [
+    "Bloc de foie gras de canard"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-003",
+   "famille": "Charcuterie",
+   "produit": "Boudin blanc portions 100 g",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 8.5,
+   "aliases": [
+    "Boudin blanc en portions de 100 g"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-004",
+   "famille": "Charcuterie",
+   "produit": "Boudin noir portions 100 g",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 7.0,
+   "aliases": [
+    "Boudin noir en portions de 100 g"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-005",
+   "famille": "Charcuterie",
+   "produit": "Chair à saucisse",
+   "unite": "Kg",
+   "conditionnement": "barquette 2,5 kg",
+   "prix_base": 6.5,
+   "aliases": [
+    "Chair à saucisse"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-006",
+   "famille": "Charcuterie",
+   "produit": "Chipolatas 50 g",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 7.0,
+   "aliases": [
+    "Chipolatas (50 g, 2 par portion)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-007",
+   "famille": "Charcuterie",
+   "produit": "Chorizo doux (pièce)",
+   "unite": "Kg",
+   "conditionnement": "pièce 1 kg",
+   "prix_base": 9.5,
+   "aliases": [
+    "Chorizo"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-008",
+   "famille": "Charcuterie",
+   "produit": "Chorizo doux en rondelles",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 10.5,
+   "aliases": [
+    "Chorizo doux en rondelles",
+    "Chorizo en rondelles"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-009",
+   "famille": "Charcuterie",
+   "produit": "Jambon blanc en dés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 8.5,
+   "aliases": [
+    "Jambon blanc dés",
+    "Jambon blanc en dés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-010",
+   "famille": "Charcuterie",
+   "produit": "Jambon blanc supérieur tranché DD",
+   "unite": "Kg",
+   "conditionnement": "barquette 1 kg (25 tranches)",
+   "prix_base": 9.5,
+   "aliases": [
+    "Jambon blanc en tranches",
+    "Jambon blanc supérieur découenné dégraissé",
+    "Jambon blanc tranché",
+    "Jambon blanc tranches 40 g"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-011",
+   "famille": "Charcuterie",
+   "produit": "Jambon cru / sec tranché",
+   "unite": "Kg",
+   "conditionnement": "barquette 500 g",
+   "prix_base": 22.0,
+   "aliases": [
+    "Jambon cru tranché (2 tranches de 20 g)",
+    "Jambon cru tranché (facultatif)",
+    "Jambon sec tranché"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-012",
+   "famille": "Charcuterie",
+   "produit": "Jambon cuit supérieur entier à braiser",
+   "unite": "Kg",
+   "conditionnement": "pièce 6-7 kg",
+   "prix_base": 8.0,
+   "aliases": [
+    "Jambon cuit supérieur entier à braiser (ou jambon frais demi-sel désossé)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-013",
+   "famille": "Charcuterie",
+   "produit": "Lardons fumés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 8.0,
+   "aliases": [
+    "Lardons facultatifs",
+    "Lardons fumés",
+    "Lardons fumés (facultatif)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-014",
+   "famille": "Charcuterie",
+   "produit": "Magret de canard fumé tranché",
+   "unite": "Kg",
+   "conditionnement": "barquette 500 g",
+   "prix_base": 28.0,
+   "aliases": [
+    "Magret de canard fumé tranché"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-015",
+   "famille": "Charcuterie",
+   "produit": "Merguez 50 g",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 8.0,
+   "aliases": [
+    "Merguez (50 g, 2 par portion)",
+    "Merguez (cuites le jour J)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-016",
+   "famille": "Charcuterie",
+   "produit": "Mortadelle (barre)",
+   "unite": "Kg",
+   "conditionnement": "barre 3 kg",
+   "prix_base": 7.5,
+   "aliases": [
+    "Mortadelle (barre)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-017",
+   "famille": "Charcuterie",
+   "produit": "Mousse de canard (barre)",
+   "unite": "Kg",
+   "conditionnement": "barre 1,5 kg",
+   "prix_base": 9.0,
+   "aliases": [
+    "Mousse de canard en barre ou terrine"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-018",
+   "famille": "Charcuterie",
+   "produit": "Pâté aux olives (barre)",
+   "unite": "Kg",
+   "conditionnement": "barre 2 kg",
+   "prix_base": 8.0,
+   "aliases": [
+    "Pâté aux olives (tranche de 50 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-019",
+   "famille": "Charcuterie",
+   "produit": "Pâté de campagne (barre)",
+   "unite": "Kg",
+   "conditionnement": "barre 2 kg",
+   "prix_base": 7.5,
+   "aliases": [
+    "Pâté de campagne",
+    "Pâté de campagne (tranche de 50 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-020",
+   "famille": "Charcuterie",
+   "produit": "Pâté en croûte (barre)",
+   "unite": "Kg",
+   "conditionnement": "barre 2 kg",
+   "prix_base": 10.0,
+   "aliases": [
+    "Pâté en croûte (barre)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-021",
+   "famille": "Charcuterie",
+   "produit": "Poitrine fumée",
+   "unite": "Kg",
+   "conditionnement": "pièce 2 kg",
+   "prix_base": 8.5,
+   "aliases": [
+    "Poitrine fumée"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-022",
+   "famille": "Charcuterie",
+   "produit": "Rosette / saucisson sec tranché",
+   "unite": "Kg",
+   "conditionnement": "barquette 500 g",
+   "prix_base": 15.0,
+   "aliases": [
+    "Rosette ou saucisson sec tranché",
+    "Rosette tranchée (2 tranches de 20 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-023",
+   "famille": "Charcuterie",
+   "produit": "Saucisse de Morteau",
+   "unite": "Kg",
+   "conditionnement": "pièce 350 g sous vide",
+   "prix_base": 11.0,
+   "aliases": [
+    "Saucisse de Morteau"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-024",
+   "famille": "Charcuterie",
+   "produit": "Saucisse de Toulouse 120 g",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 7.5,
+   "aliases": [
+    "Saucisse de Toulouse (pièces de 120 g)",
+    "Saucisses de Toulouse"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-025",
+   "famille": "Charcuterie",
+   "produit": "Saucisse sèche",
+   "unite": "Kg",
+   "conditionnement": "pièce 250 g",
+   "prix_base": 14.0,
+   "aliases": [
+    "Saucisse sèche (≈ 8 rondelles de 5 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-026",
+   "famille": "Charcuterie",
+   "produit": "Saucisses de Montbéliard (fumées)",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 9.5,
+   "aliases": [
+    "Saucisses de Montbéliard",
+    "Saucisses fumées (type créole ou Montbéliard)",
+    "Saucisses fumées type Montbéliard"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-027",
+   "famille": "Charcuterie",
+   "produit": "Saucisses de Strasbourg (knacks)",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 6.5,
+   "aliases": [
+    "Saucisses de Strasbourg (knacks)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-028",
+   "famille": "Charcuterie",
+   "produit": "Saucisses de volaille 100 g",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 7.5,
+   "aliases": [
+    "Saucisses de volaille (100 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CHA-029",
+   "famille": "Charcuterie",
+   "produit": "Saucisson à cuire pistaché 1 kg",
+   "unite": "Kg",
+   "conditionnement": "pièce 1 kg",
+   "prix_base": 12.0,
+   "aliases": [
+    "Saucisson à cuire pistaché (pièces de 1 kg)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "POI-001",
+   "famille": "Poissons et produits de la mer",
+   "produit": "Anneaux de calamar surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 8.5,
+   "aliases": [
+    "Anneaux de calamar surgelés",
+    "Anneaux ou lanières de calamars surgelés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "POI-002",
+   "famille": "Poissons et produits de la mer",
+   "produit": "Bâtonnets de surimi",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 6.0,
+   "aliases": [
+    "Bâtonnets de surimi"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "POI-003",
+   "famille": "Poissons et produits de la mer",
+   "produit": "Calamars / seiches surgelés",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 8.0,
+   "aliases": [
+    "Calamars OU SEICHES surgelés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "POI-004",
+   "famille": "Poissons et produits de la mer",
+   "produit": "Crevettes décortiquées surgelées",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 12.0,
+   "aliases": [
+    "Crevettes décortiquées surgelées"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "POI-005",
+   "famille": "Poissons et produits de la mer",
+   "produit": "Dés de poisson blanc surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 8.5,
+   "aliases": [
+    "Dés de poisson blanc surgelés (colin, lieu)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "POI-006",
+   "famille": "Poissons et produits de la mer",
+   "produit": "Dés de saumon surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 13.0,
+   "aliases": [
+    "Dés ou miettes de saumon surgelés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "POI-007",
+   "famille": "Poissons et produits de la mer",
+   "produit": "Dos de cabillaud surgelés sans peau 100/120 g",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 14.0,
+   "aliases": [
+    "Dos de cabillaud surgelés sans peau (100-120 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "POI-008",
+   "famille": "Poissons et produits de la mer",
+   "produit": "Dos de colin (lieu) surgelés sans peau 120 g",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 10.5,
+   "aliases": [
+    "Dos de colin (lieu) surgelés sans peau (120 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "POI-009",
+   "famille": "Poissons et produits de la mer",
+   "produit": "Dos de loup surgelés avec peau 120 g",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 15.0,
+   "aliases": [
+    "Dos de loup ou filets de dorade surgelés avec peau (120 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "POI-010",
+   "famille": "Poissons et produits de la mer",
+   "produit": "Escargots de Bourgogne décoquillés",
+   "unite": "Kg",
+   "conditionnement": "boîte 4/4 (8 dz) (≈ 22.00 €/pièce)",
+   "prix_base": 40.0,
+   "aliases": [
+    "Escargots de Bourgogne décoquillés égouttés (6 par portion)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "POI-011",
+   "famille": "Poissons et produits de la mer",
+   "produit": "Filets de maquereau surgelés",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 7.5,
+   "aliases": [
+    "Filets de maquereau surgelés sans arêtes"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "POI-012",
+   "famille": "Poissons et produits de la mer",
+   "produit": "Filets de poisson blanc surgelés",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 9.0,
+   "aliases": [
+    "Filets de poisson blanc surgelés",
+    "Filets de poisson blanc surgelés (colin, lieu)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "POI-013",
+   "famille": "Poissons et produits de la mer",
+   "produit": "Filets de saumon surgelés",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 13.5,
+   "aliases": [
+    "Filets de saumon surgelés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "POI-014",
+   "famille": "Poissons et produits de la mer",
+   "produit": "Morue dessalée surgelée (filets sans peau)",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 12.0,
+   "aliases": [
+    "Morue dessalée surgelée (filets sans peau)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "POI-015",
+   "famille": "Poissons et produits de la mer",
+   "produit": "Moules de bouchot fraîches",
+   "unite": "Kg",
+   "conditionnement": "sac 10 kg",
+   "prix_base": 4.0,
+   "aliases": [
+    "Moules de bouchot fraîches"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "POI-016",
+   "famille": "Poissons et produits de la mer",
+   "produit": "Moules décoquillées surgelées",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 7.0,
+   "aliases": [
+    "Moules décoquillées surgelées"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "POI-017",
+   "famille": "Poissons et produits de la mer",
+   "produit": "Noix de Saint-Jacques surgelées 30/40",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 24.0,
+   "aliases": [
+    "Noix de Saint-Jacques surgelées 30/40"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "POI-018",
+   "famille": "Poissons et produits de la mer",
+   "produit": "Pavés de poisson blanc surgelés 100 g",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 9.5,
+   "aliases": [
+    "Pavés de poisson blanc surgelés, colin ou lieu (100 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "POI-019",
+   "famille": "Poissons et produits de la mer",
+   "produit": "Pavés de saumon cuits sous vide surgelés",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 15.0,
+   "aliases": [
+    "Pavés de saumon surgelés (cuits sous vide 63°C)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "POI-020",
+   "famille": "Poissons et produits de la mer",
+   "produit": "Pavés de saumon surgelés 100 g",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 14.0,
+   "aliases": [
+    "Pavés de saumon surgelés sans peau sans arêtes (100 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "POI-021",
+   "famille": "Poissons et produits de la mer",
+   "produit": "Portions de poisson pané surgelées 100 g",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 7.0,
+   "aliases": [
+    "Portions de poisson pané surgelées (100 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "POI-022",
+   "famille": "Poissons et produits de la mer",
+   "produit": "Saumon fumé tranché",
+   "unite": "Kg",
+   "conditionnement": "plaque 1 kg",
+   "prix_base": 26.0,
+   "aliases": [
+    "Saumon fumé tranché"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "BOF-001",
+   "famille": "Produits laitiers et œufs (BOF)",
+   "produit": "Beurre doux",
+   "unite": "Kg",
+   "conditionnement": "plaque 1 kg x 10",
+   "prix_base": 9.0,
+   "aliases": [
+    "Beurre",
+    "Beurre (moules)",
+    "Beurre (plaques)",
+    "Beurre doux",
+    "Beurre fondu"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "BOF-002",
+   "famille": "Produits laitiers et œufs (BOF)",
+   "produit": "Beurre portions 10 g",
+   "unite": "Kg",
+   "conditionnement": "carton 10 g x 200",
+   "prix_base": 10.5,
+   "aliases": [
+    "Beurre doux portions",
+    "Beurre portions 10 g"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "BOF-004",
+   "famille": "Produits laitiers et œufs (BOF)",
+   "produit": "Bleu d'Auvergne",
+   "unite": "Kg",
+   "conditionnement": "pièce 1,3 kg",
+   "prix_base": 10.5,
+   "aliases": [
+    "Bleu d'Auvergne"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "BOF-005",
+   "famille": "Produits laitiers et œufs (BOF)",
+   "produit": "Bûche de chèvre",
+   "unite": "Kg",
+   "conditionnement": "bûche 1 kg",
+   "prix_base": 11.0,
+   "aliases": [
+    "Bûche de chèvre",
+    "Bûche de chèvre (50 g par tartine)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "BOF-006",
+   "famille": "Produits laitiers et œufs (BOF)",
+   "produit": "Cantal jeune",
+   "unite": "Kg",
+   "conditionnement": "pièce 2,5 kg",
+   "prix_base": 11.0,
+   "aliases": [
+    "Cantal jeune (ou tome fraîche)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "BOF-007",
+   "famille": "Produits laitiers et œufs (BOF)",
+   "produit": "Cheddar en tranches",
+   "unite": "Kg",
+   "conditionnement": "paquet 1 kg (80 tranches)",
+   "prix_base": 9.5,
+   "aliases": [
+    "Cheddar en tranches (80 tranches)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "BOF-008",
+   "famille": "Produits laitiers et œufs (BOF)",
+   "produit": "Comté râpé",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 13.0,
+   "aliases": [
+    "Comté râpé",
+    "Fromage de type cantal ou comté râpé"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "BOF-009",
+   "famille": "Produits laitiers et œufs (BOF)",
+   "produit": "Crème épaisse 30 %",
+   "unite": "Kg",
+   "conditionnement": "seau 5 kg",
+   "prix_base": 5.0,
+   "aliases": [
+    "Crème épaisse 30%",
+    "Crème fraîche 30%"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "BOF-010",
+   "famille": "Produits laitiers et œufs (BOF)",
+   "produit": "Crème liquide UHT 35 %",
+   "unite": "L",
+   "conditionnement": "brique 1 L x 6",
+   "prix_base": 5.5,
+   "aliases": [
+    "Crème 35%",
+    "Crème 35% (facultatif)",
+    "Crème 35% (finition facultative)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "BOF-011",
+   "famille": "Produits laitiers et œufs (BOF)",
+   "produit": "Emmental en dés",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 8.0,
+   "aliases": [
+    "Emmental en dés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "BOF-012",
+   "famille": "Produits laitiers et œufs (BOF)",
+   "produit": "Emmental râpé",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 7.5,
+   "aliases": [
+    "Emmental râpé",
+    "Gruyère râpé (complément)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "BOF-013",
+   "famille": "Produits laitiers et œufs (BOF)",
+   "produit": "Feta en dés",
+   "unite": "Kg",
+   "conditionnement": "seau 1 kg",
+   "prix_base": 9.0,
+   "aliases": [
+    "Feta dés",
+    "Feta dés ou mozzarella râpée",
+    "Feta en dés (facultatif)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "BOF-014",
+   "famille": "Produits laitiers et œufs (BOF)",
+   "produit": "Fromage blanc 20 %",
+   "unite": "Kg",
+   "conditionnement": "seau 5 kg",
+   "prix_base": 2.8,
+   "aliases": [
+    "Fromage blanc",
+    "Fromage blanc 20%",
+    "Fromage blanc 20% (sauce blanche)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "BOF-015",
+   "famille": "Produits laitiers et œufs (BOF)",
+   "produit": "Fromage frais nature (type St Môret)",
+   "unite": "Kg",
+   "conditionnement": "pain 1 kg",
+   "prix_base": 8.0,
+   "aliases": [
+    "Fromage frais nature (type St Môret ou Philadelphia)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "BOF-017",
+   "famille": "Produits laitiers et œufs (BOF)",
+   "produit": "Lait demi-écrémé UHT",
+   "unite": "L",
+   "conditionnement": "brique 1 L x 6",
+   "prix_base": 2.4,
+   "aliases": [
+    "Lait",
+    "Lait 1/2 écrémé",
+    "Lait demi-écrémé",
+    "Lait ou bouillon"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "BOF-018",
+   "famille": "Produits laitiers et œufs (BOF)",
+   "produit": "Lait entier UHT",
+   "unite": "L",
+   "conditionnement": "brique 1 L x 6",
+   "prix_base": 2.5,
+   "aliases": [
+    "Lait entier",
+    "Lait entier (crème pâtissière)",
+    "Lait entier (pâte à choux)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "BOF-019",
+   "famille": "Produits laitiers et œufs (BOF)",
+   "produit": "Mozzarella (pain)",
+   "unite": "Kg",
+   "conditionnement": "pain 1 kg",
+   "prix_base": 7.5,
+   "aliases": [
+    "Mozzarella"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "BOF-020",
+   "famille": "Produits laitiers et œufs (BOF)",
+   "produit": "Mozzarella billes",
+   "unite": "Kg",
+   "conditionnement": "seau 1 kg",
+   "prix_base": 9.0,
+   "aliases": [
+    "Mozzarella billes"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "BOF-021",
+   "famille": "Produits laitiers et œufs (BOF)",
+   "produit": "Mozzarella râpée",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 7.5,
+   "aliases": [
+    "Mozzarella râpée"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "BOF-022",
+   "famille": "Produits laitiers et œufs (BOF)",
+   "produit": "Parmesan râpé",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 16.0,
+   "aliases": [
+    "Parmesan ou emmental râpé",
+    "Parmesan râpé",
+    "Parmesan râpé ou copeaux"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "BOF-023",
+   "famille": "Produits laitiers et œufs (BOF)",
+   "produit": "Reblochon",
+   "unite": "Kg",
+   "conditionnement": "pièce 450 g",
+   "prix_base": 13.0,
+   "aliases": [
+    "Reblochon"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "BOF-024",
+   "famille": "Produits laitiers et œufs (BOF)",
+   "produit": "Saindoux",
+   "unite": "Kg",
+   "conditionnement": "seau 5 kg",
+   "prix_base": 3.5,
+   "aliases": [
+    "Saindoux ou huile"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "BOF-025",
+   "famille": "Produits laitiers et œufs (BOF)",
+   "produit": "Tome fraîche de l'Aubrac",
+   "unite": "Kg",
+   "conditionnement": "pièce 2 kg",
+   "prix_base": 12.0,
+   "aliases": [
+    "Tome fraîche de l'Aubrac"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "BOF-026",
+   "famille": "Produits laitiers et œufs (BOF)",
+   "produit": "Œufs coquille calibre moyen",
+   "unite": "Pièce",
+   "conditionnement": "plateau 30 œufs x 6",
+   "prix_base": 0.18,
+   "aliases": [
+    "Œufs coquille calibre moyen",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 120 pièces)",
+    "Œufs coquille calibre moyen pour dorure (≈ 60 g pièce, 4 pièces)",
+    "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 16 pièces)",
+    "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 10 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 40 pièces)",
+    "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 8 pièces)",
+    "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 30 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 30 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 50 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 24 pièces)",
+    "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 20 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 28 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 180 pièces)",
+    "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 160 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 10 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 8 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 6 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 20 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 32 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 36 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 22 pièces)",
+    "Œufs coquille calibre moyen pour les jaunes (≈ 60 g pièce, 28 pièces)",
+    "Œufs coquille calibre moyen pour les jaunes (crème pâtissière) (≈ 60 g pièce, 22 pièces)",
+    "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 17 pièces)",
+    "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 9 pièces)",
+    "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 7 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 19 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 21 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 29 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 26 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 11 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 68 pièces)",
+    "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 15 pièces)",
+    "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 14 pièces)",
+    "Œufs coquille calibre moyen pour les jaunes (≈ 60 g pièce, 26 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 134 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 146 pièces)",
+    "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 126 pièces)",
+    "Œufs coquille calibre moyen à cuire durs (≈ 60 g pièce, 143 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 9 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 7 pièces)",
+    "Œufs coquille calibre moyen pour dorure (≈ 60 g pièce, 3 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 16 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 31 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 18 pièces)",
+    "Œufs coquille calibre moyen (≈ 60 g pièce, 27 pièces)",
+    "Œufs coquille calibre moyen pour les jaunes (crème pâtissière) (≈ 60 g pièce, 17 pièces)",
+    "Œufs coquille calibre moyen pour les jaunes (crème pâtissière) (≈ 60 g pièce, 18 pièces)"
+   ],
+   "observations": "Commandé à la pièce ; poids moyen 60 g par pièce, prix ramené au kg dans les fiches",
+   "poids_piece": 0.06
+  },
+  {
+   "code": "BOF-029",
+   "famille": "Produits laitiers et œufs (BOF)",
+   "produit": "Yaourt nature",
+   "unite": "Pièce",
+   "conditionnement": "pot 125 g, carton 24",
+   "prix_base": 0.31,
+   "aliases": [
+    "Yaourt nature",
+    "Yaourt nature (≈ 125 g pièce, 3 pièces)"
+   ],
+   "poids_piece": 0.125,
+   "observations": "Commandé à la pièce ; poids moyen 125 g par pièce, prix ramené au kg dans les fiches"
+  },
+  {
+   "code": "FLF-001",
+   "famille": "Fruits et légumes frais",
+   "produit": "Ail frais",
+   "unite": "Kg",
+   "conditionnement": "filet 1 kg",
+   "prix_base": 6.0,
+   "aliases": [
+    "Ail"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-002",
+   "famille": "Fruits et légumes frais",
+   "produit": "Ananas frais",
+   "unite": "Pièce",
+   "conditionnement": "carton 8 pièces",
+   "prix_base": 2.81,
+   "aliases": [
+    "Ananas frais (ou 4ème gamme)",
+    "Ananas frais (ou 4ème gamme) (≈ 1.5 kg pièce, 1 pièces)"
+   ],
+   "observations": "Commandé à la pièce ; poids moyen 1.5 kg par pièce, prix ramené au kg dans les fiches",
+   "poids_piece": 1.5
+  },
+  {
+   "code": "FLF-003",
+   "famille": "Fruits et légumes frais",
+   "produit": "Asperges blanches fraîches épluchées",
+   "unite": "Kg",
+   "conditionnement": "botte 1 kg",
+   "prix_base": 9.0,
+   "aliases": [
+    "Asperges blanches ou vertes (fraîches épluchées ou surgelées)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-004",
+   "famille": "Fruits et légumes frais",
+   "produit": "Aubergines fraîches",
+   "unite": "Kg",
+   "conditionnement": "colis 5 kg",
+   "prix_base": 2.6,
+   "aliases": [
+    "Aubergines",
+    "Aubergines (fraîches ou tranches grillées surgelées)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-005",
+   "famille": "Fruits et légumes frais",
+   "produit": "Avocats",
+   "unite": "Pièce",
+   "conditionnement": "colis 12 pièces",
+   "prix_base": 1.1,
+   "aliases": [
+    "Avocats mûrs (1/2 par portion)",
+    "Avocats mûrs (1/2 par portion) (≈ 200 g pièce, 34 pièces)"
+   ],
+   "observations": "Commandé à la pièce ; poids moyen 200 g par pièce, prix ramené au kg dans les fiches",
+   "poids_piece": 0.2
+  },
+  {
+   "code": "FLF-006",
+   "famille": "Fruits et légumes frais",
+   "produit": "Bananes",
+   "unite": "Kg",
+   "conditionnement": "carton 18 kg",
+   "prix_base": 1.6,
+   "aliases": [
+    "Bananes"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-007",
+   "famille": "Fruits et légumes frais",
+   "produit": "Basilic frais (botte)",
+   "unite": "Pièce",
+   "conditionnement": "botte",
+   "prix_base": 1.6,
+   "aliases": [
+    "Basilic frais PM"
+   ],
+   "observations": "Commandé à la pièce ; poids moyen 50 g par pièce, prix ramené au kg dans les fiches",
+   "poids_piece": 0.05
+  },
+  {
+   "code": "FLF-008",
+   "famille": "Fruits et légumes frais",
+   "produit": "Betteraves rouges crues",
+   "unite": "Kg",
+   "conditionnement": "sac 5 kg",
+   "prix_base": 1.4,
+   "aliases": [
+    "Betteraves rouges crues"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-009",
+   "famille": "Fruits et légumes frais",
+   "produit": "Carottes bâtonnets 4ème gamme",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 3.2,
+   "aliases": [
+    "Carottes bâtonnets ou tournées 4ème gamme (ou surgelées)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-010",
+   "famille": "Fruits et légumes frais",
+   "produit": "Carottes fraîches",
+   "unite": "Kg",
+   "conditionnement": "sac 10 kg",
+   "prix_base": 1.0,
+   "aliases": [
+    "Carottes"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-011",
+   "famille": "Fruits et légumes frais",
+   "produit": "Carottes râpées 4ème gamme",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 3.2,
+   "aliases": [
+    "Carottes râpées 4ème gamme"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-012",
+   "famille": "Fruits et légumes frais",
+   "produit": "Céleri-rave (boule)",
+   "unite": "Pièce",
+   "conditionnement": "colis 10 pièces",
+   "prix_base": 1.28,
+   "aliases": [
+    "Céleri boule cubes",
+    "Céleri boule cubes (≈ 800 g pièce, 1 pièces)"
+   ],
+   "poids_piece": 0.8,
+   "observations": "Commandé à la pièce ; poids moyen 800 g par pièce, prix ramené au kg dans les fiches"
+  },
+  {
+   "code": "FLF-013",
+   "famille": "Fruits et légumes frais",
+   "produit": "Céleri-rave râpé 4ème gamme",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 3.5,
+   "aliases": [
+    "Céleri-rave râpé 4ème gamme"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-014",
+   "famille": "Fruits et légumes frais",
+   "produit": "Chou blanc",
+   "unite": "Pièce",
+   "conditionnement": "pièce",
+   "prix_base": 1.5,
+   "aliases": [
+    "Chou blanc",
+    "Chou blanc (≈ 1.5 kg pièce, 2 pièces)"
+   ],
+   "poids_piece": 1.5,
+   "observations": "Commandé à la pièce ; poids moyen 1.5 kg par pièce, prix ramené au kg dans les fiches"
+  },
+  {
+   "code": "FLF-015",
+   "famille": "Fruits et légumes frais",
+   "produit": "Chou chinois",
+   "unite": "Pièce",
+   "conditionnement": "pièce",
+   "prix_base": 1.9,
+   "aliases": [
+    "Chou chinois",
+    "Chou chinois (≈ 1 kg pièce, 4 pièces)"
+   ],
+   "poids_piece": 1.0,
+   "observations": "Commandé à la pièce ; poids moyen 1.0 kg par pièce, prix ramené au kg dans les fiches"
+  },
+  {
+   "code": "FLF-016",
+   "famille": "Fruits et légumes frais",
+   "produit": "Chou rouge râpé 4ème gamme",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 3.2,
+   "aliases": [
+    "Chou rouge râpé 4ème gamme"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-017",
+   "famille": "Fruits et légumes frais",
+   "produit": "Chou vert frisé",
+   "unite": "Pièce",
+   "conditionnement": "pièce",
+   "prix_base": 1.56,
+   "aliases": [
+    "Chou vert frisé",
+    "Chou vert frisé (≈ 1.2 kg pièce, 5 pièces)"
+   ],
+   "poids_piece": 1.2,
+   "observations": "Commandé à la pièce ; poids moyen 1.2 kg par pièce, prix ramené au kg dans les fiches"
+  },
+  {
+   "code": "FLF-018",
+   "famille": "Fruits et légumes frais",
+   "produit": "Citrons jaunes",
+   "unite": "Kg",
+   "conditionnement": "colis 10 kg",
+   "prix_base": 2.2,
+   "aliases": [
+    "Citron jaune",
+    "Citron jaune PM",
+    "Citrons"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-019",
+   "famille": "Fruits et légumes frais",
+   "produit": "Citrons verts",
+   "unite": "Kg",
+   "conditionnement": "colis 4,5 kg",
+   "prix_base": 3.5,
+   "aliases": [
+    "Citron vert"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-020",
+   "famille": "Fruits et légumes frais",
+   "produit": "Concombres",
+   "unite": "Pièce",
+   "conditionnement": "colis 12 pièces",
+   "prix_base": 0.9,
+   "aliases": [
+    "Concombre en dés",
+    "Concombres",
+    "Concombre en dés (≈ 400 g pièce, 2 pièces)",
+    "Concombres (≈ 400 g pièce, 1 pièces)",
+    "Concombres (≈ 400 g pièce, 2 pièces)",
+    "Concombres (≈ 400 g pièce, 6 pièces)"
+   ],
+   "observations": "Commandé à la pièce ; poids moyen 400 g par pièce, prix ramené au kg dans les fiches",
+   "poids_piece": 0.4
+  },
+  {
+   "code": "FLF-021",
+   "famille": "Fruits et légumes frais",
+   "produit": "Coriandre fraîche (botte)",
+   "unite": "Pièce",
+   "conditionnement": "botte",
+   "prix_base": 1.5,
+   "aliases": [
+    "Coriandre fraîche PM"
+   ],
+   "observations": "Commandé à la pièce ; poids moyen 50 g par pièce, prix ramené au kg dans les fiches",
+   "poids_piece": 0.05
+  },
+  {
+   "code": "FLF-022",
+   "famille": "Fruits et légumes frais",
+   "produit": "Courgettes fraîches",
+   "unite": "Kg",
+   "conditionnement": "colis 10 kg",
+   "prix_base": 2.0,
+   "aliases": [
+    "Courgettes",
+    "Courgettes fraîches",
+    "Courgettes rondes ou longues"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-023",
+   "famille": "Fruits et légumes frais",
+   "produit": "Endives",
+   "unite": "Kg",
+   "conditionnement": "colis 5 kg",
+   "prix_base": 2.6,
+   "aliases": [
+    "Endives",
+    "Endives fraîches"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-024",
+   "famille": "Fruits et légumes frais",
+   "produit": "Fenouil",
+   "unite": "Kg",
+   "conditionnement": "colis 5 kg",
+   "prix_base": 2.8,
+   "aliases": [
+    "Fenouil"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-025",
+   "famille": "Fruits et légumes frais",
+   "produit": "Gingembre frais",
+   "unite": "Kg",
+   "conditionnement": "colis 1 kg",
+   "prix_base": 6.5,
+   "aliases": [
+    "Gingembre haché"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-026",
+   "famille": "Fruits et légumes frais",
+   "produit": "Kiwis",
+   "unite": "Kg",
+   "conditionnement": "plateau 4 kg",
+   "prix_base": 2.8,
+   "aliases": [
+    "Kiwis"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-027",
+   "famille": "Fruits et légumes frais",
+   "produit": "Mâche 4ème gamme",
+   "unite": "Kg",
+   "conditionnement": "sachet 500 g",
+   "prix_base": 9.5,
+   "aliases": [
+    "Mâche",
+    "Mâche ou mesclun 4ème gamme"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-028",
+   "famille": "Fruits et légumes frais",
+   "produit": "Melon charentais",
+   "unite": "Pièce",
+   "conditionnement": "colis 10 pièces",
+   "prix_base": 1.8,
+   "aliases": [
+    "Melon charentais (≈ 1 kg pièce)",
+    "Melon charentais (≈ 1 kg pièce) (≈ 1 kg pièce, 9 pièces)"
+   ],
+   "observations": "Commandé à la pièce ; poids moyen 1.0 kg par pièce, prix ramené au kg dans les fiches",
+   "poids_piece": 1.0
+  },
+  {
+   "code": "FLF-029",
+   "famille": "Fruits et légumes frais",
+   "produit": "Menthe fraîche (botte)",
+   "unite": "Pièce",
+   "conditionnement": "botte",
+   "prix_base": 1.5,
+   "aliases": [
+    "Menthe fraîche ciselée PM",
+    "Menthe fraîche PM"
+   ],
+   "observations": "Commandé à la pièce ; poids moyen 50 g par pièce, prix ramené au kg dans les fiches",
+   "poids_piece": 0.05
+  },
+  {
+   "code": "FLF-030",
+   "famille": "Fruits et légumes frais",
+   "produit": "Mesclun / salade mélangée 4ème gamme",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 7.0,
+   "aliases": [
+    "Mesclun ou frisée 4ème gamme",
+    "Salade mélangée 4ème gamme",
+    "Salade verte mélange 4ème gamme"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-031",
+   "famille": "Fruits et légumes frais",
+   "produit": "Oignons épluchés 4ème gamme",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.5,
+   "aliases": [
+    "Oignons 4ÈME g"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-032",
+   "famille": "Fruits et légumes frais",
+   "produit": "Oignons jaunes frais",
+   "unite": "Kg",
+   "conditionnement": "sac 10 kg",
+   "prix_base": 1.0,
+   "aliases": [
+    "Oignons"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-033",
+   "famille": "Fruits et légumes frais",
+   "produit": "Oignons rouges",
+   "unite": "Kg",
+   "conditionnement": "sac 5 kg",
+   "prix_base": 1.8,
+   "aliases": [
+    "Oignons rouges",
+    "Oignons rouges émincés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-034",
+   "famille": "Fruits et légumes frais",
+   "produit": "Oranges",
+   "unite": "Kg",
+   "conditionnement": "colis 10 kg",
+   "prix_base": 1.6,
+   "aliases": [
+    "Oranges",
+    "Zeste d'orange, thym, laurier, clou de girofle PM",
+    "Zeste d'orange, thym, laurier, romarin PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-035",
+   "famille": "Fruits et légumes frais",
+   "produit": "Pamplemousse rose",
+   "unite": "Pièce",
+   "conditionnement": "colis 20 pièces",
+   "prix_base": 0.9,
+   "aliases": [
+    "Pamplemousse rose (≈ 400 g pièce, 1/2 par portion)",
+    "Pamplemousse rose (≈ 400 g pièce, 1/2 par portion) (≈ 400 g pièce, 34 pièces)"
+   ],
+   "observations": "Commandé à la pièce ; poids moyen 400 g par pièce, prix ramené au kg dans les fiches",
+   "poids_piece": 0.4
+  },
+  {
+   "code": "FLF-036",
+   "famille": "Fruits et légumes frais",
+   "produit": "Panais",
+   "unite": "Kg",
+   "conditionnement": "colis 5 kg",
+   "prix_base": 2.5,
+   "aliases": [
+    "Panais ou carottes"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-037",
+   "famille": "Fruits et légumes frais",
+   "produit": "Pastèque",
+   "unite": "Pièce",
+   "conditionnement": "pièce",
+   "prix_base": 4.4,
+   "aliases": [
+    "Pastèque",
+    "Pastèque (≈ 4 kg pièce, 3 pièces)"
+   ],
+   "poids_piece": 4.0,
+   "observations": "Commandé à la pièce ; poids moyen 4.0 kg par pièce, prix ramené au kg dans les fiches"
+  },
+  {
+   "code": "FLF-038",
+   "famille": "Fruits et légumes frais",
+   "produit": "Poireaux frais",
+   "unite": "Kg",
+   "conditionnement": "colis 10 kg",
+   "prix_base": 2.0,
+   "aliases": [
+    "Blancs de poireaux",
+    "Poireaux"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-039",
+   "famille": "Fruits et légumes frais",
+   "produit": "Poires",
+   "unite": "Kg",
+   "conditionnement": "plateau 7 kg",
+   "prix_base": 2.4,
+   "aliases": [
+    "Poires",
+    "Poires quartiers (ou autre fruit de saison)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-040",
+   "famille": "Fruits et légumes frais",
+   "produit": "Poivrons rouges et verts frais",
+   "unite": "Kg",
+   "conditionnement": "colis 5 kg",
+   "prix_base": 3.0,
+   "aliases": [
+    "Poivrons rouges et verts",
+    "Poivrons verts frais"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-041",
+   "famille": "Fruits et légumes frais",
+   "produit": "Pommes (Golden / Granny)",
+   "unite": "Kg",
+   "conditionnement": "plateau 13 kg",
+   "prix_base": 1.7,
+   "aliases": [
+    "Pommes",
+    "Pommes (Golden)",
+    "Pommes (Granny Smith)",
+    "Pommes fruits (ou quartiers de pommes surgelés)",
+    "Pommes fruits en dés (ou bananes)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-042",
+   "famille": "Fruits et légumes frais",
+   "produit": "Pommes de terre à farcir calibre 60/70",
+   "unite": "Kg",
+   "conditionnement": "sac 10 kg",
+   "prix_base": 1.2,
+   "aliases": [
+    "Pommes de terre à farcir calibre 60/70 (1 par portion)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-043",
+   "famille": "Fruits et légumes frais",
+   "produit": "Pommes de terre cubes 4ème gamme sous vide",
+   "unite": "Kg",
+   "conditionnement": "sachet 5 kg",
+   "prix_base": 2.2,
+   "aliases": [
+    "Pommes de terre cubes",
+    "Pommes de terre cubes 4ème gamme",
+    "Pommes de terre cubes 4ème gamme sous vide",
+    "Pommes de terre dés 4ème gamme"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-044",
+   "famille": "Fruits et légumes frais",
+   "produit": "Pommes de terre entières épluchées 4ème gamme sous vide",
+   "unite": "Kg",
+   "conditionnement": "sachet 5 kg",
+   "prix_base": 2.0,
+   "aliases": [
+    "PDT",
+    "Pommes de terre 4ème gamme calibre 35/45",
+    "Pommes de terre 4ème gamme épluchées",
+    "Pommes de terre 4ème gamme épluchées (Bintje)",
+    "Pommes de terre 4ème gamme épluchées (variété à purée type Bintje)",
+    "Pommes de terre 4ème gamme épluchées calibre 35/45",
+    "Pommes de terre épluchées sous vide",
+    "Pommes de terre vapeur 4ème gamme"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-045",
+   "famille": "Fruits et légumes frais",
+   "produit": "Pommes de terre lamelles / rondelles 4ème gamme sous vide",
+   "unite": "Kg",
+   "conditionnement": "sachet 5 kg",
+   "prix_base": 2.2,
+   "aliases": [
+    "Pommes de terre lamelles 4ème gamme (vapeur)",
+    "Pommes de terre lamelles 4ème gamme sous vide",
+    "Pommes de terre rondelles 4ème gamme"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-046",
+   "famille": "Fruits et légumes frais",
+   "produit": "Pommes de terre râpées 4ème gamme",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.6,
+   "aliases": [
+    "Pommes de terre râpées 4ème gamme (ou fraîches râpées)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-047",
+   "famille": "Fruits et légumes frais",
+   "produit": "Potimarron",
+   "unite": "Kg",
+   "conditionnement": "colis 10 kg",
+   "prix_base": 2.0,
+   "aliases": [
+    "Potimarron"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-048",
+   "famille": "Fruits et légumes frais",
+   "produit": "Radis",
+   "unite": "Pièce",
+   "conditionnement": "botte",
+   "prix_base": 1.0,
+   "aliases": [
+    "Radis",
+    "Radis (≈ 300 g pièce, 2 pièces)"
+   ],
+   "observations": "Commandé à la pièce ; poids moyen 300 g par pièce, prix ramené au kg dans les fiches",
+   "poids_piece": 0.3
+  },
+  {
+   "code": "FLF-049",
+   "famille": "Fruits et légumes frais",
+   "produit": "Raisin",
+   "unite": "Kg",
+   "conditionnement": "plateau 5 kg",
+   "prix_base": 3.5,
+   "aliases": [
+    "Raisin"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-050",
+   "famille": "Fruits et légumes frais",
+   "produit": "Roquette / jeunes pousses 4ème gamme",
+   "unite": "Kg",
+   "conditionnement": "sachet 500 g",
+   "prix_base": 10.0,
+   "aliases": [
+    "Roquette ou jeunes pousses"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-051",
+   "famille": "Fruits et légumes frais",
+   "produit": "Salade frisée",
+   "unite": "Pièce",
+   "conditionnement": "colis 6 pièces",
+   "prix_base": 1.8,
+   "aliases": [
+    "Salade frisée",
+    "Salade frisée (≈ 500 g pièce, 3 pièces)",
+    "Salade frisée (≈ 500 g pièce, 2 pièces)"
+   ],
+   "observations": "Commandé à la pièce ; poids moyen 500 g par pièce, prix ramené au kg dans les fiches",
+   "poids_piece": 0.5
+  },
+  {
+   "code": "FLF-052",
+   "famille": "Fruits et légumes frais",
+   "produit": "Salade iceberg",
+   "unite": "Pièce",
+   "conditionnement": "colis 10 pièces",
+   "prix_base": 1.3,
+   "aliases": [
+    "Salade iceberg",
+    "Salade iceberg (≈ 500 g pièce, 3 pièces)"
+   ],
+   "observations": "Commandé à la pièce ; poids moyen 500 g par pièce, prix ramené au kg dans les fiches",
+   "poids_piece": 0.5
+  },
+  {
+   "code": "FLF-053",
+   "famille": "Fruits et légumes frais",
+   "produit": "Salade verte (batavia / laitue / frisée) – pièce",
+   "unite": "Pièce",
+   "conditionnement": "colis 12 pièces",
+   "prix_base": 1.2,
+   "aliases": [
+    "Salade romaine ou laitue 4ème gamme",
+    "Salade verte",
+    "Salade verte (batavia, frisée) 4ème gamme",
+    "Salade verte (batavia, laitue ou frisée)",
+    "Salade verte 4ème gamme",
+    "Salade verte (batavia, laitue ou frisée) (≈ 500 g pièce, 9 pièces)",
+    "Salade verte (≈ 500 g pièce, 3 pièces)",
+    "Salade verte 4ème gamme (≈ 500 g pièce, 1 pièces)",
+    "Salade verte 4ème gamme (≈ 500 g pièce, 2 pièces)",
+    "Salade romaine ou laitue 4ème gamme (≈ 500 g pièce, 5 pièces)",
+    "Salade verte (batavia, frisée) 4ème gamme (≈ 500 g pièce, 5 pièces)"
+   ],
+   "poids_piece": 0.5,
+   "observations": "Commandé à la pièce ; poids moyen 500 g par pièce, prix ramené au kg dans les fiches"
+  },
+  {
+   "code": "FLF-054",
+   "famille": "Fruits et légumes frais",
+   "produit": "Tomates cerises",
+   "unite": "Kg",
+   "conditionnement": "barquette 500 g x 8",
+   "prix_base": 4.5,
+   "aliases": [
+    "Tomates cerises"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "FLF-055",
+   "famille": "Fruits et légumes frais",
+   "produit": "Tomates rondes fraîches calibre 67/82",
+   "unite": "Kg",
+   "conditionnement": "colis 6 kg",
+   "prix_base": 2.4,
+   "aliases": [
+    "Tomates",
+    "Tomates fraîches",
+    "Tomates rondes",
+    "Tomates rondes calibre 67/82",
+    "Tomates rondes calibre 67/82 (1 par portion)",
+    "Tomates rondes calibre 67/82 (environ 70 pièces)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-001",
+   "famille": "Surgelés",
+   "produit": "Ail surgelé",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 5.5,
+   "aliases": [
+    "Ail surgelé"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-002",
+   "famille": "Surgelés",
+   "produit": "Aneth ciselé surgelé",
+   "unite": "Kg",
+   "conditionnement": "sachet 250 g",
+   "prix_base": 14.0,
+   "aliases": [
+    "Aneth ciselé surgelé",
+    "Aneth PM",
+    "Aneth surgelé"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-003",
+   "famille": "Surgelés",
+   "produit": "Asperges vertes surgelées",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 7.5,
+   "aliases": [
+    "Asperges vertes surgelées"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-004",
+   "famille": "Surgelés",
+   "produit": "Aubergines cubes surgelées",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.8,
+   "aliases": [
+    "Aubergines cubes surgelées"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-005",
+   "famille": "Surgelés",
+   "produit": "Aubergines tranches grillées surgelées",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 5.5,
+   "aliases": [
+    "Aubergines tranches grillées surgelées"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-006",
+   "famille": "Surgelés",
+   "produit": "Basilic ciselé surgelé",
+   "unite": "Kg",
+   "conditionnement": "sachet 250 g",
+   "prix_base": 12.0,
+   "aliases": [
+    "Basilic ciselé surgelé",
+    "Basilic ou persil PM",
+    "Basilic PM",
+    "Basilic surgelé PM",
+    "Basilic, herbes de Provence PM",
+    "Basilic, origan PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-007",
+   "famille": "Surgelés",
+   "produit": "Brocolis fleurettes surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.3,
+   "aliases": [
+    "Brocolis fleurettes surgelés",
+    "Fleurettes de brocolis surgelées"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-008",
+   "famille": "Surgelés",
+   "produit": "Brunoise de légumes surgelée",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 4.0,
+   "aliases": [
+    "Brunoise",
+    "Brunoise de légumes surgelée",
+    "Brunoise de légumes surgelée crue",
+    "Brunoise surgelée",
+    "Brunoise surgelée (FACULTATIF)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-009",
+   "famille": "Surgelés",
+   "produit": "Carottes bâtonnets surgelées",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.2,
+   "aliases": [
+    "Carottes bâtonnets surgelées"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-010",
+   "famille": "Surgelés",
+   "produit": "Carottes brunoise surgelées",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.6,
+   "aliases": [
+    "Brunoise de carottes surgelée",
+    "Carottes brunoise surgelée",
+    "Carottes brunoise surgelées"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-011",
+   "famille": "Surgelés",
+   "produit": "Carottes cubes surgelées",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 1.9,
+   "aliases": [
+    "Carottes cubes surgelées"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-012",
+   "famille": "Surgelés",
+   "produit": "Carottes rondelles surgelées",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 1.8,
+   "aliases": [
+    "Carottes rondelles épaisses surgelées",
+    "Carottes rondelles surgelées"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-013",
+   "famille": "Surgelés",
+   "produit": "Cèpes surgelés (morceaux / émincés)",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 16.0,
+   "aliases": [
+    "Cèpes émincés surgelés",
+    "Cèpes surgelés (morceaux)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-014",
+   "famille": "Surgelés",
+   "produit": "Champignons de Paris émincés surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 3.8,
+   "aliases": [
+    "Champignons de Paris émincés surgelés",
+    "Champignons émincés surgelés",
+    "Champignons surgelés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-015",
+   "famille": "Surgelés",
+   "produit": "Champignons de Paris entiers / quartiers surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 4.5,
+   "aliases": [
+    "Champignons de Paris entiers ou quartiers surgelés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-016",
+   "famille": "Surgelés",
+   "produit": "Chou romanesco fleurettes surgelé",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 3.0,
+   "aliases": [
+    "Fleurettes de chou romanesco surgelées"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-017",
+   "famille": "Surgelés",
+   "produit": "Chou-fleur fleurettes surgelé",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.2,
+   "aliases": [
+    "Chou-fleur fleurettes surgelé"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-018",
+   "famille": "Surgelés",
+   "produit": "Choux de Bruxelles surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.6,
+   "aliases": [
+    "Choux de Bruxelles surgelés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-019",
+   "famille": "Surgelés",
+   "produit": "Ciboulette ciselée surgelée",
+   "unite": "Kg",
+   "conditionnement": "sachet 250 g",
+   "prix_base": 13.0,
+   "aliases": [
+    "Ciboulette ciselée PM",
+    "Ciboulette ciselée surgelée",
+    "Ciboulette ciselée surgelée PM",
+    "Ciboulette ou oignons verts",
+    "Ciboulette ou persil PM",
+    "Ciboulette surgelée",
+    "Ciboulette surgelée PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-020",
+   "famille": "Surgelés",
+   "produit": "Cordon bleu de volaille surgelé 100 g",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 6.5,
+   "aliases": [
+    "Cordon bleu de volaille surgelé (100 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-021",
+   "famille": "Surgelés",
+   "produit": "Coriandre ciselée surgelée",
+   "unite": "Kg",
+   "conditionnement": "sachet 250 g",
+   "prix_base": 13.0,
+   "aliases": [
+    "Coriandre ou persil haché PM",
+    "Coriandre PM",
+    "Coriandre surgelée PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-022",
+   "famille": "Surgelés",
+   "produit": "Côtes de blettes surgelées",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 3.0,
+   "aliases": [
+    "Côtes de blettes (cardes) surgelées ou fraîches parées"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-023",
+   "famille": "Surgelés",
+   "produit": "Courgettes cubes surgelées",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.4,
+   "aliases": [
+    "Courgettes cubes surgelées"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-024",
+   "famille": "Surgelés",
+   "produit": "Courgettes rondelles surgelées",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.4,
+   "aliases": [
+    "Courgettes rondelles ou cubes surgelées",
+    "Courgettes rondelles surgelées"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-025",
+   "famille": "Surgelés",
+   "produit": "Dés de tomates surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.5,
+   "aliases": [
+    "Dés de tomates (surgelés ou frais)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-026",
+   "famille": "Surgelés",
+   "produit": "Donuts de poulet panés surgelés 50 g",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 7.0,
+   "aliases": [
+    "Donuts de poulet panés surgelés (env. 50 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-027",
+   "famille": "Surgelés",
+   "produit": "Échalotes ciselées surgelées",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 4.5,
+   "aliases": [
+    "Échalotes ciselées",
+    "Échalotes ciselées surgelées",
+    "Échalotes ou oignons ciselés surgelés",
+    "Échalotes surgelées"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-028",
+   "famille": "Surgelés",
+   "produit": "Épinards branches surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.4,
+   "aliases": [
+    "Épinards branches (ou hachés) surgelés",
+    "Épinards branches surgelés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-029",
+   "famille": "Surgelés",
+   "produit": "Épinards hachés surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.2,
+   "aliases": [
+    "Épinards hachés surgelés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-030",
+   "famille": "Surgelés",
+   "produit": "Escalopes viennoises panées surgelées 100 g",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 8.0,
+   "aliases": [
+    "Escalopes viennoises panées surgelées, dinde ou veau (100 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-031",
+   "famille": "Surgelés",
+   "produit": "Estragon ciselé surgelé",
+   "unite": "Kg",
+   "conditionnement": "sachet 250 g",
+   "prix_base": 14.0,
+   "aliases": [
+    "Estragon ou persil haché PM",
+    "Estragon PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-032",
+   "famille": "Surgelés",
+   "produit": "Feuilletés jambon fromage surgelés 90 g",
+   "unite": "Pièce",
+   "conditionnement": "carton 40 pièces",
+   "prix_base": 0.75,
+   "aliases": [
+    "Feuilletés jambon fromage surgelés (90 g pièce)",
+    "Feuilletés jambon fromage surgelés (90 g pièce) (≈ 90 g pièce, 63 pièces)"
+   ],
+   "observations": "Commandé à la pièce ; poids moyen 90 g par pièce, prix ramené au kg dans les fiches",
+   "poids_piece": 0.09
+  },
+  {
+   "code": "SUR-033",
+   "famille": "Surgelés",
+   "produit": "Fonds d'artichauts surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 8.0,
+   "aliases": [
+    "Fonds ou cœurs d'artichauts surgelés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-034",
+   "famille": "Surgelés",
+   "produit": "Framboises IQF surgelées",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 9.0,
+   "aliases": [
+    "Framboises fraîches ou surgelées IQF"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-035",
+   "famille": "Surgelés",
+   "produit": "Frites de patate douce surgelées",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 3.5,
+   "aliases": [
+    "Frites de patate douce surgelées"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-036",
+   "famille": "Surgelés",
+   "produit": "Frites précuites surgelées spécial four",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.0,
+   "aliases": [
+    "Frites précuites surgelées spéciales four"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-037",
+   "famille": "Surgelés",
+   "produit": "Fruits rouges IQF surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 6.5,
+   "aliases": [
+    "Fruits rouges surgelés IQF"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-038",
+   "famille": "Surgelés",
+   "produit": "Haricots beurre surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.6,
+   "aliases": [
+    "Haricots beurre surgelés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-039",
+   "famille": "Surgelés",
+   "produit": "Haricots plats coupés surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.6,
+   "aliases": [
+    "Haricots plats coupés surgelés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-040",
+   "famille": "Surgelés",
+   "produit": "Haricots verts extra-fins surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.8,
+   "aliases": [
+    "Haricots verts extra-fins surgelés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-041",
+   "famille": "Surgelés",
+   "produit": "Haricots verts surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.2,
+   "aliases": [
+    "Haricots verts surgelés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-042",
+   "famille": "Surgelés",
+   "produit": "Jardinière de légumes surgelée",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.4,
+   "aliases": [
+    "Jardinière de légumes surgelée (carottes, petits pois, haricots verts, navets, flageolets)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-043",
+   "famille": "Surgelés",
+   "produit": "Julienne de légumes asiatiques surgelée",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 3.2,
+   "aliases": [
+    "Julienne de légumes asiatiques surgelée"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-044",
+   "famille": "Surgelés",
+   "produit": "Légumes pour couscous surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.6,
+   "aliases": [
+    "Légumes couscous surgelés (carottes, navets, courgettes, poivrons, céleri)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-045",
+   "famille": "Surgelés",
+   "produit": "Macédoine de légumes surgelée",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.2,
+   "aliases": [
+    "Macédoine de légumes surgelée"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-046",
+   "famille": "Surgelés",
+   "produit": "Mangue cubes surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 5.0,
+   "aliases": [
+    "Mangue cubes surgelés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-047",
+   "famille": "Surgelés",
+   "produit": "Mélange forestier surgelé",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 7.5,
+   "aliases": [
+    "Mélange forestier surgelé"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-048",
+   "famille": "Surgelés",
+   "produit": "Menthe ciselée surgelée",
+   "unite": "Kg",
+   "conditionnement": "sachet 250 g",
+   "prix_base": 13.0,
+   "aliases": [
+    "Menthe ou basilic ciselé surgelé",
+    "Menthe ou coriandre ciselée surgelée PM",
+    "Menthe, ciboulette, cumin PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-049",
+   "famille": "Surgelés",
+   "produit": "Navets cubes surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.2,
+   "aliases": [
+    "Navets cubes surgelés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-050",
+   "famille": "Surgelés",
+   "produit": "Nems au poulet surgelés 50 g",
+   "unite": "Pièce",
+   "conditionnement": "carton 100 pièces",
+   "prix_base": 0.4,
+   "aliases": [
+    "Nems au poulet ou au porc surgelés (50 g)",
+    "Nems au poulet ou au porc surgelés (50 g) (≈ 50 g pièce, 160 pièces)",
+    "Nems au poulet ou au porc surgelés (50 g) (≈ 50 g pièce, 99 pièces)"
+   ],
+   "poids_piece": 0.05,
+   "observations": "Commandé à la pièce ; poids moyen 50 g par pièce, prix ramené au kg dans les fiches"
+  },
+  {
+   "code": "SUR-051",
+   "famille": "Surgelés",
+   "produit": "Nuggets de poulet surgelés 20 g",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 6.5,
+   "aliases": [
+    "Nuggets de poulet surgelés (20 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-052",
+   "famille": "Surgelés",
+   "produit": "Oignons ciselés surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 1.9,
+   "aliases": [
+    "Oignons ciselés",
+    "Oignons ciselés surgelés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-053",
+   "famille": "Surgelés",
+   "produit": "Oignons cubes surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 1.8,
+   "aliases": [
+    "Oignons cubes",
+    "Oignons cubes surgelés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-054",
+   "famille": "Surgelés",
+   "produit": "Oignons émincés surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 1.9,
+   "aliases": [
+    "Oignons émincés surgelés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-055",
+   "famille": "Surgelés",
+   "produit": "Patate douce cubes surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 3.2,
+   "aliases": [
+    "Patate douce cubes surgelés (ou fraîche épluchée)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-056",
+   "famille": "Surgelés",
+   "produit": "Persil haché surgelé",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 8.0,
+   "aliases": [
+    "Persil ciselé surgelé",
+    "Persil ciselé surgelé PM",
+    "Persil haché PM",
+    "Persil haché surgelé",
+    "Persil haché surgelé PM",
+    "Persil ou ciboulette PM",
+    "Persil PM",
+    "Persil, ciboulette, estragon surgelés",
+    "Persil, thym PM",
+    "Persil, thym, laurier PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-057",
+   "famille": "Surgelés",
+   "produit": "Petits pois surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.3,
+   "aliases": [
+    "Petits pois surgelés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-058",
+   "famille": "Surgelés",
+   "produit": "Pizzas surgelées 400 g",
+   "unite": "Pièce",
+   "conditionnement": "carton 10 pièces",
+   "prix_base": 2.6,
+   "aliases": [
+    "Pizzas surgelées prêtes à cuire (400 g pièce, 1/4 par portion)",
+    "Pizzas surgelées prêtes à cuire (400 g pièce, 1/4 par portion) (≈ 400 g pièce, 16 pièces)"
+   ],
+   "observations": "Commandé à la pièce ; poids moyen 400 g par pièce, prix ramené au kg dans les fiches",
+   "poids_piece": 0.4
+  },
+  {
+   "code": "SUR-059",
+   "famille": "Surgelés",
+   "produit": "Poêlée de légumes surgelée",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 3.0,
+   "aliases": [
+    "Poêlée de légumes surgelée (carottes, brocolis, haricots verts, poivrons)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-060",
+   "famille": "Surgelés",
+   "produit": "Poireaux émincés surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.6,
+   "aliases": [
+    "Poireaux émincés surgelés",
+    "Poireaux émincés surgelés (ou 4ème gamme)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-061",
+   "famille": "Surgelés",
+   "produit": "Poireaux rondelles surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.6,
+   "aliases": [
+    "Poireaux rondelles surgelés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-062",
+   "famille": "Surgelés",
+   "produit": "Poireaux tronçons surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.8,
+   "aliases": [
+    "Poireaux tronçons surgelés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-063",
+   "famille": "Surgelés",
+   "produit": "Poivrons dés surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 3.0,
+   "aliases": [
+    "Poivrons dés surgelés",
+    "Poivrons rouges dés surgelés",
+    "Poivrons surgelés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-064",
+   "famille": "Surgelés",
+   "produit": "Poivrons lanières surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 3.0,
+   "aliases": [
+    "Poivrons lanières",
+    "Poivrons lanières surgelés",
+    "Poivrons rouges et verts lanières surgelés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-065",
+   "famille": "Surgelés",
+   "produit": "Pommes dauphine surgelées",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 3.2,
+   "aliases": [
+    "Pommes dauphine surgelées"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-066",
+   "famille": "Surgelés",
+   "produit": "Pommes de terre cubes rissolées surgelées",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.5,
+   "aliases": [
+    "Pommes de terre cubes rissolées surgelées"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-067",
+   "famille": "Surgelés",
+   "produit": "Pommes de terre dés surgelées",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.0,
+   "aliases": [
+    "Pommes de terre en dés surgelées (ou fraîches épluchées)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-068",
+   "famille": "Surgelés",
+   "produit": "Pommes duchesse surgelées",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 3.2,
+   "aliases": [
+    "Pommes duchesse surgelées"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-069",
+   "famille": "Surgelés",
+   "produit": "Pommes fruits quartiers / cubes surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 3.0,
+   "aliases": [
+    "Pommes en cubes surgelées",
+    "Pommes quartiers surgelés (ou Golden fraîches épluchées)",
+    "Pommes quartiers surgelés (ou pommes Golden fraîches)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-070",
+   "famille": "Surgelés",
+   "produit": "Potiron / potimarron cubes surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 2.4,
+   "aliases": [
+    "Potimarron cubes surgelés (ou frais lavé, non épluché)",
+    "Potimarron ou potiron cubes surgelés",
+    "Potiron cubes surgelés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-071",
+   "famille": "Surgelés",
+   "produit": "Purée de mangue surgelée",
+   "unite": "Kg",
+   "conditionnement": "barquette 1 kg",
+   "prix_base": 6.5,
+   "aliases": [
+    "Purée de mangue"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-072",
+   "famille": "Surgelés",
+   "produit": "Rösti surgelés 100 g",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 3.5,
+   "aliases": [
+    "Rösti surgelés (galettes 100 g)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-073",
+   "famille": "Surgelés",
+   "produit": "Salsifis surgelés",
+   "unite": "Kg",
+   "conditionnement": "sachet 2,5 kg",
+   "prix_base": 3.2,
+   "aliases": [
+    "Salsifis surgelés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "SUR-074",
+   "famille": "Surgelés",
+   "produit": "Viande kebab précuite tranchée surgelée",
+   "unite": "Kg",
+   "conditionnement": "sachet 2 kg",
+   "prix_base": 9.0,
+   "aliases": [
+    "Viande kebab précuite tranchée surgelée (veau/dinde)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-001",
+   "famille": "Épicerie sèche",
+   "produit": "Bicarbonate de soude",
+   "unite": "Kg",
+   "conditionnement": "boîte 1 kg",
+   "prix_base": 3.0,
+   "aliases": [
+    "Bicarbonate de soude PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-002",
+   "famille": "Épicerie sèche",
+   "produit": "Blé précuit (type Ebly)",
+   "unite": "Kg",
+   "conditionnement": "sac 5 kg",
+   "prix_base": 2.8,
+   "aliases": [
+    "Blé Ebly précuit"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-003",
+   "famille": "Épicerie sèche",
+   "produit": "Bouillon de bœuf déshydraté",
+   "unite": "Kg",
+   "conditionnement": "boîte 1 kg",
+   "prix_base": 9.0,
+   "aliases": [
+    "Bouillon de bœuf",
+    "Bouillon de bœuf déshydraté",
+    "Bouillon de bœuf déshydraté PM",
+    "Fond de bœuf déshydraté"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-004",
+   "famille": "Épicerie sèche",
+   "produit": "Bouillon de volaille déshydraté",
+   "unite": "Kg",
+   "conditionnement": "boîte 1 kg",
+   "prix_base": 9.0,
+   "aliases": [
+    "Bouillon de volaille déshydraté"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-005",
+   "famille": "Épicerie sèche",
+   "produit": "Cacao en poudre",
+   "unite": "Kg",
+   "conditionnement": "boîte 1 kg",
+   "prix_base": 7.0,
+   "aliases": [
+    "Cacao en poudre",
+    "Cacao ou extrait de café PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-006",
+   "famille": "Épicerie sèche",
+   "produit": "Cannellonis à farcir (pâte sèche)",
+   "unite": "Kg",
+   "conditionnement": "carton 3 kg",
+   "prix_base": 4.5,
+   "aliases": [
+    "Cannellonis à farcir (pâte sèche)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-007",
+   "famille": "Épicerie sèche",
+   "produit": "Cassonade",
+   "unite": "Kg",
+   "conditionnement": "sac 1 kg",
+   "prix_base": 2.2,
+   "aliases": [
+    "Cassonade"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-008",
+   "famille": "Épicerie sèche",
+   "produit": "Cerises confites",
+   "unite": "Kg",
+   "conditionnement": "boîte 1 kg",
+   "prix_base": 9.0,
+   "aliases": [
+    "Cerises confites"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-009",
+   "famille": "Épicerie sèche",
+   "produit": "Cerneaux de noix",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 14.0,
+   "aliases": [
+    "Cerneaux de noix"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-010",
+   "famille": "Épicerie sèche",
+   "produit": "Chapelure",
+   "unite": "Kg",
+   "conditionnement": "sac 5 kg",
+   "prix_base": 2.0,
+   "aliases": [
+    "Chapelure",
+    "Chapelure ou flocons d'avoine"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-011",
+   "famille": "Épicerie sèche",
+   "produit": "Chocolat au lait",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 9.5,
+   "aliases": [
+    "Chocolat au lait"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-012",
+   "famille": "Épicerie sèche",
+   "produit": "Chocolat noir de couverture",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 10.0,
+   "aliases": [
+    "Chocolat noir de couverture"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-013",
+   "famille": "Épicerie sèche",
+   "produit": "Crêpes dentelle émiettées",
+   "unite": "Kg",
+   "conditionnement": "boîte 1 kg",
+   "prix_base": 11.0,
+   "aliases": [
+    "Crêpes dentelle émiettées"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-014",
+   "famille": "Épicerie sèche",
+   "produit": "Crozets de Savoie",
+   "unite": "Kg",
+   "conditionnement": "sac 1 kg x 5",
+   "prix_base": 4.5,
+   "aliases": [
+    "Crozets de Savoie"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-015",
+   "famille": "Épicerie sèche",
+   "produit": "Farine T55",
+   "unite": "Kg",
+   "conditionnement": "sac 25 kg",
+   "prix_base": 0.85,
+   "aliases": [
+    "Farine",
+    "Farine (abaisse)",
+    "Farine (blanc de cuisson)",
+    "Farine (fleurage)",
+    "Farine T55"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-016",
+   "famille": "Épicerie sèche",
+   "produit": "Fécule de pomme de terre",
+   "unite": "Kg",
+   "conditionnement": "sac 1 kg x 10",
+   "prix_base": 2.2,
+   "aliases": [
+    "Fécule",
+    "Fécule de PDT",
+    "Fécule de pomme de terre",
+    "Fécule pomme de terre"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-017",
+   "famille": "Épicerie sèche",
+   "produit": "Flageolets verts secs",
+   "unite": "Kg",
+   "conditionnement": "sac 5 kg",
+   "prix_base": 4.5,
+   "aliases": [
+    "Flageolets verts secs"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-018",
+   "famille": "Épicerie sèche",
+   "produit": "Flocons de pomme de terre",
+   "unite": "Kg",
+   "conditionnement": "sac 4 kg",
+   "prix_base": 3.5,
+   "aliases": [
+    "Flocons de pomme de terre"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-019",
+   "famille": "Épicerie sèche",
+   "produit": "Fond blanc de veau déshydraté",
+   "unite": "Kg",
+   "conditionnement": "boîte 1 kg",
+   "prix_base": 14.0,
+   "aliases": [
+    "Fond de veau blanc déshydraté"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-020",
+   "famille": "Épicerie sèche",
+   "produit": "Fond brun déshydraté",
+   "unite": "Kg",
+   "conditionnement": "boîte 1 kg",
+   "prix_base": 11.0,
+   "aliases": [
+    "Fond brun déshydraté"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-021",
+   "famille": "Épicerie sèche",
+   "produit": "Fond d'agneau déshydraté",
+   "unite": "Kg",
+   "conditionnement": "boîte 1 kg",
+   "prix_base": 15.0,
+   "aliases": [
+    "Fond d'agneau déshydraté",
+    "Fond d'agneau ou de veau déshydraté"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-022",
+   "famille": "Épicerie sèche",
+   "produit": "Fond de veau déshydraté",
+   "unite": "Kg",
+   "conditionnement": "boîte 1 kg",
+   "prix_base": 12.0,
+   "aliases": [
+    "Fond brun de veau déshydraté",
+    "Fond de veau déshydraté",
+    "Fond de veau ou de canard déshydraté"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-023",
+   "famille": "Épicerie sèche",
+   "produit": "Fond de volaille déshydraté",
+   "unite": "Kg",
+   "conditionnement": "boîte 1 kg",
+   "prix_base": 10.0,
+   "aliases": [
+    "Fond de volaille déshydraté",
+    "Fond de volaille déshydraté (jus)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-024",
+   "famille": "Épicerie sèche",
+   "produit": "Fondant pâtissier",
+   "unite": "Kg",
+   "conditionnement": "seau 1 kg",
+   "prix_base": 4.5,
+   "aliases": [
+    "Fondant pâtissier"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-025",
+   "famille": "Épicerie sèche",
+   "produit": "Fumet de poisson déshydraté",
+   "unite": "Kg",
+   "conditionnement": "boîte 1 kg",
+   "prix_base": 12.0,
+   "aliases": [
+    "Fumet de poisson déshydraté"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-026",
+   "famille": "Épicerie sèche",
+   "produit": "Gélatine en feuilles",
+   "unite": "Kg",
+   "conditionnement": "boîte 1 kg (500 feuilles)",
+   "prix_base": 28.0,
+   "aliases": [
+    "Gélatine feuilles"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-027",
+   "famille": "Épicerie sèche",
+   "produit": "Graines de courge",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 8.0,
+   "aliases": [
+    "Graines de courge ou croûtons (service)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-028",
+   "famille": "Épicerie sèche",
+   "produit": "Graines de sésame",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 6.0,
+   "aliases": [
+    "Graines de sésame"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-029",
+   "famille": "Épicerie sèche",
+   "produit": "Graisse de canard",
+   "unite": "Kg",
+   "conditionnement": "seau 4 kg",
+   "prix_base": 6.0,
+   "aliases": [
+    "Graisse de canard"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-030",
+   "famille": "Épicerie sèche",
+   "produit": "Haricots blancs secs (lingots)",
+   "unite": "Kg",
+   "conditionnement": "sac 5 kg",
+   "prix_base": 6.0,
+   "aliases": [
+    "Haricots blancs",
+    "Haricots blancs secs",
+    "Haricots lingots secs (pour 1 bac)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-031",
+   "famille": "Épicerie sèche",
+   "produit": "Haricots rouges secs",
+   "unite": "Kg",
+   "conditionnement": "sac 5 kg",
+   "prix_base": 4.0,
+   "aliases": [
+    "Haricots rouges",
+    "Haricots rouges SECS",
+    "Haricots rouges secs"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-032",
+   "famille": "Épicerie sèche",
+   "produit": "Huile d'olive",
+   "unite": "L",
+   "conditionnement": "bidon 5 L",
+   "prix_base": 7.5,
+   "aliases": [
+    "Huile d'olive"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-033",
+   "famille": "Épicerie sèche",
+   "produit": "Huile de colza",
+   "unite": "L",
+   "conditionnement": "bidon 5 L",
+   "prix_base": 2.3,
+   "aliases": [
+    "Huile de colza"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-034",
+   "famille": "Épicerie sèche",
+   "produit": "Huile de noix",
+   "unite": "L",
+   "conditionnement": "bouteille 1 L",
+   "prix_base": 12.0,
+   "aliases": [
+    "Huile de noix"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-035",
+   "famille": "Épicerie sèche",
+   "produit": "Huile de sésame",
+   "unite": "L",
+   "conditionnement": "bouteille 500 mL",
+   "prix_base": 11.0,
+   "aliases": [
+    "Huile de sésame"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-036",
+   "famille": "Épicerie sèche",
+   "produit": "Huile de tournesol",
+   "unite": "L",
+   "conditionnement": "bidon 5 L",
+   "prix_base": 2.2,
+   "aliases": [
+    "Huile",
+    "Huile - Vinaigre",
+    "Huile cuisson",
+    "Huile de tournesol"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-037",
+   "famille": "Épicerie sèche",
+   "produit": "Lentilles vertes sèches",
+   "unite": "Kg",
+   "conditionnement": "sac 5 kg",
+   "prix_base": 3.2,
+   "aliases": [
+    "Lentilles",
+    "Lentilles vertes sèches",
+    "Lentilles vertes sèches (1,5 kg par bac, 2 bacs)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-038",
+   "famille": "Épicerie sèche",
+   "produit": "Mélange de céréales (quinoa, boulgour, lentilles corail)",
+   "unite": "Kg",
+   "conditionnement": "sac 5 kg",
+   "prix_base": 4.5,
+   "aliases": [
+    "Mélange de céréales (quinoa, boulgour, lentilles corail)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-039",
+   "famille": "Épicerie sèche",
+   "produit": "Miel",
+   "unite": "Kg",
+   "conditionnement": "seau 5 kg",
+   "prix_base": 7.5,
+   "aliases": [
+    "Miel"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-040",
+   "famille": "Épicerie sèche",
+   "produit": "Morilles séchées",
+   "unite": "Kg",
+   "conditionnement": "sachet 500 g",
+   "prix_base": 180.0,
+   "aliases": [
+    "Morilles séchées"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-041",
+   "famille": "Épicerie sèche",
+   "produit": "Nouilles chinoises aux œufs",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 3.5,
+   "aliases": [
+    "Nouilles chinoises aux œufs"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-042",
+   "famille": "Épicerie sèche",
+   "produit": "Pâtes fusilli / torsades",
+   "unite": "Kg",
+   "conditionnement": "sac 5 kg",
+   "prix_base": 1.6,
+   "aliases": [
+    "Pâtes (fusilli ou penne)",
+    "Pâtes torsades"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-043",
+   "famille": "Épicerie sèche",
+   "produit": "Pâtes macaronis",
+   "unite": "Kg",
+   "conditionnement": "sac 5 kg",
+   "prix_base": 1.6,
+   "aliases": [
+    "Pâtes (macaronis ou coquillettes)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-044",
+   "famille": "Épicerie sèche",
+   "produit": "Pâtes penne",
+   "unite": "Kg",
+   "conditionnement": "sac 5 kg",
+   "prix_base": 1.6,
+   "aliases": [
+    "Pâtes (penne ou coquillettes)",
+    "Pâtes (penne ou fusilli)",
+    "Pâtes (penne ou spaghetti)",
+    "Pâtes penne"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-045",
+   "famille": "Épicerie sèche",
+   "produit": "Pâtes tagliatelles",
+   "unite": "Kg",
+   "conditionnement": "sac 5 kg",
+   "prix_base": 2.2,
+   "aliases": [
+    "Pâtes (tagliatelles ou penne)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-046",
+   "famille": "Épicerie sèche",
+   "produit": "Perles de pâtes",
+   "unite": "Kg",
+   "conditionnement": "sac 5 kg",
+   "prix_base": 2.5,
+   "aliases": [
+    "Pâtes perles",
+    "Perles de pâtes"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-047",
+   "famille": "Épicerie sèche",
+   "produit": "Pignons de pin",
+   "unite": "Kg",
+   "conditionnement": "sachet 500 g",
+   "prix_base": 38.0,
+   "aliases": [
+    "Pignons de pin"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-048",
+   "famille": "Épicerie sèche",
+   "produit": "Plaques de lasagnes sans précuisson",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 3.0,
+   "aliases": [
+    "Plaques de lasagnes sans précuisson"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-049",
+   "famille": "Épicerie sèche",
+   "produit": "Pois cassés secs",
+   "unite": "Kg",
+   "conditionnement": "sac 5 kg",
+   "prix_base": 2.8,
+   "aliases": [
+    "Pois cassés secs"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-050",
+   "famille": "Épicerie sèche",
+   "produit": "Pois chiches secs",
+   "unite": "Kg",
+   "conditionnement": "sac 5 kg",
+   "prix_base": 3.2,
+   "aliases": [
+    "Pois chiches",
+    "Pois chiches secs"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-051",
+   "famille": "Épicerie sèche",
+   "produit": "Poudre à crème pâtissière (à chaud)",
+   "unite": "Kg",
+   "conditionnement": "boîte 1 kg",
+   "prix_base": 6.0,
+   "aliases": [
+    "Poudre à crème"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-052",
+   "famille": "Épicerie sèche",
+   "produit": "Praliné",
+   "unite": "Kg",
+   "conditionnement": "seau 1 kg",
+   "prix_base": 14.0,
+   "aliases": [
+    "Praliné"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-053",
+   "famille": "Épicerie sèche",
+   "produit": "Préparation crème pâtissière à froid",
+   "unite": "Kg",
+   "conditionnement": "sac 1 kg",
+   "prix_base": 7.5,
+   "aliases": [
+    "Préparation pour crème pâtissière à froid"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-054",
+   "famille": "Épicerie sèche",
+   "produit": "Pruneaux dénoyautés",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 7.0,
+   "aliases": [
+    "Pruneaux dénoyautés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-055",
+   "famille": "Épicerie sèche",
+   "produit": "Raisins secs",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 5.0,
+   "aliases": [
+    "Raisins secs",
+    "Raisins secs (facultatif)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-056",
+   "famille": "Épicerie sèche",
+   "produit": "Riz arborio (risotto)",
+   "unite": "Kg",
+   "conditionnement": "sac 5 kg",
+   "prix_base": 3.2,
+   "aliases": [
+    "Riz arborio ou carnaroli"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-057",
+   "famille": "Épicerie sèche",
+   "produit": "Riz long étuvé",
+   "unite": "Kg",
+   "conditionnement": "sac 5 kg",
+   "prix_base": 1.9,
+   "aliases": [
+    "Riz long cru",
+    "Riz long étuvé"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-058",
+   "famille": "Épicerie sèche",
+   "produit": "Semoule de blé moyenne",
+   "unite": "Kg",
+   "conditionnement": "sac 5 kg",
+   "prix_base": 1.5,
+   "aliases": [
+    "Semoule de blé moyenne",
+    "Semoule moyenne"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-059",
+   "famille": "Épicerie sèche",
+   "produit": "Spéculoos",
+   "unite": "Kg",
+   "conditionnement": "carton 2,5 kg",
+   "prix_base": 7.0,
+   "aliases": [
+    "Spéculoos"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-060",
+   "famille": "Épicerie sèche",
+   "produit": "Sucre glace",
+   "unite": "Kg",
+   "conditionnement": "sac 1 kg",
+   "prix_base": 2.0,
+   "aliases": [
+    "Sucre glace"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-061",
+   "famille": "Épicerie sèche",
+   "produit": "Sucre semoule",
+   "unite": "Kg",
+   "conditionnement": "sac 1 kg x 10",
+   "prix_base": 1.3,
+   "aliases": [
+    "Sirop d'imbibage (eau + sucre)",
+    "Sucre",
+    "Sucre pour le coulis",
+    "Sucre pour le dressage",
+    "Sucre semoule",
+    "Sucre semoule (crème pâtissière)",
+    "Sucre semoule (pâte à choux)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPI-062",
+   "famille": "Épicerie sèche",
+   "produit": "Vermicelles de chocolat",
+   "unite": "Kg",
+   "conditionnement": "boîte 1 kg",
+   "prix_base": 6.5,
+   "aliases": [
+    "Vermicelles de chocolat"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-001",
+   "famille": "Conserves et sauces",
+   "produit": "Anchois en filets (à l'huile)",
+   "unite": "Kg",
+   "conditionnement": "boîte 1/2",
+   "prix_base": 22.0,
+   "aliases": [
+    "Anchois en filets (ou pâte d'anchois)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-002",
+   "famille": "Conserves et sauces",
+   "produit": "Bisque de homard",
+   "unite": "L",
+   "conditionnement": "brique 1 L",
+   "prix_base": 6.5,
+   "aliases": [
+    "Bisque"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-003",
+   "famille": "Conserves et sauces",
+   "produit": "Câpres",
+   "unite": "Kg",
+   "conditionnement": "bocal 1 kg",
+   "prix_base": 8.0,
+   "aliases": [
+    "Câpres"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-004",
+   "famille": "Conserves et sauces",
+   "produit": "Châtaignes cuites pelées sous vide",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg",
+   "prix_base": 9.5,
+   "aliases": [
+    "Châtaignes cuites pelées (sous vide ou surgelées)",
+    "Châtaignes cuites sous vide (ou surgelées)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-005",
+   "famille": "Conserves et sauces",
+   "produit": "Concentré de tomates",
+   "unite": "Kg",
+   "conditionnement": "boîte 4/4",
+   "prix_base": 2.6,
+   "aliases": [
+    "Concentré de tomates"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-006",
+   "famille": "Conserves et sauces",
+   "produit": "Confit d'oignons",
+   "unite": "Kg",
+   "conditionnement": "bocal 1 kg",
+   "prix_base": 8.5,
+   "aliases": [
+    "Confit d'oignons ou gelée de groseille"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-007",
+   "famille": "Conserves et sauces",
+   "produit": "Confit de figues",
+   "unite": "Kg",
+   "conditionnement": "bocal 1 kg",
+   "prix_base": 10.0,
+   "aliases": [
+    "Confit de figues ou chutney d'oignons"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-008",
+   "famille": "Conserves et sauces",
+   "produit": "Cornichons en rondelles",
+   "unite": "Kg",
+   "conditionnement": "seau 2 kg",
+   "prix_base": 6.0,
+   "aliases": [
+    "Cornichons en rondelles",
+    "Cornichons rondelles"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-009",
+   "famille": "Conserves et sauces",
+   "produit": "Cornichons entiers",
+   "unite": "Kg",
+   "conditionnement": "bocal 2 kg",
+   "prix_base": 6.5,
+   "aliases": [
+    "Cornichons",
+    "Cornichons (service)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-010",
+   "famille": "Conserves et sauces",
+   "produit": "Haricots rouges cuits (boîte 5/1)",
+   "unite": "Kg",
+   "conditionnement": "boîte 5/1",
+   "prix_base": 2.0,
+   "aliases": [
+    "Haricots rouges appertisés égouttés",
+    "Haricots rouges cuits égouttés (conserve 5/1)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-011",
+   "famille": "Conserves et sauces",
+   "produit": "Ketchup",
+   "unite": "Kg",
+   "conditionnement": "flacon 5 kg",
+   "prix_base": 3.0,
+   "aliases": [
+    "Ketchup",
+    "Ketchup (alternative)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-012",
+   "famille": "Conserves et sauces",
+   "produit": "Lait de coco",
+   "unite": "L",
+   "conditionnement": "boîte 1 L",
+   "prix_base": 3.5,
+   "aliases": [
+    "Lait de coco"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-013",
+   "famille": "Conserves et sauces",
+   "produit": "Macédoine de légumes (boîte 5/1)",
+   "unite": "Kg",
+   "conditionnement": "boîte 5/1",
+   "prix_base": 2.0,
+   "aliases": [
+    "Macédoine de légumes appertisée égouttée"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-014",
+   "famille": "Conserves et sauces",
+   "produit": "Maïs doux (boîte 5/1)",
+   "unite": "Kg",
+   "conditionnement": "boîte 5/1",
+   "prix_base": 2.2,
+   "aliases": [
+    "Maïs boite",
+    "Maïs doux appertisé égoutté",
+    "Maïs grains (boîte égouttée)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-015",
+   "famille": "Conserves et sauces",
+   "produit": "Mayonnaise collectivité (seau)",
+   "unite": "Kg",
+   "conditionnement": "seau 5 kg",
+   "prix_base": 4.5,
+   "aliases": [
+    "Mayonnaise (ovoproduit pasteurisé)",
+    "Mayonnaise collective (ovoproduit pasteurisé)",
+    "Mayonnaise ovoproduit pasteurisée",
+    "Mayonnaise ovoproduit pasteurisée (sauce)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-016",
+   "famille": "Conserves et sauces",
+   "produit": "Oignons grelots au vinaigre",
+   "unite": "Kg",
+   "conditionnement": "bocal 1 kg",
+   "prix_base": 6.0,
+   "aliases": [
+    "Oignons grelots au vinaigre"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-017",
+   "famille": "Conserves et sauces",
+   "produit": "Olives noires dénoyautées",
+   "unite": "Kg",
+   "conditionnement": "boîte 4/4",
+   "prix_base": 5.5,
+   "aliases": [
+    "Olives noires dénoyautées"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-018",
+   "famille": "Conserves et sauces",
+   "produit": "Pesto au basilic",
+   "unite": "Kg",
+   "conditionnement": "seau 1 kg",
+   "prix_base": 9.0,
+   "aliases": [
+    "Pesto au basilic",
+    "Pesto au basilic (seau)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-019",
+   "famille": "Conserves et sauces",
+   "produit": "Pointes d'asperges (boîte)",
+   "unite": "Kg",
+   "conditionnement": "boîte 4/4",
+   "prix_base": 9.0,
+   "aliases": [
+    "Pointes d'asperges (boîte ou surgelées)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-020",
+   "famille": "Conserves et sauces",
+   "produit": "Pois chiches cuits (boîte 5/1)",
+   "unite": "Kg",
+   "conditionnement": "boîte 5/1",
+   "prix_base": 2.0,
+   "aliases": [
+    "Pois chiches cuits égouttés"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-021",
+   "famille": "Conserves et sauces",
+   "produit": "Pulpe de tomates (boîte 5/1)",
+   "unite": "Kg",
+   "conditionnement": "boîte 5/1",
+   "prix_base": 1.5,
+   "aliases": [
+    "Pulpe de tomates",
+    "Tomates en cubes"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-022",
+   "famille": "Conserves et sauces",
+   "produit": "Ratatouille cuisinée (boîte 5/1)",
+   "unite": "Kg",
+   "conditionnement": "boîte 5/1",
+   "prix_base": 2.8,
+   "aliases": [
+    "Ratatouille cuisinée (ou légumes grillés surgelés)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-023",
+   "famille": "Conserves et sauces",
+   "produit": "Sardines à l'huile",
+   "unite": "Kg",
+   "conditionnement": "boîte 1/4 x 25",
+   "prix_base": 9.0,
+   "aliases": [
+    "Sardines à l'huile (boîtes 1/4)",
+    "Sardines à l'huile (boîtes 1/4) (≈ 125 g pièce, 80 pièces)",
+    "Sardines à l'huile (boîtes 1/4) (≈ 125 g pièce, 32 pièces)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-024",
+   "famille": "Conserves et sauces",
+   "produit": "Sauce huître",
+   "unite": "L",
+   "conditionnement": "bouteille 1 L",
+   "prix_base": 5.0,
+   "aliases": [
+    "Sauce huître"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-025",
+   "famille": "Conserves et sauces",
+   "produit": "Sauce nuoc-mâm",
+   "unite": "L",
+   "conditionnement": "bouteille 1 L",
+   "prix_base": 5.0,
+   "aliases": [
+    "Nuoc-mâm",
+    "Sauce nuoc-mâm"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-026",
+   "famille": "Conserves et sauces",
+   "produit": "Sauce soja",
+   "unite": "L",
+   "conditionnement": "bouteille 1 L",
+   "prix_base": 4.0,
+   "aliases": [
+    "Sauce soja"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-027",
+   "famille": "Conserves et sauces",
+   "produit": "Soupe de poisson prête à l'emploi",
+   "unite": "L",
+   "conditionnement": "brique 1 L",
+   "prix_base": 6.0,
+   "aliases": [
+    "Soupe de poisson prête à l'emploi (brique ou bocal)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-028",
+   "famille": "Conserves et sauces",
+   "produit": "Thon au naturel",
+   "unite": "Kg",
+   "conditionnement": "boîte 4/4",
+   "prix_base": 9.5,
+   "aliases": [
+    "Thon au naturel égoutté"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "CON-029",
+   "famille": "Conserves et sauces",
+   "produit": "Tomates concassées (boîte 5/1)",
+   "unite": "Kg",
+   "conditionnement": "boîte 5/1",
+   "prix_base": 1.6,
+   "aliases": [
+    "Concassée tomate",
+    "Tomates concassées",
+    "Tomates concassées (boîte)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-001",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Baies de genièvre",
+   "unite": "Kg",
+   "conditionnement": "boîte 250 g",
+   "prix_base": 20.0,
+   "aliases": [
+    "Baies de genièvre, clous de girofle, laurier PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-002",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Cannelle moulue",
+   "unite": "Kg",
+   "conditionnement": "boîte 500 g",
+   "prix_base": 12.0,
+   "aliases": [
+    "Cannelle (facultatif) PM",
+    "Cannelle PM",
+    "Cannelle, origan, muscade PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-003",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Clous de girofle",
+   "unite": "Kg",
+   "conditionnement": "boîte 250 g",
+   "prix_base": 25.0,
+   "aliases": [
+    "Clou de girofle, laurier, thym PM",
+    "Clou de girofle, thym, laurier PM",
+    "Clous de girofle, thym, laurier PM",
+    "Clous de girofle, thym, laurier, poivre en grains PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-004",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Colombo (épices)",
+   "unite": "Kg",
+   "conditionnement": "boîte 500 g",
+   "prix_base": 14.0,
+   "aliases": [
+    "Colombo",
+    "Colombo ou curry",
+    "COLOMBO OU CURRY"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-005",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Cumin moulu",
+   "unite": "Kg",
+   "conditionnement": "boîte 500 g",
+   "prix_base": 12.0,
+   "aliases": [
+    "Cumin moulu",
+    "Cumin moulu PM",
+    "Cumin, herbes de Provence PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-006",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Curcuma moulu",
+   "unite": "Kg",
+   "conditionnement": "boîte 500 g",
+   "prix_base": 12.0,
+   "aliases": [
+    "Curcuma"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-007",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Curry doux",
+   "unite": "Kg",
+   "conditionnement": "boîte 500 g",
+   "prix_base": 13.0,
+   "aliases": [
+    "Curry",
+    "Curry doux",
+    "Curry doux ou cumin"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-008",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Épices chili (mélange)",
+   "unite": "Kg",
+   "conditionnement": "boîte 500 g",
+   "prix_base": 13.0,
+   "aliases": [
+    "Chili",
+    "Epice Chili",
+    "Épices chili doux (cumin, paprika, origan)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-009",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Épices paëlla (mélange)",
+   "unite": "Kg",
+   "conditionnement": "boîte 500 g",
+   "prix_base": 18.0,
+   "aliases": [
+    "Épices paëlla (safran, curcuma, paprika)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-010",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Extrait de vanille",
+   "unite": "L",
+   "conditionnement": "flacon 1 L",
+   "prix_base": 28.0,
+   "aliases": [
+    "Extrait de vanille ou rhum",
+    "Vanille (gousse ou extrait) PM",
+    "Vanille (gousses ou extrait) PM",
+    "Vanille PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-011",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Fleur de sel",
+   "unite": "Kg",
+   "conditionnement": "boîte 1 kg",
+   "prix_base": 8.0,
+   "aliases": [
+    "Fleur de sel PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-012",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Gingembre moulu",
+   "unite": "Kg",
+   "conditionnement": "boîte 500 g",
+   "prix_base": 14.0,
+   "aliases": [
+    "Gingembre moulu",
+    "Gingembre moulu PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-013",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Graines de coriandre",
+   "unite": "Kg",
+   "conditionnement": "boîte 500 g",
+   "prix_base": 12.0,
+   "aliases": [
+    "Graines de coriandre"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-014",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Gros sel",
+   "unite": "Kg",
+   "conditionnement": "sac 5 kg",
+   "prix_base": 0.8,
+   "aliases": [
+    "Gros sel",
+    "Sel gros"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-015",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Harissa",
+   "unite": "Kg",
+   "conditionnement": "tube/boîte 1 kg",
+   "prix_base": 6.0,
+   "aliases": [
+    "Harissa"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-016",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Herbes de Provence",
+   "unite": "Kg",
+   "conditionnement": "boîte 500 g",
+   "prix_base": 11.0,
+   "aliases": [
+    "Herbes de provence PM",
+    "Herbes de Provence PM",
+    "Herbes de Provence, ail PM",
+    "Herbes de Provence, basilic PM",
+    "Herbes de Provence, laurier PM",
+    "Herbes de Provence, laurier, piment d'Espelette PM",
+    "Herbes de Provence, muscade PM",
+    "Herbes de Provence, persil PM",
+    "Herbes de Provence, romarin PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-017",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Jus de citron",
+   "unite": "L",
+   "conditionnement": "bouteille 1 L x 6",
+   "prix_base": 2.5,
+   "aliases": [
+    "Jus de citron"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-018",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Jus de citron vert",
+   "unite": "L",
+   "conditionnement": "bouteille 1 L",
+   "prix_base": 4.5,
+   "aliases": [
+    "Jus de citron vert"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-019",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Moutarde à l'ancienne",
+   "unite": "Kg",
+   "conditionnement": "seau 5 kg",
+   "prix_base": 9.5,
+   "aliases": [
+    "Moutarde à l'ancienne"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-020",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Moutarde de Dijon",
+   "unite": "Kg",
+   "conditionnement": "seau 5 kg",
+   "prix_base": 9.0,
+   "aliases": [
+    "Moutarde",
+    "Moutarde (service)",
+    "Moutarde de Dijon",
+    "Moutarde forte",
+    "Moutarde, cornichons (service) PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-021",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Moutarde en portions",
+   "unite": "Kg",
+   "conditionnement": "carton 300 portions (≈ 0.06 €/pièce)",
+   "prix_base": 12.0,
+   "aliases": [
+    "Moutarde (portions)"
+   ],
+   "observations": "Prix converti au kg sur la base de 4 g par pièce",
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-022",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Muscade moulue",
+   "unite": "Kg",
+   "conditionnement": "boîte 500 g",
+   "prix_base": 30.0,
+   "aliases": [
+    "Muscade",
+    "Muscade - Poivre PM",
+    "Muscade PM",
+    "Muscade, ail PM",
+    "Muscade, aneth PM",
+    "Muscade, herbes de Provence PM",
+    "Muscade, persil PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-023",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Origan séché",
+   "unite": "Kg",
+   "conditionnement": "boîte 250 g",
+   "prix_base": 14.0,
+   "aliases": [
+    "Origan PM",
+    "Origan séché",
+    "Origan, basilic PM",
+    "Origan, muscade PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-024",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Paprika doux",
+   "unite": "Kg",
+   "conditionnement": "boîte 500 g",
+   "prix_base": 11.0,
+   "aliases": [
+    "Paprika",
+    "Paprika PM",
+    "Paprika, origan PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-025",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Paprika fumé",
+   "unite": "Kg",
+   "conditionnement": "boîte 500 g",
+   "prix_base": 14.0,
+   "aliases": [
+    "Paprika fumé"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-026",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Piment d'Espelette",
+   "unite": "Kg",
+   "conditionnement": "boîte 250 g",
+   "prix_base": 60.0,
+   "aliases": [
+    "Piment d'Espelette",
+    "Piment d'espelette",
+    "Piment d'Espelette (FACULTATIF) PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-027",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Piment doux moulu",
+   "unite": "Kg",
+   "conditionnement": "boîte 500 g",
+   "prix_base": 12.0,
+   "aliases": [
+    "Piment doux PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-028",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Poivre blanc moulu",
+   "unite": "Kg",
+   "conditionnement": "boîte 1 kg",
+   "prix_base": 22.0,
+   "aliases": [
+    "Poivre blanc - Muscade - Aneth PM",
+    "Poivre blanc PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-029",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Poivre noir en grains",
+   "unite": "Kg",
+   "conditionnement": "boîte 1 kg",
+   "prix_base": 18.0,
+   "aliases": [
+    "Poivre du moulin PM",
+    "Poivre en grains, clous de girofle PM",
+    "Poivre en grains, clous de girofle, thym, laurier PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-030",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Poivre noir moulu",
+   "unite": "Kg",
+   "conditionnement": "boîte 1 kg",
+   "prix_base": 18.0,
+   "aliases": [
+    "Poivre",
+    "Poivre - Cerfeuil PM",
+    "Poivre - Ciboulette ciselée PM",
+    "Poivre - Fenouil - Laurier PM",
+    "Poivre - Herbes de Provence PM",
+    "Poivre - Laurier - Thym PM",
+    "Poivre - Muscade - Curry doux PM",
+    "Poivre - Muscade PM",
+    "Poivre - Paprika PM",
+    "Poivre - Persil ciselé PM",
+    "Poivre - Thym - Basilic ciselé PM",
+    "Poivre - Thym - Laurier - Ail PM",
+    "Poivre - Thym - Laurier PM",
+    "Poivre - Thym - Muscade PM",
+    "Poivre PM",
+    "Poivre, coriandre PM",
+    "Poivre, coriandre, anis étoilé PM",
+    "Poivre, muscade PM",
+    "Poivre, thym, laurier PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-031",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Poivre vert en grains",
+   "unite": "Kg",
+   "conditionnement": "bocal 500 g",
+   "prix_base": 25.0,
+   "aliases": [
+    "Poivre vert en grains"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-032",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Quatre-épices",
+   "unite": "Kg",
+   "conditionnement": "boîte 500 g",
+   "prix_base": 16.0,
+   "aliases": [
+    "Quatre-épices"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-033",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Ras el hanout (épices couscous)",
+   "unite": "Kg",
+   "conditionnement": "boîte 500 g",
+   "prix_base": 14.0,
+   "aliases": [
+    "Épices couscous (ras el hanout)",
+    "Ras el hanout",
+    "Ras el hanout PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-034",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Spigol (mélange safrané)",
+   "unite": "Kg",
+   "conditionnement": "boîte 100 g",
+   "prix_base": 110.0,
+   "aliases": [
+    "Safran ou spigol"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-035",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Sel fin",
+   "unite": "Kg",
+   "conditionnement": "sac 1 kg x 10",
+   "prix_base": 2.0,
+   "aliases": [
+    "Sel",
+    "Sel (rectifier, Morteau et comté salés)",
+    "Sel (rectifier, morue déjà salée)",
+    "Sel (rectifier, sauce soja salée)",
+    "Sel (rectifier, saucisses salées)",
+    "Sel (viande déjà salée, rectifier le lendemain)",
+    "Sel - Poivre - Paprika PM",
+    "Sel - Poivre PM",
+    "Sel fin",
+    "Sel fin PM",
+    "Sel PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-036",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Thym / laurier (bouquet garni)",
+   "unite": "Kg",
+   "conditionnement": "boîte 250 g",
+   "prix_base": 16.0,
+   "aliases": [
+    "Bouquet garni (thym, laurier) PM",
+    "Bouquet garni, clous de girofle PM",
+    "Bouquet garni, poivre en grains, clous de girofle PM",
+    "Laurier - Thym PM",
+    "Laurier, thym PM",
+    "Laurier, thym, baies de genièvre PM",
+    "Laurier, thym, clou de girofle PM",
+    "Thym PM",
+    "Thym, estragon PM",
+    "Thym, laurier (pochage) PM",
+    "Thym, laurier PM",
+    "Thym, laurier, cannelle PM",
+    "Thym, laurier, clou de girofle PM",
+    "Thym, laurier, estragon PM",
+    "Thym, laurier, romarin PM",
+    "Thym, piment doux, combava PM",
+    "Thym, romarin PM",
+    "Thym, romarin, laurier PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-037",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Vinaigre balsamique",
+   "unite": "L",
+   "conditionnement": "bidon 5 L",
+   "prix_base": 3.5,
+   "aliases": [
+    "Vinaigre balsamique"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-038",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Vinaigre blanc (alcool)",
+   "unite": "L",
+   "conditionnement": "bidon 5 L",
+   "prix_base": 1.0,
+   "aliases": [
+    "Vinaigre blanc"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-039",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Vinaigre de cidre",
+   "unite": "L",
+   "conditionnement": "bidon 5 L",
+   "prix_base": 1.8,
+   "aliases": [
+    "Vinaigre de cidre"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-040",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Vinaigre de riz",
+   "unite": "L",
+   "conditionnement": "bouteille 1 L",
+   "prix_base": 4.0,
+   "aliases": [
+    "Vinaigre de riz ou de cidre",
+    "Vinaigre de riz ou vinaigre blanc"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-041",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Vinaigre de vin blanc",
+   "unite": "L",
+   "conditionnement": "bidon 5 L",
+   "prix_base": 1.6,
+   "aliases": [
+    "Vinaigre de vin blanc"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-042",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Vinaigre de vin rouge",
+   "unite": "L",
+   "conditionnement": "bidon 5 L",
+   "prix_base": 1.5,
+   "aliases": [
+    "Vinaigre",
+    "Vinaigre de vin"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-043",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Vinaigre de xérès",
+   "unite": "L",
+   "conditionnement": "bouteille 1 L",
+   "prix_base": 6.0,
+   "aliases": [
+    "Vinaigre de xérès",
+    "Vinaigre de Xérès"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "EPC-044",
+   "famille": "Épices, herbes et condiments",
+   "produit": "Vinaigrette prête à l'emploi",
+   "unite": "L",
+   "conditionnement": "bidon 5 L",
+   "prix_base": 3.0,
+   "aliases": [
+    "Vinaigrette"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIN-001",
+   "famille": "Vins, alcools et boissons",
+   "produit": "Bière brune",
+   "unite": "L",
+   "conditionnement": "bouteille 75 cL x 6",
+   "prix_base": 3.0,
+   "aliases": [
+    "Bière brune"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIN-002",
+   "famille": "Vins, alcools et boissons",
+   "produit": "Calvados",
+   "unite": "L",
+   "conditionnement": "bouteille 1 L",
+   "prix_base": 18.0,
+   "aliases": [
+    "Calvados"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIN-003",
+   "famille": "Vins, alcools et boissons",
+   "produit": "Cidre brut",
+   "unite": "L",
+   "conditionnement": "bouteille 75 cL x 6",
+   "prix_base": 2.5,
+   "aliases": [
+    "Cidre brut",
+    "Cidre ou jus de pomme"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIN-004",
+   "famille": "Vins, alcools et boissons",
+   "produit": "Cognac de cuisine",
+   "unite": "L",
+   "conditionnement": "bouteille 1 L",
+   "prix_base": 22.0,
+   "aliases": [
+    "Cognac ou armagnac (facultatif)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIN-005",
+   "famille": "Vins, alcools et boissons",
+   "produit": "Jus d'orange",
+   "unite": "L",
+   "conditionnement": "brique 1 L x 12",
+   "prix_base": 1.5,
+   "aliases": [
+    "Jus d'orange"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIN-006",
+   "famille": "Vins, alcools et boissons",
+   "produit": "Madère",
+   "unite": "L",
+   "conditionnement": "bouteille 1 L",
+   "prix_base": 8.0,
+   "aliases": [
+    "Madère ou porto"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIN-007",
+   "famille": "Vins, alcools et boissons",
+   "produit": "Porto",
+   "unite": "L",
+   "conditionnement": "bouteille 1 L",
+   "prix_base": 9.0,
+   "aliases": [
+    "Porto (facultatif)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIN-008",
+   "famille": "Vins, alcools et boissons",
+   "produit": "Rhum de cuisine",
+   "unite": "L",
+   "conditionnement": "bouteille 1 L",
+   "prix_base": 14.0,
+   "aliases": [
+    "Rhum ou extrait de vanille PM"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIN-009",
+   "famille": "Vins, alcools et boissons",
+   "produit": "Sirop de grenadine",
+   "unite": "L",
+   "conditionnement": "bidon 1 L",
+   "prix_base": 3.5,
+   "aliases": [
+    "Sirop de grenadine"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIN-010",
+   "famille": "Vins, alcools et boissons",
+   "produit": "Vin blanc de cuisine",
+   "unite": "L",
+   "conditionnement": "BIB 10 L",
+   "prix_base": 2.0,
+   "aliases": [
+    "Vin Blanc",
+    "Vin blanc",
+    "Vin blanc (Riesling)",
+    "Vin blanc du Jura"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "VIN-011",
+   "famille": "Vins, alcools et boissons",
+   "produit": "Vin rouge de cuisine",
+   "unite": "L",
+   "conditionnement": "BIB 10 L",
+   "prix_base": 2.0,
+   "aliases": [
+    "Vin rouge"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "ELA-001",
+   "famille": "Produits élaborés (prêts à l'emploi)",
+   "produit": "Choucroute crue",
+   "unite": "Kg",
+   "conditionnement": "seau 5 kg",
+   "prix_base": 2.5,
+   "aliases": [
+    "Choucroute crue"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "ELA-002",
+   "famille": "Produits élaborés (prêts à l'emploi)",
+   "produit": "Gnocchis de pommes de terre frais sous vide",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg x 6",
+   "prix_base": 3.5,
+   "aliases": [
+    "Gnocchis de pommes de terre frais sous vide"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "ELA-003",
+   "famille": "Produits élaborés (prêts à l'emploi)",
+   "produit": "Godiveaux (quenelles de veau) 80 g",
+   "unite": "Kg",
+   "conditionnement": "barquette 2,5 kg",
+   "prix_base": 7.5,
+   "aliases": [
+    "Godiveaux (quenelles de veau) 80 g prêts à l'emploi"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "ELA-004",
+   "famille": "Produits élaborés (prêts à l'emploi)",
+   "produit": "Quenelles de volaille 30 g",
+   "unite": "Kg",
+   "conditionnement": "barquette 2,5 kg",
+   "prix_base": 7.0,
+   "aliases": [
+    "Quenelles de volaille 30 g"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "ELA-005",
+   "famille": "Produits élaborés (prêts à l'emploi)",
+   "produit": "Quenelles de volaille 80 g",
+   "unite": "Kg",
+   "conditionnement": "barquette 2,5 kg",
+   "prix_base": 7.0,
+   "aliases": [
+    "Quenelles de volaille 80 g prêtes à l'emploi"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "ELA-006",
+   "famille": "Produits élaborés (prêts à l'emploi)",
+   "produit": "Raviolis frais au bœuf (5ème gamme)",
+   "unite": "Kg",
+   "conditionnement": "sachet 1 kg x 6",
+   "prix_base": 5.5,
+   "aliases": [
+    "Raviolis frais au bœuf (5ème gamme)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "PAT-001",
+   "famille": "Pain, pâtisserie et desserts",
+   "produit": "Bouchées feuilletées vides 40 g",
+   "unite": "Pièce",
+   "conditionnement": "carton 80 pièces",
+   "prix_base": 0.35,
+   "aliases": [
+    "Bouchées feuilletées vides",
+    "Croûtes feuilletées bouchée à la reine (80 pièces de 40 g)",
+    "Bouchées feuilletées vides (≈ 40 g pièce, 80 pièces)",
+    "Bouchées feuilletées vides (≈ 40 g pièce, 50 pièces)",
+    "Croûtes feuilletées bouchée à la reine (80 pièces de 40 g) (≈ 40 g pièce, 70 pièces)"
+   ],
+   "observations": "Commandé à la pièce ; poids moyen 40 g par pièce, prix ramené au kg dans les fiches",
+   "poids_piece": 0.04
+  },
+  {
+   "code": "PAT-002",
+   "famille": "Pain, pâtisserie et desserts",
+   "produit": "Caramel beurre salé prêt à l'emploi",
+   "unite": "Kg",
+   "conditionnement": "seau 1 kg",
+   "prix_base": 8.0,
+   "aliases": [
+    "Caramel beurre salé prêt à l'emploi"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "PAT-003",
+   "famille": "Pain, pâtisserie et desserts",
+   "produit": "Crêpes nature Ø 28 cm",
+   "unite": "Pièce",
+   "conditionnement": "carton 60 pièces",
+   "prix_base": 0.4,
+   "aliases": [
+    "Crêpes nature prêtes à l'emploi Ø 28 cm (1 par portion)",
+    "Crêpes nature prêtes à l'emploi Ø 28 cm (1 par portion) (≈ 60 g pièce, 80 pièces)",
+    "Crêpes nature prêtes à l'emploi Ø 28 cm (1 par portion) (≈ 60 g pièce, 63 pièces)"
+   ],
+   "observations": "Commandé à la pièce ; poids moyen 60 g par pièce, prix ramené au kg dans les fiches",
+   "poids_piece": 0.06
+  },
+  {
+   "code": "PAT-004",
+   "famille": "Pain, pâtisserie et desserts",
+   "produit": "Crêpes salées prêtes à l'emploi 50 g",
+   "unite": "Pièce",
+   "conditionnement": "carton 100 pièces",
+   "prix_base": 0.3,
+   "aliases": [
+    "Crêpes salées prêtes à l'emploi (50 g, 2 par portion)",
+    "Crêpes salées prêtes à l'emploi (ou pâte maison)",
+    "Crêpes salées prêtes à l'emploi (ou pâte maison) (≈ 50 g pièce, 80 pièces)",
+    "Crêpes salées prêtes à l'emploi (ou pâte maison) (≈ 50 g pièce, 56 pièces)",
+    "Crêpes salées prêtes à l'emploi (50 g, 2 par portion) (≈ 50 g pièce, 117 pièces)"
+   ],
+   "observations": "Commandé à la pièce ; poids moyen 50 g par pièce, prix ramené au kg dans les fiches",
+   "poids_piece": 0.05
+  },
+  {
+   "code": "PAT-005",
+   "famille": "Pain, pâtisserie et desserts",
+   "produit": "Croustades feuilletées pur beurre",
+   "unite": "Pièce",
+   "conditionnement": "carton 48 pièces",
+   "prix_base": 0.45,
+   "aliases": [
+    "Croustades feuilletées pur beurre (1 par portion)",
+    "Croustades feuilletées pur beurre (1 par portion) (≈ 25 g pièce, 80 pièces)",
+    "Croustades feuilletées pur beurre (1 par portion) (≈ 25 g pièce, 66 pièces)"
+   ],
+   "observations": "Commandé à la pièce ; poids moyen 25 g par pièce, prix ramené au kg dans les fiches",
+   "poids_piece": 0.025
+  },
+  {
+   "code": "PAT-006",
+   "famille": "Pain, pâtisserie et desserts",
+   "produit": "Croûtons",
+   "unite": "Kg",
+   "conditionnement": "sachet 500 g x 10",
+   "prix_base": 6.0,
+   "aliases": [
+    "Croûtons",
+    "Croûtons - Rouille - Emmental râpé (service)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "PAT-007",
+   "famille": "Pain, pâtisserie et desserts",
+   "produit": "Génoise chocolat prête à l'emploi (plaque)",
+   "unite": "Pièce",
+   "conditionnement": "carton 6 plaques 40x60",
+   "prix_base": 6.5,
+   "aliases": [
+    "Génoise chocolat prête à l'emploi",
+    "Génoise chocolat prête à l'emploi (≈ 1 kg pièce, 2 pièces)"
+   ],
+   "observations": "Commandé à la pièce ; poids moyen 1.0 kg par pièce, prix ramené au kg dans les fiches",
+   "poids_piece": 1.0
+  },
+  {
+   "code": "PAT-008",
+   "famille": "Pain, pâtisserie et desserts",
+   "produit": "Génoise nature prête à l'emploi (plaque 40x60)",
+   "unite": "Pièce",
+   "conditionnement": "carton 6 plaques 40x60",
+   "prix_base": 6.0,
+   "aliases": [
+    "Biscuit cuillère ou génoise prête à l'emploi",
+    "Génoise roulable prête à l'emploi (plaques 40x60)",
+    "Génoise roulable prête à l'emploi (plaques 40x60) (≈ 1 kg pièce, 3 pièces)",
+    "Biscuit cuillère ou génoise prête à l'emploi (≈ 1 kg pièce, 2 pièces)"
+   ],
+   "observations": "Commandé à la pièce ; poids moyen 1.0 kg par pièce, prix ramené au kg dans les fiches",
+   "poids_piece": 1.0
+  },
+  {
+   "code": "PAT-009",
+   "famille": "Pain, pâtisserie et desserts",
+   "produit": "Glaçage chocolat prêt à l'emploi",
+   "unite": "Kg",
+   "conditionnement": "seau 1 kg",
+   "prix_base": 8.5,
+   "aliases": [
+    "Glaçage chocolat prêt à l'emploi"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "PAT-010",
+   "famille": "Pain, pâtisserie et desserts",
+   "produit": "Nappage neutre",
+   "unite": "Kg",
+   "conditionnement": "seau 3 kg",
+   "prix_base": 5.0,
+   "aliases": [
+    "Nappage neutre"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "PAT-011",
+   "famille": "Pain, pâtisserie et desserts",
+   "produit": "Nappage rouge",
+   "unite": "Kg",
+   "conditionnement": "seau 3 kg",
+   "prix_base": 5.0,
+   "aliases": [
+    "Nappage rouge ou neutre"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "PAT-012",
+   "famille": "Pain, pâtisserie et desserts",
+   "produit": "Pain d'épices",
+   "unite": "Kg",
+   "conditionnement": "pain 1 kg",
+   "prix_base": 7.0,
+   "aliases": [
+    "Pain d'épices"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "PAT-013",
+   "famille": "Pain, pâtisserie et desserts",
+   "produit": "Pain de campagne tranché",
+   "unite": "Kg",
+   "conditionnement": "pain 1 kg tranché",
+   "prix_base": 3.0,
+   "aliases": [
+    "Pain de campagne ou pain brioché tranché",
+    "Pain de campagne tranché (50 g la tranche)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "PAT-014",
+   "famille": "Pain, pâtisserie et desserts",
+   "produit": "Pain de mie tranché",
+   "unite": "Kg",
+   "conditionnement": "paquet 800 g",
+   "prix_base": 2.8,
+   "aliases": [
+    "Pain de mie (croûtons)",
+    "Pain de mie ou baguette (croûtons)",
+    "Pain de mie ou pain tranché",
+    "Pain de mie tranché",
+    "Pain toasté ou blinis",
+    "Pain de mie tranché (≈ 30 g pièce, 160 pièces)",
+    "Pain toasté ou blinis (≈ 30 g pièce, 80 pièces)",
+    "Pain de mie tranché (≈ 30 g pièce, 118 pièces)",
+    "Pain toasté ou blinis (≈ 30 g pièce, 48 pièces)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "PAT-015",
+   "famille": "Pain, pâtisserie et desserts",
+   "produit": "Pains hamburger 55 g",
+   "unite": "Pièce",
+   "conditionnement": "carton 80 pièces",
+   "prix_base": 0.25,
+   "aliases": [
+    "Pains hamburger (80 pièces de 55 g)",
+    "Pains hamburger (80 pièces de 55 g) (≈ 55 g pièce, 71 pièces)"
+   ],
+   "observations": "Commandé à la pièce ; poids moyen 55 g par pièce, prix ramené au kg dans les fiches",
+   "poids_piece": 0.055
+  },
+  {
+   "code": "PAT-016",
+   "famille": "Pain, pâtisserie et desserts",
+   "produit": "Pains pita 70 g",
+   "unite": "Pièce",
+   "conditionnement": "carton 80 pièces",
+   "prix_base": 0.3,
+   "aliases": [
+    "Pains pita (80 pièces de 70 g)",
+    "Pains pita (80 pièces de 70 g) (≈ 70 g pièce, 72 pièces)"
+   ],
+   "observations": "Commandé à la pièce ; poids moyen 70 g par pièce, prix ramené au kg dans les fiches",
+   "poids_piece": 0.07
+  },
+  {
+   "code": "PAT-017",
+   "famille": "Pain, pâtisserie et desserts",
+   "produit": "Pâte à brioche crue surgelée",
+   "unite": "Kg",
+   "conditionnement": "carton 5 kg",
+   "prix_base": 5.5,
+   "aliases": [
+    "Pâte à brioche crue (surgelée prête à l'emploi ou maison)"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "PAT-018",
+   "famille": "Pain, pâtisserie et desserts",
+   "produit": "Pâte à flammekueche (abaisses 600 g)",
+   "unite": "Pièce",
+   "conditionnement": "carton 10 abaisses",
+   "prix_base": 2.5,
+   "aliases": [
+    "Pâte à flammekueche prête à l'emploi (10 abaisses de 600 g)",
+    "Pâte à flammekueche prête à l'emploi (10 abaisses de 600 g) (≈ 600 g pièce, 9 pièces)"
+   ],
+   "observations": "Commandé à la pièce ; poids moyen 600 g par pièce, prix ramené au kg dans les fiches",
+   "poids_piece": 0.6
+  },
+  {
+   "code": "PAT-019",
+   "famille": "Pain, pâtisserie et desserts",
+   "produit": "Pâte brisée plaque 60x40",
+   "unite": "Pièce",
+   "conditionnement": "carton 10 plaques",
+   "prix_base": 3.0,
+   "aliases": [
+    "Pâte brisée en plaque 60x40",
+    "Pâte brisée en plaque 60x40 (≈ 900 g pièce, 4 pièces)",
+    "Pâte brisée en plaque 60x40 (≈ 900 g pièce, 4 pièces)",
+    "Pâte brisée en plaque 60x40 (≈ 900 g pièce, 4 pièces)",
+    "Pâte brisée en plaque 60x40 (≈ 900 g pièce, 4 pièces)",
+    "Pâte brisée en plaque 60x40 (≈ 900 g pièce, 4 pièces)",
+    "Pâte brisée en plaque 60x40 (≈ 900 g pièce, 3 pièces)",
+    "Pâte brisée en plaque 60x40 (≈ 900 g pièce, 2 pièces)"
+   ],
+   "observations": "Commandé à la pièce ; poids moyen 900 g par pièce, prix ramené au kg dans les fiches",
+   "poids_piece": 0.9
+  },
+  {
+   "code": "PAT-020",
+   "famille": "Pain, pâtisserie et desserts",
+   "produit": "Pâte feuilletée plaque 60x40",
+   "unite": "Pièce",
+   "conditionnement": "carton 10 plaques",
+   "prix_base": 3.5,
+   "aliases": [
+    "Pâte feuilletée en plaque 60x40",
+    "Pâte feuilletée prête à l'emploi",
+    "Pâte feuilletée prête à l'emploi (plaques ou rouleaux)",
+    "Pâte feuilletée en plaque 60x40 (≈ 900 g pièce, 4 pièces)",
+    "Pâte feuilletée en plaque 60x40 (≈ 900 g pièce, 3 pièces)",
+    "Pâte feuilletée prête à l'emploi (plaques ou rouleaux) (≈ 900 g pièce, 4 pièces)",
+    "Pâte feuilletée prête à l'emploi (≈ 900 g pièce, 4 pièces)"
+   ],
+   "observations": "Commandé à la pièce ; poids moyen 900 g par pièce, prix ramené au kg dans les fiches",
+   "poids_piece": 0.9
+  },
+  {
+   "code": "PAT-021",
+   "famille": "Pain, pâtisserie et desserts",
+   "produit": "Pâte sucrée prête à l'emploi",
+   "unite": "Pièce",
+   "conditionnement": "carton 10 plaques",
+   "prix_base": 3.2,
+   "aliases": [
+    "Pâte sucrée prête à l'emploi (rouleaux ou plaques)",
+    "Pâte sucrée prête à l'emploi (rouleaux ou plaques) (≈ 900 g pièce, 3 pièces)"
+   ],
+   "observations": "Commandé à la pièce ; poids moyen 900 g par pièce, prix ramené au kg dans les fiches",
+   "poids_piece": 0.9
+  },
+  {
+   "code": "DIV-001",
+   "famille": "Divers",
+   "produit": "Eau",
+   "unite": "L",
+   "conditionnement": "réseau",
+   "prix_base": 0.0,
+   "aliases": [
+    "Eau",
+    "Eau (4,5 L par bac)",
+    "Eau (purée)",
+    "Eau froide"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "DIV-002",
+   "famille": "Divers",
+   "produit": "Finition J+1 (sans objet)",
+   "unite": "Pièce",
+   "conditionnement": "-",
+   "prix_base": 0.0,
+   "aliases": [
+    "Finition J+1"
+   ],
+   "poids_piece": null
+  },
+  {
+   "code": "DIV-003",
+   "famille": "Divers",
+   "produit": "Papier cuisson",
+   "unite": "Pièce",
+   "conditionnement": "carton 500 feuilles 40x60",
+   "prix_base": 0.04,
+   "aliases": [
+    "Papier cuisson"
+   ],
+   "poids_piece": null
+  }
+ ]
+}
