@@ -163,7 +163,8 @@ for cat in order:
         ws.page_setup.orientation = 'landscape'
         ws.page_setup.fitToWidth = 1; ws.page_setup.fitToHeight = 1
         ws.sheet_properties.pageSetUpPr.fitToPage = True
-        ws.print_area = 'A1:G24'
+        ws.print_area = 'A1:H24' if piece_rows else 'A1:G24'
+        if len(str(f['vp'])) > 12: ws['E2'].font = Font(name='Calibri', size=12)
         index.append((cat, nom, sname, f['mode'], f['titre']))
 
 # fiches bonus du chef (non présentes au menu)
