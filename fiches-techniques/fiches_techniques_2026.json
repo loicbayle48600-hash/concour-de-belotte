@@ -8,7 +8,7 @@
   "cuisson": "Préparation froide\nBac gastro + film, 0/+3°C\nVinaigrette à part",
   "ingredients": [
    {
-    "produit": "Salade verte (batavia, laitue ou frisée)",
+    "produit": "Salade verte (batavia, laitue ou frisée) (≈ 500 g pièce, 9 pièces)",
     "qte": 4.66,
     "unite": "Kg"
    },
@@ -209,7 +209,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Concombre en dés",
+    "produit": "Concombre en dés (≈ 400 g pièce, 2 pièces)",
     "qte": 0.905,
     "unite": "Kg"
    },
@@ -266,12 +266,12 @@
   "cuisson": "Four mixte 180°C chaleur sèche\nPlaques gastro + papier cuisson\n15 à 20 min",
   "ingredients": [
    {
-    "produit": "Feuilletés jambon fromage surgelés (90 g pièce)",
+    "produit": "Feuilletés jambon fromage surgelés (90 g pièce) (≈ 90 g pièce, 63 pièces)",
     "qte": 5.71,
     "unite": "Kg"
    },
    {
-    "produit": "Salade frisée",
+    "produit": "Salade frisée (≈ 500 g pièce, 3 pièces)",
     "qte": 1.36,
     "unite": "Kg"
    },
@@ -762,7 +762,7 @@
   "cuisson": "Préparation froide\nTranchage le jour même\nBac gastro + film, 0/+3°C",
   "ingredients": [
    {
-    "produit": "Melon charentais (≈ 1 kg pièce)",
+    "produit": "Melon charentais (≈ 1 kg pièce) (≈ 1 kg pièce, 9 pièces)",
     "qte": 9.29,
     "unite": "Kg"
    },
@@ -804,7 +804,7 @@
   "cuisson": "Préparation froide\nTranchage le jour même\nBac gastro + film, 0/+3°C",
   "ingredients": [
    {
-    "produit": "Pastèque",
+    "produit": "Pastèque (≈ 4 kg pièce, 3 pièces)",
     "qte": 11.37,
     "unite": "Kg"
    },
@@ -851,7 +851,7 @@
   "cuisson": "Préparation froide\nBac gastro + film, 0/+3°C",
   "ingredients": [
    {
-    "produit": "Pamplemousse rose (≈ 400 g pièce, 1/2 par portion)",
+    "produit": "Pamplemousse rose (≈ 400 g pièce, 1/2 par portion) (≈ 400 g pièce, 34 pièces)",
     "qte": 13.42,
     "unite": "Kg"
    },
@@ -950,7 +950,7 @@
   "cuisson": "Préparation froide\nDécoupe au plus près du service\nBac gastro + film, 0/+3°C",
   "ingredients": [
    {
-    "produit": "Avocats mûrs (1/2 par portion)",
+    "produit": "Avocats mûrs (1/2 par portion) (≈ 200 g pièce, 34 pièces)",
     "qte": 6.7,
     "unite": "Kg"
    },
@@ -1441,7 +1441,7 @@
   "cuisson": "Four mixte 220°C chaleur sèche\nPlaques gastro ou grilles\n10 à 12 min",
   "ingredients": [
    {
-    "produit": "Pizzas surgelées prêtes à cuire (400 g pièce, 1/4 par portion)",
+    "produit": "Pizzas surgelées prêtes à cuire (400 g pièce, 1/4 par portion) (≈ 400 g pièce, 16 pièces)",
     "qte": 6.45,
     "unite": "Kg"
    },
@@ -1451,7 +1451,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Salade verte",
+    "produit": "Salade verte (≈ 500 g pièce, 3 pièces)",
     "qte": 1.38,
     "unite": "Kg"
    },
@@ -1508,7 +1508,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Salade frisée",
+    "produit": "Salade frisée (≈ 500 g pièce, 2 pièces)",
     "qte": 0.982,
     "unite": "Kg"
    },
@@ -1550,12 +1550,12 @@
     "unite": "Kg"
    },
    {
-    "produit": "Salade frisée",
+    "produit": "Salade frisée (≈ 500 g pièce, 2 pièces)",
     "qte": 0.907,
     "unite": "Kg"
    },
    {
-    "produit": "Radis",
+    "produit": "Radis (≈ 300 g pièce, 2 pièces)",
     "qte": 0.454,
     "unite": "Kg"
    },
@@ -1577,7 +1577,7 @@
   "cuisson": "Préparation froide\nBac gastro + film, 0/+3°C",
   "ingredients": [
    {
-    "produit": "Chou blanc",
+    "produit": "Chou blanc (≈ 1.5 kg pièce, 2 pièces)",
     "qte": 3.54,
     "unite": "Kg"
    },
@@ -1644,7 +1644,7 @@
   "cuisson": "Préparation froide\nBac gastro + film, 0/+3°C",
   "ingredients": [
    {
-    "produit": "Chou chinois",
+    "produit": "Chou chinois (≈ 1 kg pièce, 4 pièces)",
     "qte": 4.44,
     "unite": "Kg"
    },
@@ -1845,7 +1845,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Salade frisée",
+    "produit": "Salade frisée (≈ 500 g pièce, 2 pièces)",
     "qte": 0.769,
     "unite": "Kg"
    },
@@ -1912,7 +1912,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Salade frisée",
+    "produit": "Salade frisée (≈ 500 g pièce, 2 pièces)",
     "qte": 0.762,
     "unite": "Kg"
    },
@@ -2165,7 +2165,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Salade frisée",
+    "produit": "Salade frisée (≈ 500 g pièce, 2 pièces)",
     "qte": 0.911,
     "unite": "Kg"
    },
@@ -2212,7 +2212,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Salade frisée",
+    "produit": "Salade frisée (≈ 500 g pièce, 2 pièces)",
     "qte": 0.982,
     "unite": "Kg"
    },
@@ -2259,7 +2259,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Salade frisée",
+    "produit": "Salade frisée (≈ 500 g pièce, 2 pièces)",
     "qte": 0.941,
     "unite": "Kg"
    },
@@ -2683,7 +2683,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Concombres",
+    "produit": "Concombres (≈ 400 g pièce, 1 pièces)",
     "qte": 0.446,
     "unite": "Kg"
    },
@@ -2765,7 +2765,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Concombres",
+    "produit": "Concombres (≈ 400 g pièce, 1 pièces)",
     "qte": 0.333,
     "unite": "Kg"
    },
@@ -3291,7 +3291,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Salade verte 4ème gamme",
+    "produit": "Salade verte 4ème gamme (≈ 500 g pièce, 1 pièces)",
     "qte": 0.589,
     "unite": "Kg"
    },
@@ -3328,7 +3328,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Salade verte 4ème gamme",
+    "produit": "Salade verte 4ème gamme (≈ 500 g pièce, 2 pièces)",
     "qte": 0.808,
     "unite": "Kg"
    },
@@ -3494,7 +3494,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Salade verte 4ème gamme",
+    "produit": "Salade verte 4ème gamme (≈ 500 g pièce, 1 pièces)",
     "qte": 0.322,
     "unite": "Kg"
    },
@@ -3950,7 +3950,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Salade romaine ou laitue 4ème gamme",
+    "produit": "Salade romaine ou laitue 4ème gamme (≈ 500 g pièce, 5 pièces)",
     "qte": 2.55,
     "unite": "Kg"
    },
@@ -3970,7 +3970,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Yaourt nature",
+    "produit": "Yaourt nature (≈ 125 g pièce, 3 pièces)",
     "qte": 0.382,
     "unite": "Kg"
    },
@@ -4037,7 +4037,7 @@
     "unite": "L"
    },
    {
-    "produit": "Salade verte 4ème gamme",
+    "produit": "Salade verte 4ème gamme (≈ 500 g pièce, 1 pièces)",
     "qte": 0.685,
     "unite": "Kg"
    },
@@ -4089,7 +4089,7 @@
     "unite": "L"
    },
    {
-    "produit": "Salade verte 4ème gamme",
+    "produit": "Salade verte 4ème gamme (≈ 500 g pièce, 2 pièces)",
     "qte": 0.932,
     "unite": "Kg"
    },
@@ -4342,7 +4342,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Concombres",
+    "produit": "Concombres (≈ 400 g pièce, 2 pièces)",
     "qte": 0.898,
     "unite": "Kg"
    },
@@ -4769,7 +4769,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Salade verte (batavia, frisée) 4ème gamme",
+    "produit": "Salade verte (batavia, frisée) 4ème gamme (≈ 500 g pièce, 5 pièces)",
     "qte": 2.54,
     "unite": "Kg"
    },
@@ -4846,7 +4846,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Salade verte 4ème gamme",
+    "produit": "Salade verte 4ème gamme (≈ 500 g pièce, 1 pièces)",
     "qte": 0.563,
     "unite": "Kg"
    },
@@ -5022,7 +5022,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Concombres",
+    "produit": "Concombres (≈ 400 g pièce, 6 pièces)",
     "qte": 2.25,
     "unite": "Kg"
    },
@@ -5228,7 +5228,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Salade verte 4ème gamme",
+    "produit": "Salade verte 4ème gamme (≈ 500 g pièce, 2 pièces)",
     "qte": 1.04,
     "unite": "Kg"
    },
@@ -5290,7 +5290,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Salade verte 4ème gamme",
+    "produit": "Salade verte 4ème gamme (≈ 500 g pièce, 1 pièces)",
     "qte": 0.727,
     "unite": "Kg"
    },
@@ -5399,7 +5399,7 @@
   "cuisson": "Four mixte 180°C\nBacs gastro 1/1, gratiner 20 à 25 min",
   "ingredients": [
    {
-    "produit": "Crêpes salées prêtes à l'emploi (50 g, 2 par portion)",
+    "produit": "Crêpes salées prêtes à l'emploi (50 g, 2 par portion) (≈ 50 g pièce, 117 pièces)",
     "qte": 5.87,
     "unite": "Kg"
    },
@@ -6057,7 +6057,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Salade verte 4ème gamme",
+    "produit": "Salade verte 4ème gamme (≈ 500 g pièce, 1 pièces)",
     "qte": 0.617,
     "unite": "Kg"
    },
@@ -7015,7 +7015,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Salade verte 4ème gamme",
+    "produit": "Salade verte 4ème gamme (≈ 500 g pièce, 1 pièces)",
     "qte": 0.666,
     "unite": "Kg"
    },
@@ -9537,7 +9537,7 @@
   "cuisson": "Four mixte 220°C chaleur sèche\nPlaques gastro 1/1 pâtissières",
   "ingredients": [
    {
-    "produit": "Pâte à flammekueche prête à l'emploi (10 abaisses de 600 g)",
+    "produit": "Pâte à flammekueche prête à l'emploi (10 abaisses de 600 g) (≈ 600 g pièce, 9 pièces)",
     "qte": 5.33,
     "unite": "Kg"
    },
@@ -10041,7 +10041,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Pains hamburger (80 pièces de 55 g)",
+    "produit": "Pains hamburger (80 pièces de 55 g) (≈ 55 g pièce, 71 pièces)",
     "qte": 3.88,
     "unite": "Kg"
    },
@@ -10056,7 +10056,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Salade iceberg",
+    "produit": "Salade iceberg (≈ 500 g pièce, 3 pièces)",
     "qte": 1.32,
     "unite": "Kg"
    },
@@ -10113,7 +10113,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Pains pita (80 pièces de 70 g)",
+    "produit": "Pains pita (80 pièces de 70 g) (≈ 70 g pièce, 72 pièces)",
     "qte": 5.07,
     "unite": "Kg"
    },
@@ -10128,7 +10128,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Salade iceberg",
+    "produit": "Salade iceberg (≈ 500 g pièce, 3 pièces)",
     "qte": 1.36,
     "unite": "Kg"
    },
@@ -10411,7 +10411,7 @@
   "cuisson": "Four mixte 180°C (croûtes) et sauteuse (garniture)\nPlaques gastro + bacs gastro",
   "ingredients": [
    {
-    "produit": "Croûtes feuilletées bouchée à la reine (80 pièces de 40 g)",
+    "produit": "Croûtes feuilletées bouchée à la reine (80 pièces de 40 g) (≈ 40 g pièce, 70 pièces)",
     "qte": 2.81,
     "unite": "Kg"
    },
@@ -10632,7 +10632,7 @@
   "cuisson": "Cuisson 85°C four vapeur\nBac gastro avec couvercles",
   "ingredients": [
    {
-    "produit": "Chou vert frisé",
+    "produit": "Chou vert frisé (≈ 1.2 kg pièce, 5 pièces)",
     "qte": 6.18,
     "unite": "Kg"
    },
@@ -13737,7 +13737,7 @@
   "cuisson": "Four mixte 180°C\nPlaques ou bacs gastro 1/1 H4\nDorure, cheminée",
   "ingredients": [
    {
-    "produit": "Pâte feuilletée prête à l'emploi (plaques ou rouleaux)",
+    "produit": "Pâte feuilletée prête à l'emploi (plaques ou rouleaux) (≈ 900 g pièce, 4 pièces)",
     "qte": 3.84,
     "unite": "Kg"
    },
@@ -13834,7 +13834,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Pâte feuilletée prête à l'emploi",
+    "produit": "Pâte feuilletée prête à l'emploi (≈ 900 g pièce, 4 pièces)",
     "qte": 3.76,
     "unite": "Kg"
    },
@@ -17085,7 +17085,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Céleri boule cubes",
+    "produit": "Céleri boule cubes (≈ 800 g pièce, 1 pièces)",
     "qte": 0.433,
     "unite": "Kg"
    },
@@ -17358,7 +17358,7 @@
     "unite": "Kg"
    },
    {
-    "produit": "Ananas frais (ou 4ème gamme)",
+    "produit": "Ananas frais (ou 4ème gamme) (≈ 1.5 kg pièce, 1 pièces)",
     "qte": 1.08,
     "unite": "Kg"
    },
@@ -17452,7 +17452,7 @@
   "cuisson": "Préparation froide (montage)\nPlaques gastro + film, 0/+3°C",
   "ingredients": [
    {
-    "produit": "Génoise roulable prête à l'emploi (plaques 40x60)",
+    "produit": "Génoise roulable prête à l'emploi (plaques 40x60) (≈ 1 kg pièce, 3 pièces)",
     "qte": 2.87,
     "unite": "Kg"
    },
@@ -17566,7 +17566,7 @@
   "cuisson": "Préparation froide\nCadres inox ou verrines, 0/+3°C",
   "ingredients": [
    {
-    "produit": "Biscuit cuillère ou génoise prête à l'emploi",
+    "produit": "Biscuit cuillère ou génoise prête à l'emploi (≈ 1 kg pièce, 2 pièces)",
     "qte": 1.71,
     "unite": "Kg"
    },
@@ -17628,7 +17628,7 @@
   "cuisson": "Préparation froide\nCadres inox ou verrines, 0/+3°C",
   "ingredients": [
    {
-    "produit": "Génoise chocolat prête à l'emploi",
+    "produit": "Génoise chocolat prête à l'emploi (≈ 1 kg pièce, 2 pièces)",
     "qte": 1.76,
     "unite": "Kg"
    },
@@ -17834,7 +17834,7 @@
   "cuisson": "Four mixte 170°C chaleur sèche (pâte cuite à blanc)\nCrème pâtissière à ébullition 2 min puis 0/+3°C",
   "ingredients": [
    {
-    "produit": "Pâte sucrée prête à l'emploi (rouleaux ou plaques)",
+    "produit": "Pâte sucrée prête à l'emploi (rouleaux ou plaques) (≈ 900 g pièce, 3 pièces)",
     "qte": 2.47,
     "unite": "Kg"
    },

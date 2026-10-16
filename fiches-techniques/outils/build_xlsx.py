@@ -21,6 +21,20 @@ ALIAS2CODE = {}
 for _p in CATALOGUE:
     for _a in _p['aliases']: ALIAS2CODE[re.sub(r'\s+', ' ', _a).strip()] = _p['code']
 PU_FORMULA = "=IFERROR(INDEX(Correspondance!$D$2:$D$3000,MATCH(A{r},Correspondance!$A$2:$A$3000,0)),0)"
+PIECES_FORMULA = "=IFERROR(ROUNDUP(C{r}/INDEX(Correspondance!$E$2:$E$3000,MATCH(A{r},Correspondance!$A$2:$A$3000,0)),0),\"\")"
+CODE2PROD = {_p['code']: _p for _p in CATALOGUE}
+def is_piece(label):
+    c = ALIAS2CODE.get(label)
+    return bool(c) and CODE2PROD[c]['unite'] == 'Pièce'
+def add_pieces_column(ws, rows, last_row):
+    hdr = ws['H3']; hdr.value = 'Pièces à commander'
+    hdr.font = copy.copy(ws['C3'].font); hdr.alignment = copy.copy(ws['C3'].alignment); hdr.border = copy.copy(ws['C3'].border)
+    for r in rows:
+        c = ws[f'H{r}']; c.value = PIECES_FORMULA.format(r=r)
+        c.font = Font(name='Calibri', size=12, bold=True); c.alignment = Alignment(horizontal='center'); c.border = copy.copy(ws[f'C{r}'].border)
+        c.number_format = '0'
+    ws.column_dimensions['H'].width = 14
+    ws.print_area = f'A1:H{last_row}'
 used_products = set()
 
 fiches = json.load(open(fiches_path, encoding='utf-8'))
@@ -94,6 +108,8 @@ def link_chef_sheet(ws):
     ws.page_setup.fitToWidth = 1; ws.page_setup.fitToHeight = 1
     ws.sheet_properties.pageSetUpPr.fitToPage = True
     ws.print_area = f'A1:G{pu_row + 4}'
+    piece_rows = [r for r in range(4, sumrow) if ws[f'A{r}'].value and is_piece(ws[f'A{r}'].value)]
+    if piece_rows: add_pieces_column(ws, piece_rows, pu_row + 4)
 
 def clear_row(ws, r):
     for col in 'ABDE':
@@ -134,6 +150,8 @@ for cat in order:
                 used_products.add(ws[f'A{r}'].value)
             ws[f'E{r}'] = PU_FORMULA.format(r=r)
         ws['G4'] = f['mode_operatoire']
+        piece_rows = [4 + i for i, ing in enumerate(ings) if is_piece(re.sub(r'\s+', ' ', ing['produit']).strip())]
+        if piece_rows: add_pieces_column(ws, piece_rows, 24)
         ws['B23'] = f['poids_portion']
         ws['B24'] = '=Paramètres!$B$5'
         ws['C23'] = 'Possibilité de saisir le grammage'
@@ -255,7 +273,7 @@ ca = wb.create_sheet('Cadencier', 2)
 ca['A1'] = 'CADENCIER – CATALOGUE DES PRODUITS'; ca['A1'].font = Font(name='Calibri', size=16, bold=True)
 ca['A2'] = "Prix moyen collectivité = prix moyen grossiste restauration collective 2026 (HT, par unité d'achat), utilisé tant qu'aucun prix facture n'est saisi. Saisir le prix facture (colonne G, jaune), la date et le fournisseur : le prix retenu (J) bascule automatiquement sur le prix facture et met à jour toutes les fiches."
 ca['A2'].font = Font(name='Calibri', size=10, italic=True)
-heads = ['Code', 'Famille', 'Produit', 'Unité', 'Conditionnement', 'Prix moyen collectivité HT (€/unité)', 'Prix facture HT (€/unité)', 'Date facture', 'Fournisseur', 'Prix retenu (€/unité)', 'Nb de fiches', 'Observations']
+heads = ['Code', 'Famille', 'Produit', "Unité d'achat", 'Poids moyen par pièce (kg)', 'Conditionnement', 'Prix moyen collectivité HT (€/unité)', 'Prix facture HT (€/unité)', 'Date facture', 'Fournisseur', 'Prix retenu (€/unité)', 'Prix retenu ramené au kg ou au L', 'Nb de fiches', 'Observations']
 for j, h in enumerate(heads, 1):
     c = ca.cell(row=4, column=j, value=h); c.font = hdr_font; c.fill = hdr_fill; c.border = bd; c.alignment = Alignment(horizontal='center', vertical='center', wrap_text=True)
 ca.row_dimensions[4].height = 42
@@ -270,26 +288,31 @@ for f in fiches:
 r = 5
 code_row = {}
 for p in cat_sorted:
-    vals = [p['code'], p['famille'], p['produit'], p['unite'], p.get('conditionnement', ''), p['prix_base'], None, None, None, f'=IF(G{r}<>"",G{r},F{r})', fiche_count.get(p['code'], 0), p.get('observations', '')]
+    vals = [p['code'], p['famille'], p['produit'], p['unite'], p.get('poids_piece'), p.get('conditionnement', ''), p['prix_base'], None, None, None,
+            f'=IF(H{r}<>"",H{r},G{r})', f'=IF(AND(D{r}="Pièce",E{r}>0),K{r}/E{r},K{r})', fiche_count.get(p['code'], 0), p.get('observations', '')]
     for j, v in enumerate(vals, 1):
         c = ca.cell(row=r, column=j, value=v); c.border = bd; c.font = Font(name='Calibri', size=11)
-    ca.cell(row=r, column=6).number_format = '#,##0.00 "€"'; ca.cell(row=r, column=6).font = Font(name='Calibri', size=11, color='0000FF')
-    ca.cell(row=r, column=7).number_format = '#,##0.00 "€"'; ca.cell(row=r, column=7).fill = PatternFill('solid', fgColor='FFFF00'); ca.cell(row=r, column=7).font = Font(name='Calibri', size=11, color='0000FF')
-    ca.cell(row=r, column=8).number_format = 'DD/MM/YYYY'; ca.cell(row=r, column=8).fill = PatternFill('solid', fgColor='FFFF00')
-    ca.cell(row=r, column=9).fill = PatternFill('solid', fgColor='FFFF00')
-    ca.cell(row=r, column=10).number_format = '#,##0.00 "€"'; ca.cell(row=r, column=10).font = Font(name='Calibri', size=11, bold=True)
+    ca.cell(row=r, column=5).number_format = '0.000'; ca.cell(row=r, column=5).font = Font(name='Calibri', size=11, color='0000FF')
+    ca.cell(row=r, column=7).number_format = '#,##0.00 "€"'; ca.cell(row=r, column=7).font = Font(name='Calibri', size=11, color='0000FF')
+    ca.cell(row=r, column=8).number_format = '#,##0.00 "€"'; ca.cell(row=r, column=8).fill = PatternFill('solid', fgColor='FFFF00'); ca.cell(row=r, column=8).font = Font(name='Calibri', size=11, color='0000FF')
+    ca.cell(row=r, column=9).number_format = 'DD/MM/YYYY'; ca.cell(row=r, column=9).fill = PatternFill('solid', fgColor='FFFF00')
+    ca.cell(row=r, column=10).fill = PatternFill('solid', fgColor='FFFF00')
+    ca.cell(row=r, column=11).number_format = '#,##0.00 "€"'; ca.cell(row=r, column=11).font = Font(name='Calibri', size=11, bold=True)
+    ca.cell(row=r, column=12).number_format = '#,##0.00 "€"'
+    if p['unite'] == 'Pièce':
+        for j in (4, 5): ca.cell(row=r, column=j).fill = PatternFill('solid', fgColor='E2EFDA')
     code_row[p['code']] = r
     r += 1
 LAST_CAT = r - 1
-for col, w in zip('ABCDEFGHIJKL', [10, 30, 44, 7, 22, 16, 16, 12, 18, 14, 10, 30]): ca.column_dimensions[col].width = w
-ca.freeze_panes = 'A5'; ca.auto_filter.ref = f"A4:L{LAST_CAT}"
+for col, w in zip('ABCDEFGHIJKLMN', [10, 30, 44, 9, 11, 22, 16, 16, 12, 18, 14, 16, 10, 40]): ca.column_dimensions[col].width = w
+ca.freeze_panes = 'A5'; ca.auto_filter.ref = f"A4:N{LAST_CAT}"
 
 # ---------- Correspondance (intitulé de fiche -> produit du cadencier) ----------
 co = wb.create_sheet('Correspondance', 3)
 co['A1'] = "Correspondance entre les intitulés utilisés dans les fiches et les produits du cadencier (le prix est repris du cadencier par formule). Modifier le code (colonne B) pour rattacher un intitulé à un autre produit."
 co['A1'].font = Font(name='Calibri', size=10, italic=True)
 # la ligne 1 est une note ; le tableau commence ligne 2 (en-têtes) pour rester dans $A$2:$A$3000
-heads = ['Intitulé dans les fiches', 'Code produit', 'Produit du cadencier', 'Prix retenu (€/unité)']
+heads = ['Intitulé dans les fiches', 'Code produit', 'Produit du cadencier', 'Prix retenu ramené au kg ou L', 'Poids moyen par pièce (kg)', "Unité d'achat"]
 for j, h in enumerate(heads, 1):
     c = co.cell(row=2, column=j, value=h); c.font = hdr_font; c.fill = hdr_fill; c.border = bd
 r = 3
@@ -300,11 +323,13 @@ for raw in sorted(used_products, key=lambda x: x.lower()):
     co.cell(row=r, column=1, value=raw).border = bd
     co.cell(row=r, column=2, value=code).border = bd
     co.cell(row=r, column=3, value=f'=IFERROR(INDEX(Cadencier!$C$5:$C${LAST_CAT},MATCH(B{r},Cadencier!$A$5:$A${LAST_CAT},0)),"code inconnu")').border = bd
-    c = co.cell(row=r, column=4, value=f'=IFERROR(INDEX(Cadencier!$J$5:$J${LAST_CAT},MATCH(B{r},Cadencier!$A$5:$A${LAST_CAT},0)),0)'); c.border = bd; c.number_format = '#,##0.00 "€"'
+    c = co.cell(row=r, column=4, value=f'=IFERROR(INDEX(Cadencier!$L$5:$L${LAST_CAT},MATCH(B{r},Cadencier!$A$5:$A${LAST_CAT},0)),0)'); c.border = bd; c.number_format = '#,##0.00 "€"'
+    c = co.cell(row=r, column=5, value=f'=IFERROR(INDEX(Cadencier!$E$5:$E${LAST_CAT},MATCH(B{r},Cadencier!$A$5:$A${LAST_CAT},0)),"")'); c.border = bd; c.number_format = '0.000'
+    c = co.cell(row=r, column=6, value=f'=IFERROR(INDEX(Cadencier!$D$5:$D${LAST_CAT},MATCH(B{r},Cadencier!$A$5:$A${LAST_CAT},0)),"")'); c.border = bd
     r += 1
 if missing_alias: print('PRODUITS SANS CORRESPONDANCE:', missing_alias)
-for col, w in zip('ABCD', [60, 12, 44, 16]): co.column_dimensions[col].width = w
-co.freeze_panes = 'A3'; co.auto_filter.ref = f"A2:D{r-1}"
+for col, w in zip('ABCDEF', [60, 12, 44, 16, 12, 10]): co.column_dimensions[col].width = w
+co.freeze_panes = 'A3'; co.auto_filter.ref = f"A2:F{r-1}"
 # PU_FORMULA utilise la colonne D de Correspondance, lignes 2..3000 : OK
 
 wb.active = 0

@@ -33,6 +33,8 @@ Les fiches déjà rédigées par le chef dans `Fiche_techniques_CBT.xlsx` (bourg
 3. La colonne J « Prix retenu » passe automatiquement sur le prix facture ; toutes les fiches qui utilisent ce produit sont mises à jour (coût matière et prix unitaire portion).
 Tant qu'aucun prix facture n'est saisi, c'est le prix moyen collectivité (colonne F, bleu) qui est utilisé : prix moyens grossiste restauration collective 2026, à remplacer par vos factures.
 
+Produits commandés à la pièce (salades, œufs, melons, avocats, concombres, choux, bottes d'herbes, pâtes en plaque, crêpes, pains, pizzas, yaourts…) : ils sont en unité « Pièce » dans le cadencier (prix à la pièce, lignes vertes) avec un poids moyen par pièce modifiable. Les fiches restent calculées au kg (prix ramené au kg automatiquement) et affichent, dans une colonne « Pièces à commander », le nombre de pièces nécessaires pour la production.
+
 Œufs : toutes les recettes utilisent des **œufs coquille** (pas d'ovoproduits), exprimés en kg dans les fiches avec le nombre de pièces (60 g par œuf). La mayonnaise reste un produit prêt à l'emploi (seau).
 Pour rattacher un intitulé de fiche à un autre produit, modifier le code en colonne B de `Correspondance`.
 
